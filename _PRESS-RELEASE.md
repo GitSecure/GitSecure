@@ -34,7 +34,7 @@ Once the project moves into development, the press release can be used as a touc
 
 ## Solution ##
   > Describe how your product elegantly solves the problem.
-
+  So elegant.
 ## Quote from You ##
   > A quote from a spokesperson in your company.
    We protect your codebase from costly mistakes with our simple to use software.
