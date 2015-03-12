@@ -12,9 +12,19 @@ var APIKeys = {
     owner: 'jjnewman10',
     ownerID: 207420538,
     accessLevel: 'Read-only'
+  },
+  stripe: {
+    sk_live: 'sk_live_FgV3tzZsHXbpDHn1tXeNxxxx',
+    p_live: 'pk_live_IDwbcPLP8Ike8ieTYrmpxxxx'
   }
+};
+
+var APIRegexes = {
+  twitter: /a/,
+  yelp: /a/
 };
 
 var fileParser = function() {
 
 };
+
