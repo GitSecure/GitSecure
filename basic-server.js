@@ -5,8 +5,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var cors = require('cors');
 var app = express();
-// var gitHubRepoGrabber = require("./jshelpers/gitHubRepoGrabber");
-// var readFilesForParsing = require("./jshelpers/readFilesForParsing");
+var mainExecution = require("./app");
 
 
 var server = app.listen(3000, function(){
