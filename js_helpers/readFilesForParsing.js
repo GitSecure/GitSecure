@@ -1,4 +1,9 @@
-//html parser library
+var spawn = require('child_process').spawn;
+
+var deploySh = spawn('sh', [ 'concatGit.sh' ], {
+  cwd: './',
+  env: './'
+});
 
 var APIKeys = {
   twitter: {
