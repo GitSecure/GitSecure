@@ -23,5 +23,17 @@ app.use(cors());
 app.get('', function(req,res){
 });
 
+var getTextFile = function(callback) {
+  var content;
+  fs.readFile('./concatenatedDirectory.txt', function (err, data) {
+      if (err) {
+          throw err;
+      }
+      content = data;
+      console.log(content);   
+      callback(content);        
+  });
+};
+
 app.post('/', function(req,res) {
 });
