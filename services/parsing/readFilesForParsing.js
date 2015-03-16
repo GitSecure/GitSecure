@@ -62,6 +62,10 @@ var storeHitData = function(data) {
   //store back in MongoDB
 };
 
+var findAPIKey = function(text, regex) {
+
+};
+
 var processFile = function(text) {
     var stripeRegex = APIRegexes[stripe];
     var googleRegex = APIRegexes[google];
