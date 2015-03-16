@@ -46,7 +46,7 @@ var APIRegexes = {
 
 var fileParser = function() {
   //read in concatenatedDirectoriest.txt file
-  getTextFile(function(text) { //async file read
+  getTextFile('./concatenatedDirectory.txt', function(text) { //async file read
     processFile(text);
   });
 };
@@ -77,6 +77,9 @@ var processFile = function(text) {
     }
 
   else { //remove file from DB
+    removeFile('./concatenatedDirectory.txt', function() {
+       console.log('successfully deleted file');
+    });
     //delete file
     //delete directory
   }
