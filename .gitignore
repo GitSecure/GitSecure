@@ -1,2 +1,4 @@
 git_data/
 node_modules/
+dist/
+results/
