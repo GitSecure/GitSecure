@@ -1,8 +1,8 @@
 var spawn = require('child_process').spawn;
 
-
+var pathName;
 var deploySh = spawn('sh', [ 'concatDirectories.sh' ], {
-  cwd: '../downloading/git_data',
+  cwd: '../downloading/git_data' + pathName,
   env: './'
 });
 
