@@ -1,10 +1,6 @@
 var spawn = require('child_process').spawn;
-
-var pathName;
-var deploySh = spawn('sh', [ 'concatDirectories.sh' ], {
-  cwd: '../downloading/git_data' + pathName,
-  env: './'
-});
+var mainApp = require('../../app.js');
+var fs = require('fs');
 
 var APIKeys = {
   twitter: {
@@ -44,31 +40,63 @@ var APIRegexes = {
   paypal: /us_api1.paypal.com'/
 };
 
-var fileParser = function() {
-  //read in concatenatedDirectoriest.txt file
-  getTextFile('./concatenatedDirectory.txt', function(text) { //async file read
-    processFile(text);
+var removeFile = function(path, callback) {
+  fs.unlink(path, function (err) {
+    if (err) {
+      throw err;
+    }
+    else {
+      console.log('successfully deleted ', path);
+      callback();
+    }
   });
 };
 
-var organizeHitData = function(obj, regex, index, match) { //decorator function for regex results
-  obj.regex = regex;
-  obj.index = index;
-  obj.match = match;
-  return obj;
-};
+var removeDirectory = function(path, callback) {
+  fs.readdir(path, function(err, files) {
+    if(err) {
+      callback(err, []);
+      return;
+    }
+    var wait = files.length;
+    var count = 0;
 
-var storeHitData = function(data) {
-  //store back in MongoDB
-};
+    var folderDone = function(err) {
+      count++;
+      if( count >= wait || err) {
+        fs.rmdir(path, callback);
+      }
+    };
 
-var findAPIKey = function(text, regex) {
-
+    // Empty directory to bail early
+    if( !wait ) {
+      folderDone();
+      return;
+    }
+    
+    // Remove one or more trailing slash to keep from doubling up
+    path = path.replace(/\/+$/,"");
+    files.forEach(function(file) {
+      var curPath = path + "/" + file;
+      fs.lstat(curPath, function(err, stats) {
+        if( err ) {
+          callback(err, []);
+          return;
+        }
+        if( stats.isDirectory() ) {
+          removeDirectory(curPath, folderDone);
+        } else {
+          fs.unlink(curPath, folderDone);
+        }
+      });
+    });
+  });
 };
 
 var processFile = function(text) {
-    var stripeRegex = APIRegexes[stripe];
-    var googleRegex = APIRegexes[google];
+  console.log("processFile:" + text);
+    var stripeRegex = APIRegexes['stripe'];
+    var googleRegex = APIRegexes['google'];
 
     var stripeHit = stripeRegex.exec(text); //note exec method returns the whole input string
     var googleHit = googleRegex.exec(text);
@@ -81,11 +109,67 @@ var processFile = function(text) {
     }
 
   else { //remove file from DB
-    removeFile('./concatenatedDirectory.txt', function() {
+    removeFile('/Users/marcbalaban/Desktop/Code/GitSecure/concatenatedDirectory.txt', function() {
        console.log('successfully deleted file');
     });
-    //delete file
     //delete directory
   }
 };
+
+var getTextFile = function(path, callback) {
+  var content;
+  fs.readFile(path, function (err, data) {
+      if (err) {
+          throw err;
+      }
+      content = data;
+      console.log(content);   
+      callback(content);        
+  });
+};
+
+var getFile = function() {
+  //read in concatenatedDirectoriest.txt file
+  getTextFile('./concatenatedDirectory.txt', function(text) { //async file read
+    processFile(text);
+  });
+};
+
+var concatDirectory = function(pathName) {
+  console.log("pathName:" + pathName);
+  var bash = spawn('sh', [ '/Users/marcbalaban/Desktop/Code/GitSecure/services/parsing/concatDirectories.sh' ], {
+    cwd: '/Users/marcbalaban/Desktop/Code/GitSecure/git_data/' + pathName,
+    env: './'
+  });
+
+  bash.on('close', function(code){
+    console.log(code); 
+    getFile();
+  });
+  
+};
+
+ exports.parseFile = parseFile = function(parseQueue) {
+  var path = mainApp.parseQueue.shift();
+  concatDirectory(path);
+};
+
+var organizeHitData = function(obj, regex, index, match) { //decorator function for regex results
+  obj.regex = regex;
+  obj.index = index;
+  obj.match = match;
+  return obj;
+};
+
+
+
+var storeHitData = function(data) {
+  //store back in MongoDB
+};
+
+var findAPIKey = function(text, regex) {
+
+};
+
+
 
