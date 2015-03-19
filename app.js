@@ -13,16 +13,15 @@ var getNext = function() {
       query.query(function(urlList){
         console.log("in download mode")
         downloader.readListOfFiles(urlList, function(parseList){
-          console.log('readlistoffiles cb', parseList)
-          // parser.parseFile(parseList, function(){
-
-          // });
+          parser.parseFile(parseList, function(){
+            console.log('parsed everything!');
+          });
         });
       })
     });
-    // setTimeout(function() {
-    //  getNext(); 
-    // }, 20000);
+    setTimeout(function() {
+     getNext(); 
+    }, 30000  );
  }
 
 // setInterval(getNext,4000);

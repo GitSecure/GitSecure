@@ -1,5 +1,4 @@
 var spawn = require('child_process').spawn;
-var mainApp = require('../../app.js');
 var fs = require('fs');
 
 var APIKeys = {
@@ -40,21 +39,21 @@ var APIRegexes = {
   paypal: /us_api1.paypal.com'/
 };
 
-var removeFile = function(path, callback) {
-  fs.unlink(path, function (err) {
-    if (err) {
-      throw err;
-    }
-    else {
-      console.log('successfully deleted ', path);
-      callback();
-    }
-  });
-};
+// var removeFile = function(path, callback) {
+//   fs.unlink(path, function (err) {
+//     if (err) {
+//       throw err;
+//     }
+//     else {
+//       console.log('successfully deleted ', path);
+//       callback();
+//     }
+//   });
+// };
 
 var removeDirectory = function(path, callback) {
   fs.readdir(path, function(err, files) {
-    if(err) {
+    if( err ) {
       callback(err, []);
       return;
     }
@@ -71,6 +70,7 @@ var removeDirectory = function(path, callback) {
     // Empty directory to bail early
     if( !wait ) {
       folderDone();
+      callback();
       return;
     }
     
@@ -93,15 +93,14 @@ var removeDirectory = function(path, callback) {
   });
 };
 
-var processFile = function(text) {
-  console.log("processFile:" + text);
+var processFile = function(text, pathName, callback) {
     var stripeRegex = APIRegexes['stripe'];
     var googleRegex = APIRegexes['google'];
 
     var stripeHit = stripeRegex.exec(text); //note exec method returns the whole input string
     var googleHit = googleRegex.exec(text);
 
-
+    console.log('rpcessfile', text);
     if ( googleHit ) {
       var googleAPIData = {};
       organizeHitData(googleAPIData); //store regex used, service name, matched text, index
@@ -109,49 +108,56 @@ var processFile = function(text) {
     }
 
   else { //remove file from DB
-    removeFile('/Users/marcbalaban/Desktop/Code/GitSecure/concatenatedDirectory.txt', function() {
-       console.log('successfully deleted file');
+    removeDirectory(pathName, function() {
+      callback();
     });
-    //delete directory
   }
 };
 
 var getTextFile = function(path, callback) {
   var content;
-  fs.readFile(path, function (err, data) {
+  fs.readFile(path, 'utf8',function (err, data) {
       if (err) {
           throw err;
       }
       content = data;
-      console.log(content);   
       callback(content);        
   });
 };
 
-var getFile = function() {
-  //read in concatenatedDirectoriest.txt file
-  getTextFile('./concatenatedDirectory.txt', function(text) { //async file read
-    processFile(text);
-  });
-};
-
-var concatDirectory = function(pathName) {
-  console.log("pathName:" + pathName);
+var concatDirectory = function(pathName, callback) {
   var bash = spawn('sh', [ '/Users/marcbalaban/Desktop/Code/GitSecure/services/parsing/concatDirectories.sh' ], {
     cwd: '/Users/marcbalaban/Desktop/Code/GitSecure/git_data/' + pathName,
     env: './'
   });
-
+  var path = '/Users/marcbalaban/Desktop/Code/GitSecure/git_data/' + pathName;
   bash.on('close', function(code){
-    console.log(code); 
-    getFile();
+    getTextFile(path + '/concatenatedDirectory.txt', function(text) { //async file read
+      processFile(text, path, function() {
+        callback();
+      });
+    });
   });
-  
 };
 
- exports.parseFile = parseFile = function(parseQueue) {
-  var path = mainApp.parseQueue.shift();
-  concatDirectory(path);
+var parseFile = module.exports.parseFile = function(directoryList, callback) {
+  var x = 0;
+
+  var checkInterval = function(){
+    if(x === directoryList.length){
+      callback();
+      clearInterval(checkLengthLoop);
+    }
+  }
+
+  var checkLengthLoop = setInterval(checkInterval, 10000);
+
+  directoryList.forEach(function(directoryName) {
+    var path = directoryName;
+    concatDirectory(path, function() {
+      x++;
+    });
+  });
 };
 
 var organizeHitData = function(obj, regex, index, match) { //decorator function for regex results
