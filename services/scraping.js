@@ -11,7 +11,7 @@ exports.scrapeUrls = function(callback){
 
   var reportResults = function(err, result) {
     if (err) console.log("ERROR: " + err);
-    console.log("RESULT: " + result);
+    console.log("PARSING RESULTS: " + result);
   }
 
   var formatUrl = function(fullName) {
@@ -30,7 +30,6 @@ exports.scrapeUrls = function(callback){
             data[i].processed = false;
             metaData.insert(data[i], reportResults);
           }
-          // db.close();
           callback()
       });
   });
