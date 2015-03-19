@@ -1,3 +1,4 @@
+
 /************************************
 NAV
 *************************************/
@@ -29,4 +30,21 @@ HEADING
   line-height: 40px;
   color: #fff;
   margin-bottom: 25px;
+}
+
+/************************************
+MAIN
+*************************************/
+
+.main {
+  padding: 40px 0;
+}
+/*
+.num-heading {
+  font-color: #D1D1D1;
+}*/
+
+.repo-numbers {
+  font-size: 75px;
+  font-weight: bold;
 }
