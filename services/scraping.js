@@ -1,10 +1,10 @@
-exports.scrapeUrls = function(callback){
+exports.scrapeUrls = function(pageNumber, callback){
 
   var MongoClient = require('mongodb').MongoClient;
   var request = require('request');
 
   var options = {};
-  options.url = 'https://api.github.com/search/repositories?q=sort=updated&order=desc&page=1&per_page=53';
+  options.url = 'https://api.github.com/search/repositories?q=sort=updated&order=desc&page=' + pageNumber  + '&per_page=53';
   options.headers = {
     'User-Agent': 'request'
   };

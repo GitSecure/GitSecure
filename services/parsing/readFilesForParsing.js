@@ -170,11 +170,12 @@ var organizeHitData = function(obj, regex, index, match) { //decorator function 
 var storeHitData = function(data) {
   var MongoClient = require('mongodb').MongoClient;
   MongoClient.connect('mongodb://127.0.0.1:27017/test4', function(err, db) {
-  var hitData = db.collection('hitdata');
-  hitData.insert({results: data}, function(err, result) {
-    console.log("HitData Persisted: " + result);
+    var hitData = db.collection('hitdata');
+    hitData.insert({results: data}, function(err, result) {
+      console.log("HitData Persisted: " + result);
+    });
   });
-};
+}
 
 var findAPIKey = function(text, regex) {
 
