@@ -1,0 +1,50 @@
+
+/************************************
+NAV
+*************************************/
+
+
+
+/************************************
+HEADING
+*************************************/
+#heading {
+  background-color: #303030;
+  height: 250px;
+  padding: 20px 0;
+  color: #fff;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+#heading h1 {
+  font-size: 80px;
+  line-height: 95px;
+  letter-spacing: -1px;
+}
+
+#heading h4 {
+  font-size: 30px;
+  line-height: 40px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+/************************************
+MAIN
+*************************************/
+
+.main {
+  padding: 40px 0;
+}
+/*
+.num-heading {
+  font-color: #D1D1D1;
+}*/
+
+.repo-numbers {
+  font-size: 75px;
+  font-weight: bold;
+}
