@@ -31,25 +31,25 @@ var APIKeys = {
 };
 
 var APIRegexes = {
-  twitter: /a/,
-  yelp: /a/,
+  // twitter: /a/,
+  // yelp: /a/,
   stripe: /(pk|sk)_live_\w{24}/,
   google: /AIza.{35}/,
   ebay: /api1.ebay.com/,
   paypal: /us_api1.paypal.com'/
 };
 
-// var removeFile = function(path, callback) {
-//   fs.unlink(path, function (err) {
-//     if (err) {
-//       throw err;
-//     }
-//     else {
-//       console.log('successfully deleted ', path);
-//       callback();
-//     }
-//   });
-// };
+var removeFile = function(path, callback) {
+  fs.unlink(path, function (err) {
+    if (err) {
+      throw err;
+    }
+    else {
+      console.log('successfully deleted ', path);
+      callback();
+    }
+  });
+};
 
 var removeDirectory = function(path, callback) {
   fs.readdir(path, function(err, files) {
@@ -93,25 +93,38 @@ var removeDirectory = function(path, callback) {
   });
 };
 
-var processFile = function(text, pathName, callback) {
-    var stripeRegex = APIRegexes['stripe'];
-    var googleRegex = APIRegexes['google'];
+var organizeHitData = function(obj, regex, index, match) { //decorator function for regex results
+  obj.regex = regex;
+  obj.index = index;
+  obj.match = match;
+  return obj;
+};
 
-    var stripeHit = stripeRegex.exec(text); //note exec method returns the whole input string
-    var googleHit = googleRegex.exec(text);
-
-    console.log('rpcessfile', text);
-    if ( googleHit ) {
-      var googleAPIData = {};
-      organizeHitData(googleAPIData); //store regex used, service name, matched text, index
-      storeHitData(googleAPIData);
-    }
-
-  else { //remove file from DB
-    removeDirectory(pathName, function() {
-      callback();
+var storeHitData = function(data) {
+  var MongoClient = require('mongodb').MongoClient;
+  MongoClient.connect('mongodb://127.0.0.1:27017/test4', function(err, db) {
+    var hitData = db.collection('hitdata');
+    hitData.insert({results: data}, function(err, result) {
+      console.log("HitData Persisted: " + result);
     });
+  });
+};
+
+var findAPIKey = function(regex, text) {
+  return regex.exec(text);
+};
+
+var processFile = function(text, pathName, callback) {  
+  for( var regex in APIRegexes ) {
+    if ( findAPIKey(APIRegexes[regex], text )) {
+      var APIData = {};
+      organizeHitData(APIData);
+      storeHitData(APIData);
+    }
   }
+  removeDirectory(pathName, function() {
+    callback();
+  });
 };
 
 var getTextFile = function(path, callback) {
@@ -145,10 +158,10 @@ var parseFile = module.exports.parseFile = function(directoryList, callback) {
 
   var checkInterval = function(){
     if(x === directoryList.length){
-      callback();
+      callback(); //return to app.js
       clearInterval(checkLengthLoop);
     }
-  }
+  };
 
   var checkLengthLoop = setInterval(checkInterval, 10000);
 
@@ -160,23 +173,3 @@ var parseFile = module.exports.parseFile = function(directoryList, callback) {
   });
 };
 
-var organizeHitData = function(obj, regex, index, match) { //decorator function for regex results
-  obj.regex = regex;
-  obj.index = index;
-  obj.match = match;
-  return obj;
-};
-
-var storeHitData = function(data) {
-  var MongoClient = require('mongodb').MongoClient;
-  MongoClient.connect('mongodb://127.0.0.1:27017/test4', function(err, db) {
-    var hitData = db.collection('hitdata');
-    hitData.insert({results: data}, function(err, result) {
-      console.log("HitData Persisted: " + result);
-    });
-  });
-}
-
-var findAPIKey = function(text, regex) {
-
-};
