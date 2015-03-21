@@ -1,17 +1,17 @@
-exports.scrapeUrls = function(callback){
+exports.scrapeUrls = function(pageNumber, callback){
 
   var MongoClient = require('mongodb').MongoClient;
   var request = require('request');
 
   var options = {};
-  options.url = 'https://api.github.com/search/repositories?q=sort=updated&order=desc&page=1&per_page=53';
+  options.url = 'https://api.github.com/search/repositories?q=sort=updated&order=desc&page=' + pageNumber  + '&per_page=53';
   options.headers = {
     'User-Agent': 'request'
   };
 
   var reportResults = function(err, result) {
     if (err) console.log("ERROR: " + err);
-    console.log("RESULT: " + result);
+    console.log("PARSING RESULTS: " + result);
   }
 
   var formatUrl = function(fullName) {
@@ -30,7 +30,6 @@ exports.scrapeUrls = function(callback){
             data[i].processed = false;
             metaData.insert(data[i], reportResults);
           }
-          // db.close();
           callback()
       });
   });

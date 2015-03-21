@@ -1,3 +1,11 @@
+<h2>Service Runner</h2>
+<code>app.js</code> is the file that is responsible for coordinating execution
+of all the services. 
+
+Note: We should changethe name of app.js later because the
+naming may conflict with what Azure expects the name of our backend server to
+be.
+
 <h2>Services</h2>
 <ol>
   <li><b>Scrape</b> Git repository meta data</li>
@@ -22,3 +30,14 @@ repositories data to a MongoDB data store.</p>
 
 <h3>Parsing</h3>
 <p>Not complete</p>
+
+
+<h3>Current Issues</h3>
+<ol>
+  <li>Naming scheme is inconsistent and unreadable</li>
+  <li>If there are already repositories in <code>git_data</code> then initiating services via
+<code>app.js</code> will cause download service to run forever</li>
+  <li>Naming someting 'callback' is cool when there is only one async function.
+Right now there are so many async functions that this codebase is entirely
+unreadable</li>
+  
