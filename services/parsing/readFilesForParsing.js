@@ -1,3 +1,4 @@
+var fs = require('fs');
 var spawn = require('child_process').spawn;
 var fs = require('fs');
 
@@ -36,7 +37,8 @@ var APIRegexes = {
   stripe: /(pk|sk)_live_\w{24}/,
   google: /AIza.{35}/,
   ebay: /api1.ebay.com/,
-  paypal: /us_api1.paypal.com'/
+  paypal: /us_api1.paypal.com'/,
+  test: /var/
 };
 
 var removeFile = function(path, callback) {
@@ -122,9 +124,9 @@ var processFile = function(text, pathName, callback) {
       storeHitData(APIData);
     }
   }
-  removeDirectory(pathName, function() {
-    callback();
-  });
+  //removeDirectory(pathName, function() {
+  //  callback();
+ // });
 };
 
 var getTextFile = function(path, callback) {
@@ -139,11 +141,21 @@ var getTextFile = function(path, callback) {
 };
 
 var concatDirectory = function(pathName, callback) {
-  var bash = spawn('sh', [ '/Users/marcbalaban/Desktop/Code/GitSecure/services/parsing/concatDirectories.sh' ], {
-    cwd: '/Users/marcbalaban/Desktop/Code/GitSecure/git_data/' + pathName,
+
+  var bash = spawn('sh', [ './services/parsing/concatDirectories.sh' ], {
+    cwd: './git_data/' + pathName,
     env: './'
   });
-  var path = '/Users/marcbalaban/Desktop/Code/GitSecure/git_data/' + pathName;
+
+  fs.writeFile('./git_data/' + pathName + "/concatenatedDirectory.txt", "works", function(err) {
+      if(err) {
+          return console.log(err);
+      }
+
+    console.log("The file was saved!: " + pathName);
+}); 
+
+  var path = './git_data/' + pathName;
   bash.on('close', function(code){
     getTextFile(path + '/concatenatedDirectory.txt', function(text) { //async file read
       processFile(text, path, function() {

@@ -16,7 +16,7 @@ var getNextGitHubRepo = function() {
     scrapeService.scrapeUrls(++pageNumber, function(){
       queryService.query(function(urlList){
         downloadService.readListOfFiles(urlList, function(parseList){
-          parsService.parseFile(parseList, function(){
+          parseService.parseFile(parseList, function(){
             console.log('parsed everything!');
           });
         });
