@@ -10,7 +10,7 @@ HEADING
 *************************************/
 #heading {
   background-color: #303030;
-  height: 250px;
+  height: 260px;
   padding: 20px 0;
   color: #fff;
 }
@@ -48,3 +48,4 @@ MAIN
   font-size: 75px;
   font-weight: bold;
 }
+
