@@ -6,11 +6,8 @@ var queryService = require('./services/query.js');
 var pageNumber = 1;
 
 
-
-var initialize = function() {
   //kill git_data
   //getNextGitHubRepo();
-};
 
 var getNextGitHubRepo = function() {
     scrapeService.scrapeUrls(++pageNumber, function(){
@@ -18,12 +15,11 @@ var getNextGitHubRepo = function() {
         downloadService.readListOfFiles(urlList, function(parseList){
           parseService.parseFile(parseList, function(){
             console.log('parsed everything!');
+            getNextGitHubRepo();
           });
         });
       });
     });
-    setTimeout(function() {
-     getNextGitHubRepo(); 
-    }, 30000  );
 };
+
 getNextGitHubRepo();

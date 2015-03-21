@@ -53,7 +53,7 @@ var removeFile = function(path, callback) {
   });
 };
 
-var removeDirectory = function(path, callback) {
+var removeDirectory = module.exports.removeDirectory = function(path, callback) {
   fs.readdir(path, function(err, files) {
     if( err ) {
       callback(err, []);
@@ -95,18 +95,17 @@ var removeDirectory = function(path, callback) {
   });
 };
 
-var organizeHitData = function(obj, regex, index, match) { //decorator function for regex results
-  obj.regex = regex;
-  obj.index = index;
-  obj.match = match;
+var decorateHitData = function(obj, result) { //decorator function for regex results
+  obj.index = result.index;
+  obj.match = result[0];
   return obj;
 };
 
 var storeHitData = function(data) {
   var MongoClient = require('mongodb').MongoClient;
-  MongoClient.connect('mongodb://127.0.0.1:27017/test4', function(err, db) {
+  MongoClient.connect('mongodb://127.0.0.1:27017/test7', function(err, db) {
     var hitData = db.collection('hitdata');
-    hitData.insert({results: data}, function(err, result) {
+    hitData.insert(data, function(err, result) {
       console.log("HitData Persisted: " + result);
     });
   });
@@ -118,15 +117,16 @@ var findAPIKey = function(regex, text) {
 
 var processFile = function(text, pathName, callback) {  
   for( var regex in APIRegexes ) {
-    if ( findAPIKey(APIRegexes[regex], text )) {
-      var APIData = {};
-      organizeHitData(APIData);
-      storeHitData(APIData);
-    }
+    var result = findAPIKey(APIRegexes[regex], text );
+      if (result) {
+        var APIData = {};
+        decorateHitData(APIData, result);
+        storeHitData(APIData);
+        }
   }
-  //removeDirectory(pathName, function() {
-  //  callback();
- // });
+  removeDirectory(pathName, function() {
+    callback();
+  });
 };
 
 var getTextFile = function(path, callback) {
@@ -142,18 +142,13 @@ var getTextFile = function(path, callback) {
 
 var concatDirectory = function(pathName, callback) {
 
-  var bash = spawn('sh', [ './services/parsing/concatDirectories.sh' ], {
-    cwd: './git_data/' + pathName,
+  var bash = spawn('sh', [ '/Users/anthonyzotti/GitSecure/services/parsing/concatDirectories.sh' ], {
+    cwd: '/Users/anthonyzotti/GitSecure/git_data/' + pathName + '/',
     env: './'
   });
+  console.log('cwd: ./git_data/' + pathName + '/');
 
-  fs.writeFile('./git_data/' + pathName + "/concatenatedDirectory.txt", "works", function(err) {
-      if(err) {
-          return console.log(err);
-      }
-
-    console.log("The file was saved!: " + pathName);
-}); 
+    console.log('/Users/anthonyzotti/GitSecure/git_data/' + pathName + '/');
 
   var path = './git_data/' + pathName;
   bash.on('close', function(code){
@@ -169,9 +164,11 @@ var parseFile = module.exports.parseFile = function(directoryList, callback) {
   var x = 0;
 
   var checkInterval = function(){
-    if(x === directoryList.length){
-      callback(); //return to app.js
+    console.log("x: " + x);
+    console.log('directoryList.length: ' + directoryList.length);
+    if(x >= directoryList.length){
       clearInterval(checkLengthLoop);
+      callback(); //return to app.js
     }
   };
 
