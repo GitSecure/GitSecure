@@ -25,9 +25,9 @@ var offset = 0;
 
 var increaseCount = function() {
   counts.scanned += 5;
-  if (offset % 200 === 0) {
+  if (offset % 60 === 0) {
     counts.hits += 1;
-  }
+  };
   offset++;
 };
 
