@@ -1,26 +1,29 @@
 // var db = require("./services/scraping.js");
-var parser = require("./services/parsing/readFilesForParsing.js")
-var downloader = require('./services/downloading/js_helpers/gitHubRepoGrabber.js')
-var scraper = require('./services/scraping.js');
-var query = require('./services/query.js');
+var parseService = require("./services/parsing/readFilesForParsing.js");
+var downloadService = require('./services/downloading/js_helpers/gitHubRepoGrabber.js');
+var scrapeService = require('./services/scraping.js');
+var queryService = require('./services/query.js');
 var pageNumber = 1;
 
 
-// var toTest = [{url: 'git://github.com/Sourdoughh/Backend-Demo-For-Hilarious-Pancake.git' , id: '81' }, {url: 'git://github.com/showdownjs/showdown.git', id:'59'}]
 
-var getNext = function() {
-    scraper.scrapeUrls(++pageNumber, function(){
-      query.query(function(urlList){
-        console.log("in download mode")
-        downloader.readListOfFiles(urlList, function(parseList){
-          parser.parseFile(parseList, function(){
+var initialize = function() {
+  //kill git_data
+  //getNextGitHubRepo();
+};
+
+var getNextGitHubRepo = function() {
+    scrapeService.scrapeUrls(++pageNumber, function(){
+      queryService.query(function(urlList){
+        downloadService.readListOfFiles(urlList, function(parseList){
+          parsService.parseFile(parseList, function(){
             console.log('parsed everything!');
           });
         });
-      })
+      });
     });
     setTimeout(function() {
-     getNext(); 
+     getNextGitHubRepo(); 
     }, 30000  );
- }
-getNext();
+};
+getNextGitHubRepo();
