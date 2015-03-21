@@ -8,17 +8,6 @@ var fs = require('fs');
 var app = express();
 var mainExecution = require("./app");
 
-//testing client -- fake count variable
-var counts = { scanned: 0, hits: 0 };
-
-var increaseCount = function() {
-  counts.scanned += 5;
-  counts.hits += 1;
-};
-
-setInterval(increaseCount, 1000);
-//end testing client
-
 var server = app.listen(3000, function(){
   var host = server.address().address;
   var port = server.address().port;
@@ -29,6 +18,21 @@ app.use(express.static(__dirname + '/client/dist'));
 
 app.use(bodyParser.json());
 app.use(cors());
+
+//testing client -- fake count variable
+var counts = { scanned: 0, hits: 0 };
+var offset = 0;
+
+var increaseCount = function() {
+  counts.scanned += 5;
+  if (offset % 200 === 0) {
+    counts.hits += 1;
+  }
+  offset++;
+};
+
+setInterval(increaseCount, 1000);
+//end testing client
 
 app.get('/numbers', function(req,res){
   //server should actually query the database for updated count info.
