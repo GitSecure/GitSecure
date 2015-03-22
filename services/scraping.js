@@ -4,7 +4,11 @@ exports.scrapeUrls = function(pageNumber, callback){
   var request = require('request');
 
   var options = {};
-  options.url = 'https://api.github.com/search/repositories?q=sort=updated&order=desc&page=' + pageNumber  + '&per_page=53';
+
+  var dateString = new Date(Date.now() - 28000).toISOString();
+
+  options.url = 'https://api.github.com/search/repositories?q=pushed:>=' + dateString + '&order=desc&per_page=100';
+
   options.headers = {
     'User-Agent': 'request'
   };
@@ -30,7 +34,7 @@ exports.scrapeUrls = function(pageNumber, callback){
             data[i].processed = false;
             metaData.insert(data[i], reportResults);
           }
-          callback()
+          callback();
       });
   });
 }
