@@ -13,7 +13,6 @@ exports.query = function(callback){
   }
 
   function handleMetaData() {
-    console.log('handling');
     if (results.length < 5)
       getMetaDataDocument();
     else
