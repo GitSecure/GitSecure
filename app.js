@@ -1,4 +1,5 @@
 // var db = require("./services/scraping.js");
+debugger;
 var parseService = require("./services/parsing/readFilesForParsing.js");
 var downloadService = require('./services/downloading/js_helpers/gitHubRepoGrabber.js');
 var scrapeService = require('./services/scraping.js');

@@ -1,6 +1,8 @@
-var fs = require('fs');
 var spawn = require('child_process').spawn;
+var events = require('events');
+var eventEmitter = new events.EventEmitter();
 var fs = require('fs');
+var async = require('async');
 
 var APIKeys = {
   twitter: {
@@ -143,14 +145,17 @@ var getTextFile = function(path, callback) {
 };
 
 var concatDirectory = function(pathName, callback) {
+  var localBashPath = './services/parsing/concatDirectories.sh';
+  var absoluteBashPath = '/Users/anthonyzotti/GitSecure/services/parsing/concatDirectories.sh';
 
-  var bash = spawn('sh', [ '/Users/anthonyzotti/GitSecure/services/parsing/concatDirectories.sh' ], {
-    cwd: '/Users/anthonyzotti/GitSecure/git_data/' + pathName + '/',
+  var localCWD = './git_data' + pathName + '/';
+  var absoluteCWD = '/Users/anthonyzotti/GitSecure/git_data/' + pathName + '/';
+
+  var bash = spawn('sh', [ localBashPath ], {
+    cwd: localCWD,
     env: './'
   });
-  console.log('cwd: ./git_data/' + pathName + '/');
 
-    console.log('/Users/anthonyzotti/GitSecure/git_data/' + pathName + '/');
 
   var path = './git_data/' + pathName;
   bash.on('close', function(code){
@@ -162,25 +167,34 @@ var concatDirectory = function(pathName, callback) {
   });
 };
 
-var parseFile = module.exports.parseFile = function(directoryList, callback) {
-  var x = 0;
-
-  var checkInterval = function(){
-    console.log("x: " + x);
-    console.log('directoryList.length: ' + directoryList.length);
-    if(x >= directoryList.length){
-      clearInterval(checkLengthLoop);
-      callback(); //return to app.js
+// var parseFile = module.exports.parseFile = function(directoryList, callback) {
+//   async.eachSeries(directoryList, function(directoryName, itemCallback) {
+//     var path = directoryName;
+//     concatDirectory(path, function() {
+//       itemCallback();
+//     });
+//   }, function() {
+//     callback();
+//   });
+// };
+//
+var parseFile = module.exports.parseFile = function(directoryList, finalCallback) {
+  var currentDirectory;
+  var queueNextDirectory = function() {
+    if (directoryList.length !== 0) {
+      currentDirectory = directoryList.pop();
+      processNextDirectory();
+    } else {
+      finalCallback();
     }
   };
 
-  var checkLengthLoop = setInterval(checkInterval, 10000);
-
-  directoryList.forEach(function(directoryName) {
-    var path = directoryName;
-    concatDirectory(path, function() {
-      x++;
+  var processNextDirectory = function() {
+    concatDirectory(currentDirectory, function() {
+      eventEmitter.emit('completeDirectoryProcessing');
     });
-  });
-};
+  }
 
+  eventEmitter.on('completeDirectoryProcessing', queueNextDirectory);
+  queueNextDirectory();
+}
