@@ -95,9 +95,11 @@ var removeDirectory = module.exports.removeDirectory = function(path, callback) 
   });
 };
 
-var decorateHitData = function(obj, result) { //decorator function for regex results
+var decorateHitData = function(obj, result, pathName, regex) { //decorator function for regex results
   obj.index = result.index;
   obj.match = result[0];
+  obj.gitId = pathName.match(/[0-9]+/)[0];
+  obj.key_type = regex;
   return obj;
 };
 
@@ -120,7 +122,7 @@ var processFile = function(text, pathName, callback) {
     var result = findAPIKey(APIRegexes[regex], text );
       if (result) {
         var APIData = {};
-        decorateHitData(APIData, result);
+        decorateHitData(APIData, result, pathName, regex);
         storeHitData(APIData);
         }
   }
