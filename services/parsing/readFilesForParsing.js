@@ -1,6 +1,4 @@
 var spawn = require('child_process').spawn;
-var events = require('events');
-var eventEmitter = new events.EventEmitter();
 var fs = require('fs');
 var async = require('async');
 
@@ -64,12 +62,10 @@ var removeDirectory = module.exports.removeDirectory = function(path) {
       count++;
     };
 
-    // Empty directory to bail early
     if( !wait ) {
       folderDone();
     }
 
-    // Remove one or more trailing slash to keep from doubling up
     path = path.replace(/\/+$/,"");
     files.forEach(function(file) {
       var curPath = path + "/" + file;
@@ -84,7 +80,7 @@ var removeDirectory = module.exports.removeDirectory = function(path) {
   });
 };
 
-var decorateHitData = function(obj, result, pathName, regex) { //decorator function for regex results
+var decorateHitData = function(obj, result, pathName, regex) {
   obj.index = result.index;
   obj.match = result[0];
   obj.gitId = pathName.match(/[0-9]+/)[0];
@@ -132,34 +128,20 @@ var getTextFile = function(path, callback) {
 
 var concatDirectory = function(pathName, callback) {
   var path = __dirname + '/git_data/' + pathName;
-  // var path = './git_data/' + pathName;
-
-
-  var localBashPath = './services/parsing/concatDirectories.sh';
-  var absoluteBashPath = '/Users/anthonyzotti/GitSecure/services/parsing/concatDirectories.sh';
   var dirNamePath = __dirname + '/concatDirectories.sh';
-
-  var localCWD = './git_data' + pathName + '/';
-  var absoluteCWD = '/Users/anthonyzotti/GitSecure/git_data/' + pathName + '/';
   var dirCWD = __dirname + '/git_data/' + pathName +'/';
-
   var bash = spawn('sh', [ dirNamePath ], {
     cwd: dirCWD,
     env: './'
   });
 
-
   bash.on('close', function(code){
-    getTextFile(path + '/concatenatedDirectory.txt', function(text) { //async file read
+    getTextFile(path + '/concatenatedDirectory.txt', function(text) {
       processFile(text, path, function() {
         callback();
       });
     });
   });
-//  setTimeout(function() {
-//    callback();
-//    console.log('in setTimeout');
-//  }, 5000);
 };
 
  var parseFile = module.exports.parseFile = function(directoryList, callback) {
