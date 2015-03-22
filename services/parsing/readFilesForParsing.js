@@ -131,19 +131,24 @@ var getTextFile = function(path, callback) {
 };
 
 var concatDirectory = function(pathName, callback) {
+  var path = __dirname + '/git_data/' + pathName;
+  // var path = './git_data/' + pathName;
+
+
   var localBashPath = './services/parsing/concatDirectories.sh';
   var absoluteBashPath = '/Users/anthonyzotti/GitSecure/services/parsing/concatDirectories.sh';
+  var dirNamePath = __dirname + '/concatDirectories.sh';
 
   var localCWD = './git_data' + pathName + '/';
   var absoluteCWD = '/Users/anthonyzotti/GitSecure/git_data/' + pathName + '/';
+  var dirCWD = __dirname + '/git_data/' + pathName +'/';
 
-  var bash = spawn('sh', [ absoluteBashPath ], {
-    cwd: absoluteCWD,
+  var bash = spawn('sh', [ dirNamePath ], {
+    cwd: dirCWD,
     env: './'
   });
 
 
-  var path = './git_data/' + pathName;
   bash.on('close', function(code){
     getTextFile(path + '/concatenatedDirectory.txt', function(text) { //async file read
       processFile(text, path, function() {
