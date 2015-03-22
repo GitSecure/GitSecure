@@ -8,12 +8,18 @@ exports.readListOfFiles = function(urlList, callback) {
 
   async.eachSeries(urlList, function(urlObj, itemCallback) {
     console.log(urlObj);
-    mkdirp("git_data/" + urlObj.id.toString(), function(err){
+    mkdirp("services/parsing/git_data/" + urlObj.id.toString(), function(err){
     });
-    clone(urlObj.git_url, "git_data/" + urlObj.id.toString()).then(function(repo){
+    // mkdirp("git_data/" + urlObj.id.toString(), function(err){
+    // });
+    clone(urlObj.git_url, "services/parsing/git_data/" + urlObj.id.toString()).then(function(repo){
       directoryList.push(urlObj.id.toString());
       itemCallback();
     });
+    // clone(urlObj.git_url, "git_data/" + urlObj.id.toString()).then(function(repo){
+    //   directoryList.push(urlObj.id.toString());
+    //   itemCallback();
+    // });
   }, function() {
     console.log('in the final callback for each');
     callback(directoryList);
