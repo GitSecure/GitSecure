@@ -23,7 +23,7 @@ exports.scrapeUrls = function(pageNumber, callback){
   }
 
 
-  var db = MongoClient.connect('mongodb://127.0.0.1:27017/test6', 
+  var db = MongoClient.connect('mongodb://127.0.0.1:27017/test7', 
     function(err, db) {  
       var metaData = db.collection('metadata');
 

@@ -23,11 +23,13 @@
     "grunt": "^0.4.5"
   },
   "dependencies": {
+    "async": "^0.9.0",
     "body-parser": "^1.12.0",
     "cors": "^2.5.3",
     "express": "^4.12.0",
     "mkdirp": "~0.5.0",
     "mongodb": "^1.4.34",
+    "node-debug": "^0.1.0",
     "nodegit": "~0.2.7",
     "underscore": "^1.8.2"
   }
