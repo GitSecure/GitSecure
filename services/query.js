@@ -1,17 +1,23 @@
 exports.query = function(callback){
   var MongoClient = require('mongodb').MongoClient;
   var results = [];
-
-  var db = MongoClient.connect('mongodb://127.0.0.1:27017/test6', 
-    function(err, db) {  
+  function getMetaDataDocument() {
+    var db = MongoClient.connect('mongodb://127.0.0.1:27017/test6', function(err, db) {  
       var metaData = db.collection('metadata');
-      
-      metaData.find({processed: false}).toArray(function(err, documents) {
-        documents.forEach(function(value){
-          results.push({url: value.git_url, id: value.id});
-        })
-      
-      callback(results.slice(0,5));
+      metaData.findAndModify({processed: false}, [['_id','asc']], {$set: {processed: true}}, function(err, doc) {
+        console.log(doc.git_url);
+        results.push({ git_url: doc.git_url, id: doc.id});
+        handleMetaData();
       });
-  });
+    });
+  }
+
+  function handleMetaData() {
+    console.log('handling');
+    if (results.length < 5)
+      getMetaDataDocument();
+    else
+     callback(results);
+  }
+  getMetaDataDocument();
 }

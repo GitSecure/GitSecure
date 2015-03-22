@@ -6,7 +6,6 @@ exports.readListOfFiles = function(urlList, callback){
   var x = 0;
   var directoryList = [];
   var strId = [];
-
   var checkInterval = function(){
     console.log('github repograbber', x, urlList.length)
       if(x === urlList.length - 1){
@@ -23,7 +22,7 @@ exports.readListOfFiles = function(urlList, callback){
       strId[i] = urlList[i].id.toString();
       mkdirp("git_data/" + strId[i], function(err){
       })
-      clone(urlList[i].url, "git_data/" + strId[i]).then(function(repo){
+      clone(urlList[i].git_url, "git_data/" + strId[i]).then(function(repo){
         directoryList.push(strId[x]);
         console.log("DLIST: " + directoryList);
         x++;
