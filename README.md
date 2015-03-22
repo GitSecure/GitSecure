@@ -34,10 +34,10 @@ repositories data to a MongoDB data store.</p>
 
 <h3>Current Issues</h3>
 <ol>
-  <li>Naming scheme is inconsistent and unreadable</li>
-  <li>If there are already repositories in <code>git_data</code> then initiating services via
-<code>app.js</code> will cause download service to run forever</li>
-  <li>Naming someting 'callback' is cool when there is only one async function.
-Right now there are so many async functions that this codebase is entirely
-unreadable</li>
-  
+  <li>git_data needs to be cleaned out on every initialization on its own</li>
+  <li>Extract mongo connection settings to central location</li>
+  <li>Refactor naming</li>
+  <li>Refactor callbacks to use eventEmitters instead</li>
+  <li>Update README to include services information</li>
+  <li>Add more API key detection criterion to parsing service</li>
+</ol>
