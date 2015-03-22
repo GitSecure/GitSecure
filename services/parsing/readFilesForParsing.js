@@ -15,7 +15,7 @@ var APIKeys = {
   stripe: {
     sk_live: 'sk_live_FgV3tzZsHXbpDHn1tXeNxxxx',
     p_live: 'pk_live_IDwbcPLP8Ike8ieTYrmpxxxx'
-  }, 
+  },
   google: {
     GOOGLEKEY : 'AIzaSyDRhpkQmqUbkJQpW73P_JkZK5kqNOYqjps',
     G_PLACES_KEY: 'AIzaSyDRhpkQmqUbkJQpW73P_JkZK5kqNOYqjps'
@@ -55,38 +55,25 @@ var removeFile = function(path, callback) {
   });
 };
 
-var removeDirectory = module.exports.removeDirectory = function(path, callback) {
+var removeDirectory = module.exports.removeDirectory = function(path) {
   fs.readdir(path, function(err, files) {
-    if( err ) {
-      callback(err, []);
-      return;
-    }
     var wait = files.length;
     var count = 0;
 
     var folderDone = function(err) {
       count++;
-      if( count >= wait || err) {
-        fs.rmdir(path, callback);
-      }
     };
 
     // Empty directory to bail early
     if( !wait ) {
       folderDone();
-      callback();
-      return;
     }
-    
+
     // Remove one or more trailing slash to keep from doubling up
     path = path.replace(/\/+$/,"");
     files.forEach(function(file) {
       var curPath = path + "/" + file;
       fs.lstat(curPath, function(err, stats) {
-        if( err ) {
-          callback(err, []);
-          return;
-        }
         if( stats.isDirectory() ) {
           removeDirectory(curPath, folderDone);
         } else {
@@ -119,19 +106,18 @@ var findAPIKey = function(regex, text) {
   return regex.exec(text);
 };
 
-var processFile = function(text, pathName, callback) {  
+var processFile = function(text, pathName, callback) {
   for( var regex in APIRegexes ) {
     var result = findAPIKey(APIRegexes[regex], text );
       if (result) {
         var APIData = {};
         decorateHitData(APIData, result, pathName, regex);
         storeHitData(APIData);
-        }
+      }
   }
-  removeDirectory(pathName, function() {
-    callback();
-  });
-};
+  callback();
+  removeDirectory(pathName);
+}
 
 var getTextFile = function(path, callback) {
   var content;
@@ -140,7 +126,7 @@ var getTextFile = function(path, callback) {
           throw err;
       }
       content = data;
-      callback(content);        
+      callback(content);
   });
 };
 
@@ -151,8 +137,8 @@ var concatDirectory = function(pathName, callback) {
   var localCWD = './git_data' + pathName + '/';
   var absoluteCWD = '/Users/anthonyzotti/GitSecure/git_data/' + pathName + '/';
 
-  var bash = spawn('sh', [ localBashPath ], {
-    cwd: localCWD,
+  var bash = spawn('sh', [ absoluteBashPath ], {
+    cwd: absoluteCWD,
     env: './'
   });
 
@@ -165,36 +151,20 @@ var concatDirectory = function(pathName, callback) {
       });
     });
   });
+//  setTimeout(function() {
+//    callback();
+//    console.log('in setTimeout');
+//  }, 5000);
 };
 
-// var parseFile = module.exports.parseFile = function(directoryList, callback) {
-//   async.eachSeries(directoryList, function(directoryName, itemCallback) {
-//     var path = directoryName;
-//     concatDirectory(path, function() {
-//       itemCallback();
-//     });
-//   }, function() {
-//     callback();
-//   });
-// };
-//
-var parseFile = module.exports.parseFile = function(directoryList, finalCallback) {
-  var currentDirectory;
-  var queueNextDirectory = function() {
-    if (directoryList.length !== 0) {
-      currentDirectory = directoryList.pop();
-      processNextDirectory();
-    } else {
-      finalCallback();
-    }
-  };
+ var parseFile = module.exports.parseFile = function(directoryList, callback) {
+   async.eachSeries(directoryList, function(directoryName, itemCallback) {
+     var path = directoryName;
+     concatDirectory(path, function() {
+       itemCallback();
+     });
+   }, function() {
+     callback();
+   });
+ };
 
-  var processNextDirectory = function() {
-    concatDirectory(currentDirectory, function() {
-      eventEmitter.emit('completeDirectoryProcessing');
-    });
-  }
-
-  eventEmitter.on('completeDirectoryProcessing', queueNextDirectory);
-  queueNextDirectory();
-}
