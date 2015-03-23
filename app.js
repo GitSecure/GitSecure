@@ -1,6 +1,6 @@
 var MongoClient = require('mongodb').MongoClient;
 var parseService = require("./services/parsing/readFilesForParsing.js");
-var downloadService = require('./services/downloading/js_helpers/gitHubRepoGrabber.js');
+var downloadService = require('./services/downloading/gitHubRepoGrabber.js');
 var scrapeService = require('./services/scraping.js');
 var queryService = require('./services/query.js');
 var fileSystemUtilities = require('./services/fileSystem/utilities');
