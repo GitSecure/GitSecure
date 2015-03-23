@@ -8,11 +8,24 @@ exports.query = function(callback){
   });
 }
 
+  var updateCount = function() {
+    var metaData = GLOBAL.db.collection('metadata');
+    metaData.update({"count": {$exists: true}}, {$inc : {count: 1 }}, function(err, modified, status) {
+      if (err) {console.log(err)};
+    });
+  };
+
   function handleMetaData() {
-    if (results.length < 2)
+    if (results.length < 2) {
+      updateCount();
+      console.log("updating count")
       getMetaDataDocument();
-    else
-     callback(results);
+    } else {
+      updateCount();
+      console.log("updating count")
+      
+      callback(results);
+   }
   }
   getMetaDataDocument();
 }
