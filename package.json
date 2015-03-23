@@ -27,12 +27,13 @@
     "body-parser": "^1.12.0",
     "cors": "^2.5.3",
     "express": "^4.12.0",
+    "forever": "^0.14.1",
+    "mandrill-api": "~1.0.41",
     "mkdirp": "~0.5.0",
     "mongodb": "^1.4.34",
     "node-debug": "^0.1.0",
     "nodegit": "~0.2.7",
     "rimraf": "^2.3.2",
-    "underscore": "^1.8.2",
-    "mandrill-api": "~1.0.41"
+    "underscore": "^1.8.2"
   }
 }
