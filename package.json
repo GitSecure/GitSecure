@@ -33,5 +33,6 @@
     "nodegit": "~0.2.7",
     "rimraf": "^2.3.2",
     "underscore": "^1.8.2"
+    "mandrill-api": "~1.0.41"
   }
 }
