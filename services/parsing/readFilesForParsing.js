@@ -3,55 +3,27 @@ var fs = require('fs');
 var async = require('async');
 var fileSystemUtilities = require('./../fileSystem/utilities');
 
-var APIKeys = {
-  yahoo: {
-    YAHOO_APP_ID: "Fy1D6WzV34GsyEey_xIofNOCy_yB3Z.mj5g0W3lOZwGmZu67EhFpCaMjkfk9Xg--",
-    YAHOO_KEY: "dj0yJmk9eFJ5bU5aM3VydFBwJmQ9WVdrOU9WRTFPRUZzTlRnbWNHbzlOell3TXprM09UWXkmcz1jb25zdW1lcnNlY3JldCZ4PTRi"
-  },
-  bing: {
-    BING_KEY : 'A84CD76D3C77083636BA7467897101D66D4BF831',
-    BING_KEY : '0YD0LJBdtdzwVxoCkja4ggjGpUl/1LAWT8PELL2Dkcs'
-  },
-  facebook: {
-    key:'350259761745772',
-    secret:'23156e3c1874f75f8871ba6ea872db03'
-  },
-  twitter: {
-    consumerKey: 'XZY3ZAyRzem613wcfFsCWqnA3',
-    consumerSecret: '03CGds3Q0GCMSSLp3BjVo1zGEe0BS3zoabmh1NFTm3MCRlPvve',
-    owner: 'jjnewman10',
-    ownerID: 207420538,
-    accessLevel: 'Read-only'
-  },
-  stripe: {
-    sk_live: 'sk_live_FgV3tzZsHXbpDHn1tXeNxxxx',
-    p_live: 'pk_live_IDwbcPLP8Ike8ieTYrmpxxxx'
-  },
-  google: {
-    GOOGLEKEY : 'AIzaSyDRhpkQmqUbkJQpW73P_JkZK5kqNOYqjps',
-    G_PLACES_KEY: 'AIzaSyDRhpkQmqUbkJQpW73P_JkZK5kqNOYqjps'
-  },
-  ebay: {
-    username: 'krich_api1.ebay.com',
-    password: ''
-  },
-  paypal: {
-    username: 'schandrasekaran-us_api1.paypal.com',
-    password: '44K8KBKHSKUQE6JK8'
-  },
-  azure: {
-    mongoDB: 'AfKnZYWmF4q.r.Qj2YUl2OFgCfgab0wCfwV2VggD6e0-@ds050077.mongolab.com:50077/deploy-shortlyDB'
-  },
-  yelp: {
-    api: 'http://api.yelp.com/business_review_search?',
-    key: 'ftPpQUCgfSA3yV98-uJn9g'
-  }
-};
 
 var APIRegexes = {
-  // twitter: /a/,
-  yelpAPI: /http:\/\/api.yelp.com\/business_review_search?/,
-  yelpKey: /\w{16}-[a-zA-Z1-9]{5}/,
+  flikrKey: /(flikr)? (key)? ?[:=] ?[a-z0-9]{32}/i, 
+  flikrSecret: /(flikr)? (secret)? ?[:=] ?[a-z0-9]{16}/i,
+  blockchainKey: /(blockchain)? (key)? ?[:=] ?[a-z0-9-]{36}/i,
+  blockchainSecret: /(blockchain)? (secret)? ?[:=] ?[a-z0-9]{56}/i,
+  bitpayKey: /(bitpay)? (key)? ?[:=] ?[a-z0-9]{26}/i, 
+  coinkite: /(coinkite)? (key)? ?[:=] ?[a-z0-9-]{35}/i,
+  amazonKey: /(amazon)? (key)? ?[:=] ?[A-Z1-9]{20}/,
+  amazonSecret: /(amazon)? (secret)? ?[:=] ?[a-z0-9\/]{35}/i, 
+  linkedin: /\d{4}\w{8}\d\w/,
+  yahooKey: /(yahoo)? (key)? ?[:=] ?[a-z0-9]{100}/i, 
+  bingKey: /(bing)? (key)? ?[:=] ?[a-z0-9]{40}/i,
+  bingSecret: /(bing)? (secret)? ?[:=] ?[a-z0-9\/]{43}/i,
+  facebookKey: /(facebook)? (key)? ?[:=] ?\d{15}/, //not precise
+  facebookSecret: /(facebook)? (secret)? ?[:=] ?[0-9a-z]/,
+  twitterKey: /(twitter)? (key)? ?[:=] ?[a-z0-9]{25}/i,
+  twitterSecret: /(twitter)? (secret)? ?[:=] ?[a-z0-9]{25}/i,
+  spotifyKey: /(spotify)? (key)? ?[:=] ?[a-z0-9]{32}/,
+  nytimes: /(nytimes)? (key)? ?[:=] ?[a-z0-9:]{44}/,
+  yelpKey: /\w{16}-[a-zA-Z1-9:]{5}/,
   stripe: /(pk|sk)_live_\w{24}/,
   google: /AIza.{35}/,
   ebay: /api1.ebay.com/,

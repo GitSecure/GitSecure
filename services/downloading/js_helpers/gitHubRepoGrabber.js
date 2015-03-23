@@ -10,16 +10,10 @@ exports.readListOfFiles = function(urlList, callback) {
     console.log(urlObj);
     mkdirp("services/parsing/git_data/" + urlObj.id.toString(), function(err){
     });
-    // mkdirp("git_data/" + urlObj.id.toString(), function(err){
-    // });
     clone(urlObj.git_url, "services/parsing/git_data/" + urlObj.id.toString()).then(function(repo){
       directoryList.push(urlObj.id.toString());
       itemCallback();
     });
-    // clone(urlObj.git_url, "git_data/" + urlObj.id.toString()).then(function(repo){
-    //   directoryList.push(urlObj.id.toString());
-    //   itemCallback();
-    // });
   }, function() {
     console.log('in the final callback for each');
     callback(directoryList);
