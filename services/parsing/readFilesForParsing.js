@@ -4,6 +4,18 @@ var async = require('async');
 var fileSystemUtilities = require('./../fileSystem/utilities');
 
 var APIKeys = {
+  yahoo: {
+    YAHOO_APP_ID: "Fy1D6WzV34GsyEey_xIofNOCy_yB3Z.mj5g0W3lOZwGmZu67EhFpCaMjkfk9Xg--",
+    YAHOO_KEY: "dj0yJmk9eFJ5bU5aM3VydFBwJmQ9WVdrOU9WRTFPRUZzTlRnbWNHbzlOell3TXprM09UWXkmcz1jb25zdW1lcnNlY3JldCZ4PTRi"
+  },
+  bing: {
+    BING_KEY : 'A84CD76D3C77083636BA7467897101D66D4BF831',
+    BING_KEY : '0YD0LJBdtdzwVxoCkja4ggjGpUl/1LAWT8PELL2Dkcs'
+  },
+  facebook: {
+    key:'350259761745772',
+    secret:'23156e3c1874f75f8871ba6ea872db03'
+  },
   twitter: {
     consumerKey: 'XZY3ZAyRzem613wcfFsCWqnA3',
     consumerSecret: '03CGds3Q0GCMSSLp3BjVo1zGEe0BS3zoabmh1NFTm3MCRlPvve',
@@ -29,16 +41,22 @@ var APIKeys = {
   },
   azure: {
     mongoDB: 'AfKnZYWmF4q.r.Qj2YUl2OFgCfgab0wCfwV2VggD6e0-@ds050077.mongolab.com:50077/deploy-shortlyDB'
+  },
+  yelp: {
+    api: 'http://api.yelp.com/business_review_search?',
+    key: 'ftPpQUCgfSA3yV98-uJn9g'
   }
 };
 
 var APIRegexes = {
   // twitter: /a/,
-  // yelp: /a/,
+  yelpAPI: /http:\/\/api.yelp.com\/business_review_search?/,
+  yelpKey: /\w{16}-[a-zA-Z1-9]{5}/,
   stripe: /(pk|sk)_live_\w{24}/,
   google: /AIza.{35}/,
   ebay: /api1.ebay.com/,
-  paypal: /us_api1.paypal.com'/,
+  paypal: /us_api1.paypal.com/,
+  azureMongo: /-@\w{2}\d{6}\.mongolab\.com:\d{5}/,
   test: /var/
 };
 
