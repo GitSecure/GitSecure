@@ -8,7 +8,10 @@ var fs = require('fs');
 var app = express();
 var mainExecution = require("./app");
 var util = require("./utilities");
+<<<<<<< HEAD
 var MongoClient = require('mongodb').MongoClient;
+=======
+>>>>>>> Create utilities file. Moved getCounts out of basic server to utilities.
 
 
 var server = app.listen(3000, function(){
@@ -23,7 +26,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.get('/numbers', function(req,res){
-  getCounts();
+  var counts = util.getCounts();
   res.send(201, counts);
 });
 
