@@ -16,14 +16,14 @@ exports.scrapeUrls = function(pageNumber, callback){
   var reportResults = function(err, result) {
     if (err) console.log("ERROR: " + err);
     console.log("PARSING RESULTS: " + result);
-  }
+  };
 
   var formatUrl = function(fullName) {
     return {'url': 'https://github.com/' + fullName + '.git'};
-  }
+  };
 
 
-  var db = MongoClient.connect('mongodb://127.0.0.1:27017/test7', 
+  var db = MongoClient.connect('mongodb://127.0.0.1:27017/test8', 
     function(err, db) {  
       var metaData = db.collection('metadata');
 
@@ -37,4 +37,4 @@ exports.scrapeUrls = function(pageNumber, callback){
           callback();
       });
   });
-}
+};

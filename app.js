@@ -1,14 +1,18 @@
 // var db = require("./services/scraping.js");
-debugger;
 var parseService = require("./services/parsing/readFilesForParsing.js");
 var downloadService = require('./services/downloading/js_helpers/gitHubRepoGrabber.js');
 var scrapeService = require('./services/scraping.js');
 var queryService = require('./services/query.js');
+var fileSystemUtilities = require('./services/fileSystem/utilities');
+
 module.pageNumber = 1;
 
 
-  //kill git_data
-  //getNextGitHubRepo();
+var initialize = function() {
+  var pathToData = __dirname + '/services/parsing/git_data';
+  fileSystemUtilities.removeDirectorySync(pathToData);
+  getNextGitHubRepo();
+};
 
 var getNextGitHubRepo = function() {
     scrapeService.scrapeUrls(++module.pageNumber, function(){
@@ -23,4 +27,4 @@ var getNextGitHubRepo = function() {
     });
 };
 
-getNextGitHubRepo();
+initialize();

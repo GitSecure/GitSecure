@@ -1,6 +1,7 @@
 var spawn = require('child_process').spawn;
 var fs = require('fs');
 var async = require('async');
+var fileSystemUtilities = require('./../fileSystem/utilities');
 
 var APIKeys = {
   twitter: {
@@ -41,45 +42,6 @@ var APIRegexes = {
   test: /var/
 };
 
-var removeFile = function(path, callback) {
-  fs.unlink(path, function (err) {
-    if (err) {
-      throw err;
-    }
-    else {
-      console.log('successfully deleted ', path);
-      callback();
-    }
-  });
-};
-
-var removeDirectory = module.exports.removeDirectory = function(path) {
-  fs.readdir(path, function(err, files) {
-    var wait = files.length;
-    var count = 0;
-
-    var folderDone = function(err) {
-      count++;
-    };
-
-    if( !wait ) {
-      folderDone();
-    }
-
-    path = path.replace(/\/+$/,"");
-    files.forEach(function(file) {
-      var curPath = path + "/" + file;
-      fs.lstat(curPath, function(err, stats) {
-        if( stats.isDirectory() ) {
-          removeDirectory(curPath, folderDone);
-        } else {
-          fs.unlink(curPath, folderDone);
-        }
-      });
-    });
-  });
-};
-
 var decorateHitData = function(obj, result, pathName, regex) {
   obj.index = result.index;
   obj.match = result[0];
@@ -112,8 +74,8 @@ var processFile = function(text, pathName, callback) {
       }
   }
   callback();
-  removeDirectory(pathName);
-}
+  fileSystemUtilities.removeDirectoryAsync(pathName);
+};
 
 var getTextFile = function(path, callback) {
   var content;
