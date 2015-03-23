@@ -7,8 +7,9 @@ exports.getCounts = function() {
     var metaData = db.collection('metadata');
     var hitData = db.collection('hitdata');
 
-    metaData.count({processed: true}, function(err, count) {
-      counts.scanned = count;
+    metaData.findOne({"count" : {$exists: true}}, function(err, doc){
+      counts.scanned = doc.count;
+      console.log(doc)
     });
     hitData.count(function(err, count) {
       counts.hits = count;
