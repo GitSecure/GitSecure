@@ -3,42 +3,32 @@ var fs = require('fs');
 var async = require('async');
 var fileSystemUtilities = require('./../fileSystem/utilities');
 
-var APIKeys = {
-  twitter: {
-    consumerKey: 'XZY3ZAyRzem613wcfFsCWqnA3',
-    consumerSecret: '03CGds3Q0GCMSSLp3BjVo1zGEe0BS3zoabmh1NFTm3MCRlPvve',
-    owner: 'jjnewman10',
-    ownerID: 207420538,
-    accessLevel: 'Read-only'
-  },
-  stripe: {
-    sk_live: 'sk_live_FgV3tzZsHXbpDHn1tXeNxxxx',
-    p_live: 'pk_live_IDwbcPLP8Ike8ieTYrmpxxxx'
-  },
-  google: {
-    GOOGLEKEY : 'AIzaSyDRhpkQmqUbkJQpW73P_JkZK5kqNOYqjps',
-    G_PLACES_KEY: 'AIzaSyDRhpkQmqUbkJQpW73P_JkZK5kqNOYqjps'
-  },
-  ebay: {
-    username: 'krich_api1.ebay.com',
-    password: ''
-  },
-  paypal: {
-    username: 'schandrasekaran-us_api1.paypal.com',
-    password: '44K8KBKHSKUQE6JK8'
-  },
-  azure: {
-    mongoDB: 'AfKnZYWmF4q.r.Qj2YUl2OFgCfgab0wCfwV2VggD6e0-@ds050077.mongolab.com:50077/deploy-shortlyDB'
-  }
-};
 
 var APIRegexes = {
-  // twitter: /a/,
-  // yelp: /a/,
+  flikrKey: /(flikr)? (key)? ?[:=] ?[a-z0-9]{32}/i, 
+  flikrSecret: /(flikr)? (secret)? ?[:=] ?[a-z0-9]{16}/i,
+  blockchainKey: /(blockchain)? (key)? ?[:=] ?[a-z0-9-]{36}/i,
+  blockchainSecret: /(blockchain)? (secret)? ?[:=] ?[a-z0-9]{56}/i,
+  bitpayKey: /(bitpay)? (key)? ?[:=] ?[a-z0-9]{26}/i, 
+  coinkite: /(coinkite)? (key)? ?[:=] ?[a-z0-9-]{35}/i,
+  amazonKey: /(amazon)? (key)? ?[:=] ?[A-Z1-9]{20}/,
+  amazonSecret: /(amazon)? (secret)? ?[:=] ?[a-z0-9\/]{35}/i, 
+  linkedin: /\d{4}\w{8}\d\w/,
+  yahooKey: /(yahoo)? (key)? ?[:=] ?[a-z0-9]{100}/i, 
+  bingKey: /(bing)? (key)? ?[:=] ?[a-z0-9]{40}/i,
+  bingSecret: /(bing)? (secret)? ?[:=] ?[a-z0-9\/]{43}/i,
+  facebookKey: /(facebook)? (key)? ?[:=] ?\d{15}/, //not precise
+  facebookSecret: /(facebook)? (secret)? ?[:=] ?[0-9a-z]/,
+  twitterKey: /(twitter)? (key)? ?[:=] ?[a-z0-9]{25}/i,
+  twitterSecret: /(twitter)? (secret)? ?[:=] ?[a-z0-9]{25}/i,
+  spotifyKey: /(spotify)? (key)? ?[:=] ?[a-z0-9]{32}/,
+  nytimes: /(nytimes)? (key)? ?[:=] ?[a-z0-9:]{44}/,
+  yelpKey: /\w{16}-[a-zA-Z1-9:]{5}/,
   stripe: /(pk|sk)_live_\w{24}/,
   google: /AIza.{35}/,
   ebay: /api1.ebay.com/,
-  paypal: /us_api1.paypal.com'/,
+  paypal: /us_api1.paypal.com/,
+  azureMongo: /-@\w{2}\d{6}\.mongolab\.com:\d{5}/,
   test: /var/
 };
 
