@@ -1,6 +1,4 @@
-exports.scrapeUrls = function(pageNumber, callback){
-
-  var MongoClient = require('mongodb').MongoClient;
+exports.scrapeUrls = function(callback){
   var request = require('request');
 
   var options = {};
@@ -23,18 +21,14 @@ exports.scrapeUrls = function(pageNumber, callback){
   };
 
 
-  var db = MongoClient.connect('mongodb://127.0.0.1:27017/test8', 
-    function(err, db) {  
-      var metaData = db.collection('metadata');
-
-      request(options, function(err, res, body) {
-          var data = JSON.parse(body).items;
-          var dataGitUrls = [];
-          for (var i = 0; i < data.length - 1;i++) {
-            data[i].processed = false;
-            metaData.insert(data[i], reportResults);
-          }
-          callback();
-      });
+  var metaData = GLOBAL.db.collection('metadata');
+  request(options, function(err, res, body) {
+    var data = JSON.parse(body).items;
+    var dataGitUrls = [];
+    for (var i = 0; i < data.length - 1;i++) {
+      data[i].processed = false;
+      metaData.insert(data[i], reportResults);
+    }
+    callback();
   });
-};
+}

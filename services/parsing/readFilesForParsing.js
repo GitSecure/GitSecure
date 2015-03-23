@@ -51,12 +51,9 @@ var decorateHitData = function(obj, result, pathName, regex) {
 };
 
 var storeHitData = function(data) {
-  var MongoClient = require('mongodb').MongoClient;
-  MongoClient.connect('mongodb://127.0.0.1:27017/test7', function(err, db) {
-    var hitData = db.collection('hitdata');
-    hitData.insert(data, function(err, result) {
-      console.log("HitData Persisted: " + result);
-    });
+  var hitData = GLOBAL.db.collection('hitdata');
+  hitData.insert(data, function(err, result) {
+    console.log("HitData Persisted: " + result);
   });
 };
 
