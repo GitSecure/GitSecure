@@ -9,8 +9,8 @@ exports.query = function(callback){
 }
 
   var updateCount = function() {
-    var metaData = GLOBAL.db.collection('metadata');
-      metaData.update({"count": {$exists: true}}, {$inc : {count: 1 }}, function(err, modified, status) {
+    var count = GLOBAL.db.collection('count');
+      count.update({"count": {$exists: true}}, {$inc : {count: 1 }}, function(err, modified, status) {
         if (err) {console.log(err)};
       });
   };
