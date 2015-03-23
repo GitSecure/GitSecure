@@ -4,14 +4,14 @@ exports.sendMessage = function(data) {
   var message = {
     "html": "<p>" + data.fullname + ",</p>\
     <p>Just want to let you know we found a publically listed API key on your github repo that is perhaps dangerous.</p>\
-    <p>This is the potentially dangerous repo we found: " + data.repo +"</p>\
+    <p>This is the potentially dangerous repo we found: <a href='" + data.repo + "'>" + data.repo +"</a></p>\
     <p>We are not looking for money -- we are a team of engineers that are trying to make the web a bit of a safer place.\
     <p>All the best, \
     <br>\
     The GitSecure Team\
     <br>\
     <a href ='http://www.gitsecure.io'>http://www.gitsecure.io</a></p>",
-    "subject": data.username + " ,you posted an API key on GitHub!",
+    "subject": data.username + ", you posted an API key on GitHub!",
     "from_email": "gitsecurenow@gmail.com",
     "from_name": "GitSecure Team",
     "to": [{
@@ -33,3 +33,5 @@ exports.sendMessage = function(data) {
       console.log('A mandrill error occurred: ' + e.name + ' - ' + e.message);
   });
 }
+
+exports.sendMessage({fullname: "marc", email:'marc@marcbalaban.com', repo: "http://www.github.com/GitSecure/GitSecure", username:"marcbalaban"})
