@@ -8,8 +8,6 @@ var fs = require('fs');
 var app = express();
 var mainExecution = require("./app");
 var util = require("./utilities");
-var MongoClient = require('mongodb').MongoClient;
-
 
 var server = app.listen(3000, function(){
   var host = server.address().address;
