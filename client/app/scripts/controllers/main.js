@@ -14,7 +14,7 @@ angular.module('clientApp')
 
     $interval(function() {
       getNumbers();
-    }, 3000);
+    }, 1000);
 
     var getNumbers = function() {
       $http.get('http://localhost:3000/numbers').success(function(data){
