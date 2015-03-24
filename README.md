@@ -1,3 +1,9 @@
+<h1>GitSecure</h1>
+<p>GitSecure is a web application which scrapes repositories from Github in
+order to detect API keys that have been accidently uploaded by repository owners. 
+After GitSecure detects a private API key in the public domain it will alert the
+repository owner via email regarding their potential security vulnerability.</p>
+
 <h2>Service Runner</h2>
 <p><code>app.js</code> is the file that is responsible for coordinating execution
 of all the services. <code>basic-server.js</code> is the file that is responsible
@@ -56,7 +62,6 @@ document.</p>
 garbage collection occurs via the <code>fileSystem</code> subservice and then
 the entire cycle of scraping, downloading, and parsing is recursively restarted.</p>
 
-
 <h3>Database</h3>
 <p>Rather than each service creating it's own database connection, each service
 shares a single connection. This single connection is established in
@@ -67,21 +72,21 @@ All services are being passed into MongoDb's connection callback function.
 Basing our service architecture around callbacks is not ideal, but it is stable
 for our current data load and necessary to reach MVP.</p>
 
-<p>Ideally, services would use <a
-href="https://nodejs.org/api/events.html">EventEmitters</a> instead of callbacks
+<p>Ideally, services would use <a href="https://nodejs.org/api/events.html">EventEmitters</a> instead of callbacks
 as a means of communicating with each other asynchronously.
 Using EventEmitters instead of callbacks would decouple services and allow for much greater code flexibility.
 Until MVP is reached however, the current service architecture will be
 utilized.</p>
 
-<h3>Tools</h3>
-<p>The downloading and parsing services use the <code>async</code> module in
-order to use an asynchronous <code>for</code> loop to retrieve the
-<code>metadata</code> from MongoDb.</p>
-
-<h3>Required Documentation</h3>
-<ol>
-  <li>Add section for outcome and purpose of application as a whole</li>
-  <li>Add section for backend</li>
-  <li>Add section for frontend</li>
-</ol>
+<h3>Technology Stack</h3>
+<ul>
+  <li><a href="http://gruntjs.com/">Grunt</a></li>
+  <li><a href="http://en.wikipedia.org/wiki/MEAN">MEAN stack</a></li> 
+  <ul>
+    <li><a href="http://www.mongodb.org/">MongoDB</a></li>
+    <li><a href="http://expressjs.com/">Express.js</a></li>
+    <li><a href="https://angularjs.org/">Angular.js</a></li>
+    <li><a href="https://nodejs.org/">Node.js</a></li>
+  </ul>
+  <li><a href="http://mochajs.org/">Mocha</a></li>
+</ul>
