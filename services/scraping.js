@@ -13,7 +13,6 @@ exports.scrapeUrls = function(callback){
 
   var reportResults = function(err, result) {
     if (err) console.log("ERROR: " + err);
-    console.log("PARSING RESULTS: " + result);
   };
 
   var formatUrl = function(fullName) {
@@ -23,6 +22,7 @@ exports.scrapeUrls = function(callback){
 
   var metaData = GLOBAL.db.collection('metadata');
   request(options, function(err, res, body) {
+    console.log('Downloading most recent GitHub repo urls');
     var data = JSON.parse(body).items;
     var dataGitUrls = [];
     for (var i = 0; i < data.length - 1;i++) {
