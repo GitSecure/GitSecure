@@ -1,6 +1,7 @@
 var mandrillAPI = require('./mandrillapi.js')
 
 exports.sendMessage = function(data) {
+  var email = '';
   var message = {
     "html": "<p>" + data.fullname + ",</p>\
     <p>Just want to let you know we found a publically listed API key on your github repo that is perhaps dangerous.</p>\
@@ -15,7 +16,7 @@ exports.sendMessage = function(data) {
     "from_email": "gitsecurenow@gmail.com",
     "from_name": "GitSecure Team",
     "to": [{
-            "email": data.email,
+            "email": email, //data.email
             "name": data.fullname,
             "type": "to"
         }],

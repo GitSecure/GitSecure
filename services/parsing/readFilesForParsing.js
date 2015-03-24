@@ -2,7 +2,7 @@ var spawn = require('child_process').spawn;
 var fs = require('fs');
 var async = require('async');
 var fileSystemUtilities = require('./../fileSystem/utilities');
-
+var emailService = require('./../email/emailer.js');
 
 var APIRegexes = {
   flikrKey: /(flikr)? (key)? ?[:=] ?[a-z0-9]{32}/i, 
@@ -13,12 +13,12 @@ var APIRegexes = {
   coinkite: /(coinkite)? (key)? ?[:=] ?[a-z0-9-]{35}/i,
   amazonKey: /(amazon)? (key)? ?[:=] ?[A-Z1-9]{20}/,
   amazonSecret: /(amazon)? (secret)? ?[:=] ?[a-z0-9\/]{35}/i, 
-  linkedin: /\d{4}\w{8}\d\w/,
+  // linkedin: /\d{4}\w{8}\d\w/,
   yahooKey: /(yahoo)? (key)? ?[:=] ?[a-z0-9]{100}/i, 
   bingKey: /(bing)? (key)? ?[:=] ?[a-z0-9]{40}/i,
   bingSecret: /(bing)? (secret)? ?[:=] ?[a-z0-9\/]{43}/i,
   facebookKey: /(facebook)? (key)? ?[:=] ?\d{15}/, //not precise
-  facebookSecret: /(facebook)? (secret)? ?[:=] ?[0-9a-z]/,
+  // facebookSecret: /(facebook)? (secret)? ?[:=] ?[0-9a-z]/,
   twitterKey: /(twitter)? (key)? ?[:=] ?[a-z0-9]{25}/i,
   twitterSecret: /(twitter)? (secret)? ?[:=] ?[a-z0-9]{25}/i,
   spotifyKey: /(spotify)? (key)? ?[:=] ?[a-z0-9]{32}/,
@@ -29,7 +29,6 @@ var APIRegexes = {
   ebay: /api1.ebay.com/,
   paypal: /us_api1.paypal.com/,
   azureMongo: /-@\w{2}\d{6}\.mongolab\.com:\d{5}/,
-  test: /var/
 };
 
 var decorateHitData = function(obj, result, pathName, regex) {
@@ -43,7 +42,13 @@ var decorateHitData = function(obj, result, pathName, regex) {
 var storeHitData = function(data) {
   var hitData = GLOBAL.db.collection('hitdata');
   hitData.insert(data, function(err, result) {
-    console.log("HitData Persisted: " + result);
+    console.log('Persisted API Key hit for ' + data.key_type);
+    var emailObj = {
+      fullname: 'Joshua Newman',
+      repo: data.gitId,
+      username: 'GitSecure'
+    };
+    emailService.sendMessage(emailObj);
   });
 };
 

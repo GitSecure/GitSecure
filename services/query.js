@@ -11,7 +11,7 @@ exports.query = function(callback){
   var updateCount = function() {
     var count = GLOBAL.db.collection('count');
       count.update({"count": {$exists: true}}, {$inc : {count: 1 }}, function(err, modified, status) {
-        if (err) {console.log(err)};
+        if (err) {console.log(err,'here')};
       });
   };
 
