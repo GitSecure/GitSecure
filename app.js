@@ -31,7 +31,6 @@ var getNextGitHubRepo = function() {
 
 MongoClient.connect('mongodb://127.0.0.1:27017/development', function(err, db) {
   db.collectionNames("count", function(err, names) {
-    console.log(names);
     if (names.length === 0) {
       db.collection('count').insert({count: 0}, function(){});
     } 
