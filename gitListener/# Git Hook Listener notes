@@ -7,3 +7,9 @@ sudo apt-get install -y nodejs
 sudo apt-get install -y git
 
 sudo apt-get install -y mongodb
+
+
+https://help.github.com/articles/generating-ssh-keys/
+https://developer.github.com/guides/managing-deploy-keys/
+
+Git clone the repo (to add the github fingerprint to your authorized hosts file)
