@@ -34,7 +34,7 @@ var dive = function(dir, action) {
 
 // actual scanning function, returns an object of results, one for each file that had a non-zero # of errors
 var scanDir = function(dir) {
-  results = {};
+  var results = {};
 
   ScanJS.parser(parser);
   ScanJS.loadRules(signatures);
