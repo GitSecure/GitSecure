@@ -1,0 +1,20 @@
+<div class="container" id="login">
+  <h2>Login</h2>
+  <form name="login">
+    <ul>
+      <li>
+        <label for="email">Email Address:</label>
+        <input ng-model="email" id="email" type="email" placeholder="test@test.com" required></input>
+      </li>
+      <li>
+        <label for="password">Password:</label>
+        <input ng-model="password" id="password" type="password" placeholder="******" required></input>
+      </li>
+      <li>
+        <button ng-click="logIn()">Log In</button>
+      </li>
+    </ul>
+  </form>
+  <br>
+  <a ui-sref="signup">Not a user?  Sign up here...</a>
+</div>
