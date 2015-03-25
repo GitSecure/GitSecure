@@ -20,8 +20,8 @@ module.exports = function(grunt) {
     },
 
     jshint: {
-      files: ['**/*.js'],
-      options: {force: 'true'}
+      files: ['Gruntfile.js', 'server.js', 'database.js', 'server/**/*.js'],
+      options: {force: 'true', jshintrc: true}
     },
 
     concurrent: {
@@ -39,7 +39,7 @@ module.exports = function(grunt) {
 
     watch: {
       gruntfile: {
-        files: '**/*.js',
+        files: ['Gruntfile.js', 'server.js', 'database.js', 'server/**/*.js'],
         tasks: ['jshint', 'test']
       },
     },
