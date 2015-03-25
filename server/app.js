@@ -6,6 +6,8 @@ var downloadService = require('./services/downloading/gitHubRepoGrabber.js');
 var scrapeService = require('./services/scraping.js');
 var queryService = require('./services/query.js');
 var fileSystemUtilities = require('./services/fileSystem/utilities');
+var retirejs = require('./services/retirejs/retire.js');
+var scanjs = require('./services/scanjs/scanner.js');
 
 var getNextGitHubRepo = function() {
   scrapeService.scrapeUrls(function(){
