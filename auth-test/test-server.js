@@ -2,19 +2,41 @@
 
 var express = require('express');
 var bodyParser = require('body-parser');
+<<<<<<< HEAD
 
 var cors = require('cors');
 var app = express();
+=======
+var cors = require('cors');
+var app = express();
+var util = require('../server/utilities.js');
+// require('../server/app.js');
+
+>>>>>>> working passport github
 var session = require('express-session');
 var passport = require('passport');
 var OAuth2Strategy = require('passport-oauth').OAuth2Strategy;
 var GitHubStrategy = require('passport-github').Strategy;
 
+<<<<<<< HEAD
 app.use(cors());
 
 app.use(express.static(__dirname + '/client/'));
 
 app.get('/', function(req, res, next){
+=======
+// var User = require('./db-user.js');
+
+var server = app.listen(3000, function(){
+  var host = server.address().address;
+  var port = server.address().port;
+  console.log('example app listening at http://%s:%s', host, port);
+});
+
+app.use(express.static(__dirname + '/client/'));
+
+app.get('/',function(req, res, next){
+>>>>>>> working passport github
   console.log('hello')
   if (req.user || req.session.passport !== {}) {
     console.log('in the checkUser utility function, about to execute next()');
@@ -64,6 +86,7 @@ app.get('/auth/github/callback',
     res.redirect('/');
   });
 
+
 app.get('/auth/error', function(req, res){
   console.log('login failed in server');
   res.redirect('/');
@@ -78,5 +101,3 @@ var server = app.listen(3000, function(){
   var port = server.address().port;
   console.log('example app listening at http://%s:%s', host, port);
 });
-
-
