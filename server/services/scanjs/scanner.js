@@ -16,7 +16,7 @@ var dive = function(dir, action) {
       console.log(">" + file)
     };
   }
-  list = fs.readdirSync(dir);
+  var list = fs.readdirSync(dir);
   list.forEach(function(file) {
     var fullpath = dir + '/' + file;
     try {
