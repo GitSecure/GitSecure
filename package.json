@@ -31,7 +31,9 @@
     "mongodb": "^1.4.34",
     "monk": "^1.0.0",
     "nodegit": "~0.2.7",
+    "retire": "^0.4.0",
     "rimraf": "^2.3.2",
+    "scanjs": "git://github.com/mozilla/scanjs",
     "underscore": "^1.8.2"
   }
 }
