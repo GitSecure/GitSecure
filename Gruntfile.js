@@ -25,15 +25,32 @@ module.exports = function(grunt) {
     },
 
     concurrent: {
-      tasks: ['nodemon', 'watch'],
-      options: {
-        logConcurrentOutput: true
+      main: {
+        tasks: ['nodemon:dev', 'watch'],
+        options: {
+          logConcurrentOutput: true
+        }
+      },
+      gitHook: {
+        tasks: ['nodemon:git'],
+        options: {
+          logConcurrentOutput: true
+        }
+      },
+      all: {
+        tasks: ['nodemon:git', 'nodemon:dev', 'watch'],
+        options: {
+          logConcurrentOutput: true
+        }
       }
     },
 
     nodemon: {
       dev: {
         script: 'server.js'
+      },
+      git: {
+        script: 'gitListener/gitHookServer.js'
       }
     },
 
@@ -46,5 +63,6 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('test', 'mochaTest');
-  grunt.registerTask('default', ['concurrent']);
+  grunt.registerTask('default', ['concurrent:main']);
+  grunt.registerTask('withGit', ['concurrent:all']);
 };
