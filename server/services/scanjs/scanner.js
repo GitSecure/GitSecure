@@ -1,10 +1,10 @@
 // This script is for using scanjs server side adapted from //github.com/mozilla/scanjs
-'user strict';
+'use strict';
 var fs = require('fs');
 var path = require('path');
-var beautify = require('../../node_modules/scanjs/node_modules/js-beautify').js_beautify;
-var parser = require('../../node_modules/scanjs/client/js/lib/acorn.js');
-var ScanJS = require('../../node_modules/scanjs/common/scan');
+var beautify = require('../../../node_modules/scanjs/node_modules/js-beautify').js_beautify;
+var parser = require('../../../node_modules/scanjs/client/js/lib/acorn.js');
+var ScanJS = require('../../../node_modules/scanjs/common/scan');
 
 // rules for scanjs checking
 var signatures = JSON.parse(fs.readFileSync(__dirname + "/rules.json", "utf8"));

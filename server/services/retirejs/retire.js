@@ -4,8 +4,6 @@ var childProcess = require('child_process');
 // function to scan a directory using retirejs
 var retireScan = function(dir) {
   console.log('retireScan started...');
-  console.log('dir: ', dir);
-  console.log('__dir: ', __dirname);
   var results = childProcess.spawnSync('retire', [ '--jspath', dir, '--outputformat', 'json'], {encoding: 'utf8'});
 
   // returning the 2nd value in the output object
