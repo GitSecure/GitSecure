@@ -16,7 +16,7 @@ var dive = function(dir, action) {
       console.log(">" + file)
     };
   }
-  list = fs.readdirSync(dir);
+  var list = fs.readdirSync(dir);
   list.forEach(function(file) {
     var fullpath = dir + '/' + file;
     try {
@@ -34,7 +34,7 @@ var dive = function(dir, action) {
 
 // actual scanning function, returns an object of results, one for each file that had a non-zero # of errors
 var scanDir = function(dir) {
-  results = {};
+  var results = {};
 
   ScanJS.parser(parser);
   ScanJS.loadRules(signatures);
@@ -65,11 +65,11 @@ var scanDir = function(dir) {
         delete(results[testedFile][testCase]);
       }
     }
-    if (Object.keys(results[testedFile]).length === 0) {
+    if (results[testedFile].length === 0) {
       delete(results[testedFile]);
     }
   }
-  console.log('scan completed successfully...');
+  console.log('scan completed successfully.');
   return results;
 };
 
