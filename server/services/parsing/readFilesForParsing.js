@@ -1,3 +1,6 @@
+'use strict';
+
+var db = require('../../../database.js');
 var spawn = require('child_process').spawn;
 var fs = require('fs');
 var async = require('async');
@@ -40,15 +43,19 @@ var decorateHitData = function(obj, result, pathName, regex) {
 };
 
 var storeHitData = function(data) {
-  var hitData = GLOBAL.db.collection('hitdata');
-  hitData.insert(data, function(err, result) {
-    console.log('Persisted API Key hit for ' + data.key_type);
-    var emailObj = {
-      fullname: 'Joshua Newman',
-      repo: data.gitId,
-      username: 'GitSecure'
-    };
-    emailService.sendMessage(emailObj);
+  var hitData = db.get('hitdata');
+  hitData.insert(data).on('complete', function(err) {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log('Persisted API Key hit for ' + data.key_type);
+      var emailObj = {
+        fullname: 'Joshua Newman',
+        repo: data.gitId,
+        username: 'GitSecure'
+      };
+      emailService.sendMessage(emailObj);
+    }
   });
 };
 
@@ -81,15 +88,15 @@ var getTextFile = function(path, callback) {
 };
 
 var concatDirectory = function(pathName, callback) {
-  var path = __dirname + '/git_data/' + pathName;
+  var path = __dirname + '/../../../git_data/' + pathName;
   var dirNamePath = __dirname + '/concatDirectories.sh';
-  var dirCWD = __dirname + '/git_data/' + pathName +'/';
+  var dirCWD = __dirname + '/../../../git_data/' + pathName +'/';
   var bash = spawn('sh', [ dirNamePath ], {
     cwd: dirCWD,
     env: './'
   });
 
-  bash.on('close', function(code){
+  bash.on('close', function(){
     getTextFile(path + '/concatenatedDirectory.txt', function(text) {
       processFile(text, path, function() {
         callback();
@@ -98,14 +105,14 @@ var concatDirectory = function(pathName, callback) {
   });
 };
 
- var parseFile = module.exports.parseFile = function(directoryList, callback) {
-   async.eachSeries(directoryList, function(directoryName, itemCallback) {
-     var path = directoryName;
-     concatDirectory(path, function() {
-       itemCallback();
-     });
-   }, function() {
-     callback();
+module.exports.parseFile = function(directoryList, callback) {
+ async.eachSeries(directoryList, function(directoryName, itemCallback) {
+   var path = directoryName;
+   concatDirectory(path, function() {
+     itemCallback();
    });
- };
+ }, function() {
+   callback();
+ });
+};
 

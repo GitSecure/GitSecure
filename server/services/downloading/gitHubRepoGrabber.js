@@ -1,5 +1,7 @@
+'use strict';
+
 var mkdirp = require('mkdirp');
-var clone = require("nodegit").Clone.clone;
+var clone = require('nodegit').Clone.clone;
 var async = require('async');
 
 exports.readListOfFiles = function(urlList, endAsyncLoopCallback) {
@@ -8,8 +10,8 @@ exports.readListOfFiles = function(urlList, endAsyncLoopCallback) {
   async.eachSeries(urlList, function(urlObj, itemCallback) {
     var repositoryId = urlObj.id.toString();
     var repositoryUrl = urlObj.git_url;
-    var repositoryPath = "services/parsing/git_data/" + repositoryId;
-    console.log("Downloading Repository: " + repositoryUrl);
+    var repositoryPath = 'git_data/' + repositoryId;
+    console.log('Downloading Repository: ' + repositoryUrl);
 
     mkdirp(repositoryPath);
     clone(repositoryUrl, repositoryPath)

@@ -31,3 +31,5 @@ node_modules/
 bower_components/
 git_data/
 services/email/mandrillapi.js
+git_data/*
+db
