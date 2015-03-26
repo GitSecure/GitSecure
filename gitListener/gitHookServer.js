@@ -17,7 +17,7 @@ app.post('/', function(req, res){
   console.log(req.body);
   if (req.body.repository.full_name === 'graffiome/GitSecure') {
     var execOptions = {
-      cwd: '../',
+      cwd: '~/GitSecure',
     };
     var gitCmd = 'git pull --rebase origin master';
     var npmCmd = 'npm install';
