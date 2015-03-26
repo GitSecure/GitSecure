@@ -1,4 +1,5 @@
 'use strict';
+var touch = require('touch');
 
 module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-notify');
@@ -55,18 +56,24 @@ module.exports = function(grunt) {
     nodemon: {
       dev: {
         script: 'server.js',
-        callback: function (nodemon) {
-          nodemon.on('crash', function () {
-            nodemon.emit('restart');
-          });
+        options: {
+          callback: function (nodemon) {
+            nodemon.on('crash', function () {
+              console.error('App Crash');
+              touch('server.js');
+            });
+          }
         }
       },
       git: {
         script: 'gitListener/gitHookServer.js',
-        callback: function (nodemon) {
-          nodemon.on('crash', function () {
-            nodemon.emit('restart');
-          });
+        options: {
+          callback: function (nodemon) {
+            nodemon.on('crash', function () {
+              console.error('App Crash');
+              touch('gitListener/gitHookServer.js');
+            });
+          }
         }
       }
     },
