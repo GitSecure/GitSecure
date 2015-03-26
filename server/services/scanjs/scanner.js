@@ -65,11 +65,11 @@ var scanDir = function(dir) {
         delete(results[testedFile][testCase]);
       }
     }
-    if (Object.keys(results[testedFile]).length === 0) {
+    if (results[testedFile].length === 0) {
       delete(results[testedFile]);
     }
   }
-  console.log('scan completed successfully...');
+  console.log('scan completed successfully.');
   return results;
 };
 
