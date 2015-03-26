@@ -5,6 +5,10 @@ var bodyParser = require('body-parser');
 
 var cors = require('cors');
 var app = express();
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6f167111c86c4749eed2ebac115124138b105bc8
 var session = require('express-session');
 var passport = require('passport');
 var OAuth2Strategy = require('passport-oauth').OAuth2Strategy;
@@ -15,7 +19,10 @@ app.use(cors());
 app.use(express.static(__dirname + '/client/'));
 
 app.get('/', function(req, res, next){
+<<<<<<< HEAD
   console.log('hello')
+=======
+>>>>>>> 6f167111c86c4749eed2ebac115124138b105bc8
   if (req.user || req.session.passport !== {}) {
     console.log('in the checkUser utility function, about to execute next()');
     next();
@@ -63,6 +70,7 @@ app.get('/auth/github/callback',
   function(req, res) {
     res.redirect('/');
   });
+
 
 app.get('/auth/error', function(req, res){
   console.log('login failed in server');
