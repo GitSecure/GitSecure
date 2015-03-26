@@ -21,10 +21,10 @@ module.exports = function(grunt) {
 
     jshint: {
       files: [
-        'Gruntfile.js', 
-        'server.js', 
-        'database.js', 
-        'gitListner/**/*.js', 
+        'Gruntfile.js',
+        'server.js',
+        'database.js',
+        'gitListner/**/*.js',
         'server/**/*.js'
       ],
       options: {force: 'true', jshintrc: true}
@@ -63,10 +63,10 @@ module.exports = function(grunt) {
     watch: {
       gruntfile: {
         files: [
-          'Gruntfile.js', 
-          'server.js', 
-          'database.js', 
-          'gitListner/**/*.js', 
+          'Gruntfile.js',
+          'server.js',
+          'database.js',
+          'gitListner/**/*.js',
           'server/**/*.js'
         ],
         tasks: ['jshint', 'test']

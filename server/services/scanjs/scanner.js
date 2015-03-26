@@ -7,13 +7,13 @@ var parser = require('../../../node_modules/scanjs/client/js/lib/acorn.js');
 var ScanJS = require('../../../node_modules/scanjs/common/scan');
 
 // rules for scanjs checking
-var signatures = JSON.parse(fs.readFileSync(__dirname + "/rules.json", "utf8"));
+var signatures = JSON.parse(fs.readFileSync(__dirname + '/rules.json', 'utf8'));
 
 // recursive function for finding all files in a directory
 var dive = function(dir, action) {
   if( typeof action !== 'function') {
     action = function(error, file) {
-      console.log(">" + file)
+      console.log('>' + file);
     };
   }
   var list = fs.readdirSync(dir);
@@ -22,7 +22,7 @@ var dive = function(dir, action) {
     try {
       var stat = fs.statSync(fullpath);
     } catch(e) {
-      console.log("SKIPPING FILE: Could not stat " + fullpath);
+      console.log('SKIPPING FILE: Could not stat ' + fullpath);
     }
     if(stat && stat.isDirectory()) {
       dive(fullpath, action);
@@ -52,7 +52,9 @@ var scanDir = function(dir) {
       var scanresult = ScanJS.scan(ast, fullpath);
       // console.log('scanresults: ', scanresult);
       if (scanresult.type === 'error') {
-        console.log("SKIPPING FILE: Error in "+ fullpath+", at Line "+ scanresult.error.loc.line +", Column "+scanresult.error.loc.column+ ": " + scanresult.error.message);
+        console.log('SKIPPING FILE: Error in ' + fullpath+ ', at Line ' + 
+          scanresult.error.loc.line + ', Column ' + 
+          scanresult.error.loc.column + ': ' + scanresult.error.message);
       }
       results[fullpath] = scanresult;
     }

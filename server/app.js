@@ -35,7 +35,7 @@ var processRepo = function(repoID) {
             }
 
             // add scan results to the DB
-            repos.findAndModify({_id: repoID}, {$set: {"repo_info.scan_results": JSON.stringify(scanResults)}}, function(err, doc) {
+            repos.findAndModify({_id: repoID}, {$set: {'repo_info.scan_results': JSON.stringify(scanResults)}}, function(err, doc) {
               console.log('record updated with scanResults...');
               callback(null, 'scan');
             });
@@ -47,7 +47,7 @@ var processRepo = function(repoID) {
             var retireResults = retirejs.retireScan(fullRelativePath);
             console.log('retireResults: ', retireResults);
             // add retire results to the DB
-            repos.findAndModify({_id: repoID}, {$set: {"repo_info.retire_results": retireResults}}, function(err, doc) {
+            repos.findAndModify({_id: repoID}, {$set: {'repo_info.retire_results': retireResults}}, function(err, doc) {
               if (err) {
                 console.log('db err: ', err);
               }
@@ -59,7 +59,7 @@ var processRepo = function(repoID) {
           function(callback){
             console.log('starting api_key scan...');
             parseService.parseFile(repoID, function(parseResults) {
-              repos.findAndModify({_id: repoID}, {$set: {"repo_info.parse_results": parseResults}}, function(err, doc) {
+              repos.findAndModify({_id: repoID}, {$set: {'repo_info.parse_results': parseResults}}, function(err, doc) {
                 console.log('record updated with parseResults...');
                 callback(null, 'parse');
               });
