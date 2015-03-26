@@ -82,8 +82,8 @@ var concatDirectory = function(pathName, callback) {
   // once the bash command is done, it takes the txt file that was created and processes
   bash.on('close', function(){
     getTextFile(path + '/concatenatedDirectory.txt', function(text) {
-      processFile(text, path, function() {
-        callback();
+      processFile(text, path, function(matchArray) {
+        callback(matchArray);
       });
     });
   });
