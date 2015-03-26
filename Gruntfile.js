@@ -59,6 +59,7 @@ module.exports = function(grunt) {
           nodemon.on('crash', function () {
             nodemon.emit('restart');
           });
+        }
       },
       git: {
         script: 'gitListener/gitHookServer.js',
@@ -66,6 +67,7 @@ module.exports = function(grunt) {
           nodemon.on('crash', function () {
             nodemon.emit('restart');
           });
+        }
       }
     },
 
