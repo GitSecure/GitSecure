@@ -1,13 +1,13 @@
-module.exports = function(grunt) {
+'use strict';
+var touch = require('touch');
 
+module.exports = function(grunt) {
+  grunt.loadNpmTasks('grunt-notify');
   grunt.loadNpmTasks('grunt-mocha-test');
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-express-server');
+  grunt.loadNpmTasks('grunt-nodemon');
+  grunt.loadNpmTasks('grunt-concurrent');
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -20,75 +20,79 @@ module.exports = function(grunt) {
       }
     },
 
-    clean: {
-      dist: 'dist/*',
-      result: 'results/*'
-    },
-
-    copy: {
-      client: {
-
-      },
-      server: {
-        src: ['basic-server.js'],
-        dest: 'dist/'
-      },
-      services: {
-        src: ['services/**'],
-        dest: 'dist/'
-      }
-    },
-
     jshint: {
       files: [
         'Gruntfile.js',
-        'basic-server.ks',
-        'services/parsing/*.js',
-        'Test/unit/parsing.js'
+        'server.js',
+        'database.js',
+        'gitListner/**/*.js',
+        'server/**/*.js'
       ],
-      options: {
-        force: 'true',
+      options: {force: 'true', jshintrc: true}
+    },
+
+    concurrent: {
+      main: {
+        tasks: ['nodemon:dev', 'watch'],
+        options: {
+          logConcurrentOutput: true
+        }
+      },
+      gitHook: {
+        tasks: ['nodemon:git'],
+        options: {
+          logConcurrentOutput: true
+        }
+      },
+      all: {
+        tasks: ['nodemon:git', 'nodemon:dev', 'watch'],
+        options: {
+          logConcurrentOutput: true,
+          limit: 3
+        }
       }
     },
 
-    express: {
+    nodemon: {
       dev: {
+        script: 'server.js',
         options: {
-          script: 'dist/basic-server.js'
+          callback: function (nodemon) {
+            nodemon.on('crash', function () {
+              console.error('App Crash');
+              touch('server.js');
+            });
+          }
+        }
+      },
+      git: {
+        script: 'gitListener/gitHookServer.js',
+        options: {
+          callback: function (nodemon) {
+            nodemon.on('crash', function () {
+              console.error('App Crash');
+              touch('gitListener/gitHookServer.js');
+            });
+          }
         }
       }
     },
 
     watch: {
       gruntfile: {
-        files: 'Gruntfile.js',
-        tasks: 'jshint:gruntfile'
+        files: [
+          'Gruntfile.js',
+          'server.js',
+          'database.js',
+          'gitListner/**/*.js',
+          'server/**/*.js'
+        ],
+        tasks: ['jshint', 'test']
       },
-      client: {
-      },
-      server: {
-        files: ['server/**'],
-        tasks: ['build', 'express:dev'],
-        options: {
-          spawn: false
-        }
-      },
-      services: {
-        files: ['services/**'],
-        tasks: [ 'build','express:dev'],
-      },
-      unitTests: {
-        files: ['Test/unit/parsing.js']
-      },
-      integrationTests: {
-
-      },
-      e2eTests: {
-
-      }
     },
   });
 
   grunt.registerTask('test', 'mochaTest');
-  grunt.registerTask('build', ['jshint', 'clean', 'copy']);
+  grunt.registerTask('default', ['concurrent:main']);
+  grunt.registerTask('withGit', ['concurrent:all']);
 };
