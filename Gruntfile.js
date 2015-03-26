@@ -54,10 +54,18 @@ module.exports = function(grunt) {
 
     nodemon: {
       dev: {
-        script: 'server.js'
+        script: 'server.js',
+        callback: function (nodemon) {
+          nodemon.on('crash', function () {
+            nodemon.emit('restart');
+          });
       },
       git: {
-        script: 'gitListener/gitHookServer.js'
+        script: 'gitListener/gitHookServer.js',
+        callback: function (nodemon) {
+          nodemon.on('crash', function () {
+            nodemon.emit('restart');
+          });
       }
     },
 
