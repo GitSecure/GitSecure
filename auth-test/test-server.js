@@ -5,23 +5,12 @@ var bodyParser = require('body-parser');
 
 var cors = require('cors');
 var app = express();
-
-
-
-app.use(cors());
-var util = require('../server/utilities.js');
-// require('../server/app.js');
-
 var session = require('express-session');
 var passport = require('passport');
 var OAuth2Strategy = require('passport-oauth').OAuth2Strategy;
 var GitHubStrategy = require('passport-github').Strategy;
 
-// var User = require('./db-user.js');
-
-// app.use(express.cookieParser('secret'));
-// app.use(express.cookieSession());
-
+app.use(cors());
 
 app.use(express.static(__dirname + '/client/'));
 
@@ -36,9 +25,6 @@ app.get('/', function(req, res, next){
   }
 });
 
-// Check User Middleware
-
-// User Serialization and Deserialization
 passport.serializeUser(function(user, done){
   console.log('user about to be serialized', user);
   done(null, user);
@@ -48,17 +34,15 @@ passport.deserializeUser(function(user, done) {
   done(null, user);
 });
 
-// Prepare session for passport
 app.use(session({
   saveUninitialized: true, 
   resave: true, 
   secret: 'this is our secret'
 }));
 
-// Use Github authentication
 passport.use(new GitHubStrategy({
-  clientID: '9383eeff63778d471150',
-  clientSecret: 'e4e1ed909f1a2063fd4606adae6636b995229010',
+  clientID: 'secret',
+  clientSecret: 'secret',
   callbackURL: 'http://localhost:3000/auth/github/callback'
 }, function(accessToken, refreshToken, profile, done){
   console.log('accessToken', accessToken);
@@ -67,13 +51,6 @@ passport.use(new GitHubStrategy({
   })
 }));
 
-// Passport session setup.
-// To support persistent login sessions, Passport needs to be able to
-// serialize users into and deserialize users out of the session. Typically,
-// this will be as simple as storing the user when serializing, and finding
-// the user when deserializing.
-
-// Use passport to authenticate
 app.use(passport.initialize());
 app.use(passport.session());
 
