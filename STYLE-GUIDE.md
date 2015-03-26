@@ -358,7 +358,6 @@ When writing any block of code that is logically subordinate to the line immedia
 
 
 ### HTML
-
 * Do not use ids for html elements. Use a class instead.
 
     ```html
