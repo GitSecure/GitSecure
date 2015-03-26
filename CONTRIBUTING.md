@@ -141,8 +141,8 @@ Thanks for contributing!
 ### Guidelines
 
 1. Uphold the current code standard:
-    - Keep your code [DRY][].
-    - Apply the [boy scout rule][].
+    - Keep your code DRY.
+    - Apply the boy scout rule.
     - Follow [STYLE-GUIDE.md](STYLE-GUIDE.md)
 1. Run the [tests][] before submitting a pull request.
 1. Tests are very, very important. Submit tests if your pull request contains
