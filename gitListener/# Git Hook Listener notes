@@ -1,0 +1,19 @@
+# Note the new setup script name for Node.js v0.12
+curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
+
+# Then install with:
+sudo apt-get install -y nodejs
+
+sudo apt-get install -y git
+
+sudo apt-get install -y mongodb
+
+npm install -g grunt-cli
+npm install -g nodemon
+npm install -g bower
+
+
+https://help.github.com/articles/generating-ssh-keys/
+https://developer.github.com/guides/managing-deploy-keys/
+
+Git clone the repo (to add the github fingerprint to your authorized hosts file)
