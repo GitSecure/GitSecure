@@ -13,7 +13,7 @@ var initialize = function() {
 };
 
 var getNextGitHubRepo = function() {
-  MongoClient.connect('mongodb://127.0.0.1:27017/development', function(err, db) {
+  MongoClient.connect('mongodb://TweetTrackerDB.cloudapp.net:27017/gitSecure', function(err, db) {
     GLOBAL.db = db;
     scrapeService.scrapeUrls(function(){
       queryService.query(function(urlList){
@@ -29,7 +29,7 @@ var getNextGitHubRepo = function() {
   });
 };
 
-MongoClient.connect('mongodb://127.0.0.1:27017/development', function(err, db) {
+MongoClient.connect('mongodb://TweetTrackerDB.cloudapp.net:27017/gitSecure', function(err, db) {
   db.collectionNames("count", function(err, names) {
     if (names.length === 0) {
       db.collection('count').insert({count: 0}, function(){});
