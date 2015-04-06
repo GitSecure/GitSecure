@@ -1,0 +1,2600 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'cache', 'clean' ]
+2 info using npm@2.3.0
+3 info using node@v0.12.0
+4 silly ls normalized .
+5 verbose gentlyRm vacuuming /Users/Jslice/.npm/Base64
+6 verbose gentlyRm vacuuming /Users/Jslice/.npm/CSSselect
+7 verbose gentlyRm vacuuming /Users/Jslice/.npm/CSSwhat
+8 verbose gentlyRm vacuuming /Users/Jslice/.npm/JSONStream
+9 verbose gentlyRm vacuuming /Users/Jslice/.npm/MD5
+10 verbose gentlyRm vacuuming /Users/Jslice/.npm/_locks
+11 verbose gentlyRm vacuuming /Users/Jslice/.npm/abbrev
+12 verbose gentlyRm vacuuming /Users/Jslice/.npm/accepts
+13 verbose gentlyRm vacuuming /Users/Jslice/.npm/acorn
+14 verbose gentlyRm vacuuming /Users/Jslice/.npm/acorn-babel
+15 verbose gentlyRm vacuuming /Users/Jslice/.npm/active-x-obfuscator
+16 verbose gentlyRm vacuuming /Users/Jslice/.npm/adal-node
+17 verbose gentlyRm vacuuming /Users/Jslice/.npm/addressparser
+18 verbose gentlyRm vacuuming /Users/Jslice/.npm/adm-zip
+19 verbose gentlyRm vacuuming /Users/Jslice/.npm/after
+20 verbose gentlyRm vacuuming /Users/Jslice/.npm/alter
+21 verbose gentlyRm vacuuming /Users/Jslice/.npm/ambi
+22 verbose gentlyRm vacuuming /Users/Jslice/.npm/amdefine
+23 verbose gentlyRm vacuuming /Users/Jslice/.npm/ansi
+24 verbose gentlyRm vacuuming /Users/Jslice/.npm/ansi-regex
+25 verbose gentlyRm vacuuming /Users/Jslice/.npm/ansi-styles
+26 verbose gentlyRm vacuuming /Users/Jslice/.npm/anymatch
+27 verbose gentlyRm vacuuming /Users/Jslice/.npm/archive-type
+28 verbose gentlyRm vacuuming /Users/Jslice/.npm/archiver
+29 verbose gentlyRm vacuuming /Users/Jslice/.npm/archy
+30 verbose gentlyRm vacuuming /Users/Jslice/.npm/argparse
+31 verbose gentlyRm vacuuming /Users/Jslice/.npm/arguments-extended
+32 verbose gentlyRm vacuuming /Users/Jslice/.npm/array-differ
+33 verbose gentlyRm vacuuming /Users/Jslice/.npm/array-extended
+34 verbose gentlyRm vacuuming /Users/Jslice/.npm/array-filter
+35 verbose gentlyRm vacuuming /Users/Jslice/.npm/array-map
+36 verbose gentlyRm vacuuming /Users/Jslice/.npm/array-reduce
+37 verbose gentlyRm vacuuming /Users/Jslice/.npm/array-union
+38 verbose gentlyRm vacuuming /Users/Jslice/.npm/array-uniq
+39 verbose gentlyRm vacuuming /Users/Jslice/.npm/arraybuffer.slice
+40 verbose gentlyRm vacuuming /Users/Jslice/.npm/asap
+41 verbose gentlyRm vacuuming /Users/Jslice/.npm/asn1
+42 verbose gentlyRm vacuuming /Users/Jslice/.npm/asn1.js
+43 verbose gentlyRm vacuuming /Users/Jslice/.npm/asn1.js-rfc3280
+44 verbose gentlyRm vacuuming /Users/Jslice/.npm/assert
+45 verbose gentlyRm vacuuming /Users/Jslice/.npm/assert-plus
+46 verbose gentlyRm vacuuming /Users/Jslice/.npm/assertion-error
+47 verbose gentlyRm vacuuming /Users/Jslice/.npm/ast-types
+48 verbose gentlyRm vacuuming /Users/Jslice/.npm/astw
+49 verbose gentlyRm vacuuming /Users/Jslice/.npm/async
+50 verbose gentlyRm vacuuming /Users/Jslice/.npm/async-each
+51 verbose gentlyRm vacuuming /Users/Jslice/.npm/async-each-series
+52 verbose gentlyRm vacuuming /Users/Jslice/.npm/autoprefixer-core
+53 verbose gentlyRm vacuuming /Users/Jslice/.npm/aws-sdk
+54 verbose gentlyRm vacuuming /Users/Jslice/.npm/aws-sdk-apis
+55 verbose gentlyRm vacuuming /Users/Jslice/.npm/aws-sign
+56 verbose gentlyRm vacuuming /Users/Jslice/.npm/aws-sign2
+57 verbose gentlyRm vacuuming /Users/Jslice/.npm/azure
+58 verbose gentlyRm vacuuming /Users/Jslice/.npm/azure-cli
+59 verbose gentlyRm vacuuming /Users/Jslice/.npm/azure-common
+60 verbose gentlyRm vacuuming /Users/Jslice/.npm/azure-extra
+61 verbose gentlyRm vacuuming /Users/Jslice/.npm/azure-gallery
+62 verbose gentlyRm vacuuming /Users/Jslice/.npm/azure-mgmt
+63 verbose gentlyRm vacuuming /Users/Jslice/.npm/azure-mgmt-authorization
+64 verbose gentlyRm vacuuming /Users/Jslice/.npm/azure-mgmt-compute
+65 verbose gentlyRm vacuuming /Users/Jslice/.npm/azure-mgmt-hdinsight
+66 verbose gentlyRm vacuuming /Users/Jslice/.npm/azure-mgmt-resource
+67 verbose gentlyRm vacuuming /Users/Jslice/.npm/azure-mgmt-sb
+68 verbose gentlyRm vacuuming /Users/Jslice/.npm/azure-mgmt-scheduler
+69 verbose gentlyRm vacuuming /Users/Jslice/.npm/azure-mgmt-sql
+70 verbose gentlyRm vacuuming /Users/Jslice/.npm/azure-mgmt-storage
+71 verbose gentlyRm vacuuming /Users/Jslice/.npm/azure-mgmt-subscription
+72 verbose gentlyRm vacuuming /Users/Jslice/.npm/azure-mgmt-vnet
+73 verbose gentlyRm vacuuming /Users/Jslice/.npm/azure-mgmt-website
+74 verbose gentlyRm vacuuming /Users/Jslice/.npm/azure-monitoring
+75 verbose gentlyRm vacuuming /Users/Jslice/.npm/azure-rm-website
+76 verbose gentlyRm vacuuming /Users/Jslice/.npm/azure-sb
+77 verbose gentlyRm vacuuming /Users/Jslice/.npm/azure-scheduler
+78 verbose gentlyRm vacuuming /Users/Jslice/.npm/azure-storage
+79 verbose gentlyRm vacuuming /Users/Jslice/.npm/azure-storage-legacy
+80 verbose gentlyRm vacuuming /Users/Jslice/.npm/babel
+81 verbose gentlyRm vacuuming /Users/Jslice/.npm/babel-core
+82 verbose gentlyRm vacuuming /Users/Jslice/.npm/babel-loader
+83 verbose gentlyRm vacuuming /Users/Jslice/.npm/backbone
+84 verbose gentlyRm vacuuming /Users/Jslice/.npm/backo2
+85 verbose gentlyRm vacuuming /Users/Jslice/.npm/bal-util
+86 verbose gentlyRm vacuuming /Users/Jslice/.npm/balanced-match
+87 verbose gentlyRm vacuuming /Users/Jslice/.npm/base62
+88 verbose gentlyRm vacuuming /Users/Jslice/.npm/base64-arraybuffer
+89 verbose gentlyRm vacuuming /Users/Jslice/.npm/base64-js
+90 verbose gentlyRm vacuuming /Users/Jslice/.npm/base64-url
+91 verbose gentlyRm vacuuming /Users/Jslice/.npm/base64id
+92 verbose gentlyRm vacuuming /Users/Jslice/.npm/basic-auth
+93 verbose gentlyRm vacuuming /Users/Jslice/.npm/basic-auth-connect
+94 verbose gentlyRm vacuuming /Users/Jslice/.npm/batch
+95 verbose gentlyRm vacuuming /Users/Jslice/.npm/bcrypt-nodejs
+96 verbose gentlyRm vacuuming /Users/Jslice/.npm/bcryptjs
+97 verbose gentlyRm vacuuming /Users/Jslice/.npm/benchmark
+98 verbose gentlyRm vacuuming /Users/Jslice/.npm/better-assert
+99 verbose gentlyRm vacuuming /Users/Jslice/.npm/biased-opener
+100 verbose gentlyRm vacuuming /Users/Jslice/.npm/big.js
+101 verbose gentlyRm vacuuming /Users/Jslice/.npm/bignumber.js
+102 verbose gentlyRm vacuuming /Users/Jslice/.npm/bin-build
+103 verbose gentlyRm vacuuming /Users/Jslice/.npm/bin-check
+104 verbose gentlyRm vacuuming /Users/Jslice/.npm/bin-version
+105 verbose gentlyRm vacuuming /Users/Jslice/.npm/bin-version-check
+106 verbose gentlyRm vacuuming /Users/Jslice/.npm/bin-wrapper
+107 verbose gentlyRm vacuuming /Users/Jslice/.npm/binary
+108 verbose gentlyRm vacuuming /Users/Jslice/.npm/binary-extensions
+109 verbose gentlyRm vacuuming /Users/Jslice/.npm/bl
+110 verbose gentlyRm vacuuming /Users/Jslice/.npm/blanket
+111 verbose gentlyRm vacuuming /Users/Jslice/.npm/blob
+112 verbose gentlyRm vacuuming /Users/Jslice/.npm/bluebird
+113 verbose gentlyRm vacuuming /Users/Jslice/.npm/bn.js
+114 verbose gentlyRm vacuuming /Users/Jslice/.npm/body-parser
+115 verbose gentlyRm vacuuming /Users/Jslice/.npm/bookshelf
+116 verbose gentlyRm vacuuming /Users/Jslice/.npm/boom
+117 verbose gentlyRm vacuuming /Users/Jslice/.npm/bower
+118 verbose gentlyRm vacuuming /Users/Jslice/.npm/bower-config
+119 verbose gentlyRm vacuuming /Users/Jslice/.npm/bower-endpoint-parser
+120 verbose gentlyRm vacuuming /Users/Jslice/.npm/bower-json
+121 verbose gentlyRm vacuuming /Users/Jslice/.npm/bower-logger
+122 verbose gentlyRm vacuuming /Users/Jslice/.npm/bower-registry-client
+123 verbose gentlyRm vacuuming /Users/Jslice/.npm/bplist-parser
+124 verbose gentlyRm vacuuming /Users/Jslice/.npm/brace-expansion
+125 verbose gentlyRm vacuuming /Users/Jslice/.npm/broadway
+126 verbose gentlyRm vacuuming /Users/Jslice/.npm/brorand
+127 verbose gentlyRm vacuuming /Users/Jslice/.npm/browser-launcher2
+128 verbose gentlyRm vacuuming /Users/Jslice/.npm/browser-pack
+129 verbose gentlyRm vacuuming /Users/Jslice/.npm/browser-resolve
+130 verbose gentlyRm vacuuming /Users/Jslice/.npm/browserify
+131 verbose gentlyRm vacuuming /Users/Jslice/.npm/browserify-aes
+132 verbose gentlyRm vacuuming /Users/Jslice/.npm/browserify-rsa
+133 verbose gentlyRm vacuuming /Users/Jslice/.npm/browserify-shim
+134 verbose gentlyRm vacuuming /Users/Jslice/.npm/browserify-sign
+135 verbose gentlyRm vacuuming /Users/Jslice/.npm/browserify-zlib
+136 verbose gentlyRm vacuuming /Users/Jslice/.npm/browserslist
+137 verbose gentlyRm vacuuming /Users/Jslice/.npm/bson
+138 verbose gentlyRm vacuuming /Users/Jslice/.npm/buffer
+139 verbose gentlyRm vacuuming /Users/Jslice/.npm/buffer-crc32
+140 verbose gentlyRm vacuuming /Users/Jslice/.npm/buffer-equal
+141 verbose gentlyRm vacuuming /Users/Jslice/.npm/buffer-to-vinyl
+142 verbose gentlyRm vacuuming /Users/Jslice/.npm/buffer-writer
+143 verbose gentlyRm vacuuming /Users/Jslice/.npm/buffers
+144 verbose gentlyRm vacuuming /Users/Jslice/.npm/builtins
+145 verbose gentlyRm vacuuming /Users/Jslice/.npm/bundle-loader
+146 verbose gentlyRm vacuuming /Users/Jslice/.npm/bunker
+147 verbose gentlyRm vacuuming /Users/Jslice/.npm/burrito
+148 verbose gentlyRm vacuuming /Users/Jslice/.npm/busboy
+149 verbose gentlyRm vacuuming /Users/Jslice/.npm/bytes
+150 verbose gentlyRm vacuuming /Users/Jslice/.npm/caller-id
+151 verbose gentlyRm vacuuming /Users/Jslice/.npm/callsite
+152 verbose gentlyRm vacuuming /Users/Jslice/.npm/camel-case
+153 verbose gentlyRm vacuuming /Users/Jslice/.npm/camelcase
+154 verbose gentlyRm vacuuming /Users/Jslice/.npm/camelcase-keys
+155 verbose gentlyRm vacuuming /Users/Jslice/.npm/caniuse-db
+156 verbose gentlyRm vacuuming /Users/Jslice/.npm/cardinal
+157 verbose gentlyRm vacuuming /Users/Jslice/.npm/caseless
+158 verbose gentlyRm vacuuming /Users/Jslice/.npm/casperjs
+159 verbose gentlyRm vacuuming /Users/Jslice/.npm/cdnjs-cdn-data
+160 verbose gentlyRm vacuuming /Users/Jslice/.npm/chai
+161 verbose gentlyRm vacuuming /Users/Jslice/.npm/chai-as-promised
+162 verbose gentlyRm vacuuming /Users/Jslice/.npm/chai-jquery
+163 verbose gentlyRm vacuuming /Users/Jslice/.npm/chai-things
+164 verbose gentlyRm vacuuming /Users/Jslice/.npm/chainsaw
+165 verbose gentlyRm vacuuming /Users/Jslice/.npm/chalk
+166 verbose gentlyRm vacuuming /Users/Jslice/.npm/change-case
+167 verbose gentlyRm vacuuming /Users/Jslice/.npm/charenc
+168 verbose gentlyRm vacuuming /Users/Jslice/.npm/charm
+169 verbose gentlyRm vacuuming /Users/Jslice/.npm/cheerio
+170 verbose gentlyRm vacuuming /Users/Jslice/.npm/chmodr
+171 verbose gentlyRm vacuuming /Users/Jslice/.npm/chokidar
+172 verbose gentlyRm vacuuming /Users/Jslice/.npm/classnames
+173 verbose gentlyRm vacuuming /Users/Jslice/.npm/clean-css
+174 verbose gentlyRm vacuuming /Users/Jslice/.npm/cli
+175 verbose gentlyRm vacuuming /Users/Jslice/.npm/cli-color
+176 verbose gentlyRm vacuuming /Users/Jslice/.npm/cliff
+177 verbose gentlyRm vacuuming /Users/Jslice/.npm/clone
+178 verbose gentlyRm vacuuming /Users/Jslice/.npm/clone-stats
+179 verbose gentlyRm vacuuming /Users/Jslice/.npm/co
+180 verbose gentlyRm vacuuming /Users/Jslice/.npm/coa
+181 verbose gentlyRm vacuuming /Users/Jslice/.npm/coffee-script
+182 verbose gentlyRm vacuuming /Users/Jslice/.npm/colors
+183 verbose gentlyRm vacuuming /Users/Jslice/.npm/combine-source-map
+184 verbose gentlyRm vacuuming /Users/Jslice/.npm/combined-stream
+185 verbose gentlyRm vacuuming /Users/Jslice/.npm/commander
+186 verbose gentlyRm vacuuming /Users/Jslice/.npm/commondir
+187 verbose gentlyRm vacuuming /Users/Jslice/.npm/commoner
+188 verbose gentlyRm vacuuming /Users/Jslice/.npm/component-bind
+189 verbose gentlyRm vacuuming /Users/Jslice/.npm/component-emitter
+190 verbose gentlyRm vacuuming /Users/Jslice/.npm/component-inherit
+191 verbose gentlyRm vacuuming /Users/Jslice/.npm/compress-commons
+192 verbose gentlyRm vacuuming /Users/Jslice/.npm/compressible
+193 verbose gentlyRm vacuuming /Users/Jslice/.npm/compression
+194 verbose gentlyRm vacuuming /Users/Jslice/.npm/concat-map
+195 verbose gentlyRm vacuuming /Users/Jslice/.npm/concat-stream
+196 verbose gentlyRm vacuuming /Users/Jslice/.npm/config-chain
+197 verbose gentlyRm vacuuming /Users/Jslice/.npm/configstore
+198 verbose gentlyRm vacuuming /Users/Jslice/.npm/connect
+199 verbose gentlyRm vacuuming /Users/Jslice/.npm/connect-history-api-fallback
+200 verbose gentlyRm vacuuming /Users/Jslice/.npm/connect-livereload
+201 verbose gentlyRm vacuuming /Users/Jslice/.npm/connect-slashes
+202 verbose gentlyRm vacuuming /Users/Jslice/.npm/connect-timeout
+203 verbose gentlyRm vacuuming /Users/Jslice/.npm/console-browserify
+204 verbose gentlyRm vacuuming /Users/Jslice/.npm/consolidate
+205 verbose gentlyRm vacuuming /Users/Jslice/.npm/constant-case
+206 verbose gentlyRm vacuuming /Users/Jslice/.npm/constants-browserify
+207 verbose gentlyRm vacuuming /Users/Jslice/.npm/content-disposition
+208 verbose gentlyRm vacuuming /Users/Jslice/.npm/content-type
+209 verbose gentlyRm vacuuming /Users/Jslice/.npm/convert-source-map
+210 verbose gentlyRm vacuuming /Users/Jslice/.npm/cookie
+211 verbose gentlyRm vacuuming /Users/Jslice/.npm/cookie-jar
+212 verbose gentlyRm vacuuming /Users/Jslice/.npm/cookie-parser
+213 verbose gentlyRm vacuuming /Users/Jslice/.npm/cookie-session
+214 verbose gentlyRm vacuuming /Users/Jslice/.npm/cookie-signature
+215 verbose gentlyRm vacuuming /Users/Jslice/.npm/cookiejar
+216 verbose gentlyRm vacuuming /Users/Jslice/.npm/cookies
+217 verbose gentlyRm vacuuming /Users/Jslice/.npm/core-js
+218 verbose gentlyRm vacuuming /Users/Jslice/.npm/core-util-is
+219 verbose gentlyRm vacuuming /Users/Jslice/.npm/cors
+220 verbose gentlyRm vacuuming /Users/Jslice/.npm/crc
+221 verbose gentlyRm vacuuming /Users/Jslice/.npm/crc32-stream
+222 verbose gentlyRm vacuuming /Users/Jslice/.npm/create-ecdh
+223 verbose gentlyRm vacuuming /Users/Jslice/.npm/create-error
+224 verbose gentlyRm vacuuming /Users/Jslice/.npm/create-hash
+225 verbose gentlyRm vacuuming /Users/Jslice/.npm/create-hmac
+226 verbose gentlyRm vacuuming /Users/Jslice/.npm/cron
+227 verbose gentlyRm vacuuming /Users/Jslice/.npm/crypt
+228 verbose gentlyRm vacuuming /Users/Jslice/.npm/cryptiles
+229 verbose gentlyRm vacuuming /Users/Jslice/.npm/crypto-browserify
+230 verbose gentlyRm vacuuming /Users/Jslice/.npm/csrf
+231 verbose gentlyRm vacuuming /Users/Jslice/.npm/csurf
+232 verbose gentlyRm vacuuming /Users/Jslice/.npm/ctype
+233 verbose gentlyRm vacuuming /Users/Jslice/.npm/cycle
+234 verbose gentlyRm vacuuming /Users/Jslice/.npm/d
+235 verbose gentlyRm vacuuming /Users/Jslice/.npm/date-extended
+236 verbose gentlyRm vacuuming /Users/Jslice/.npm/date-now
+237 verbose gentlyRm vacuuming /Users/Jslice/.npm/date-time
+238 verbose gentlyRm vacuuming /Users/Jslice/.npm/date-utils
+239 verbose gentlyRm vacuuming /Users/Jslice/.npm/dateformat
+240 verbose gentlyRm vacuuming /Users/Jslice/.npm/debug
+241 verbose gentlyRm vacuuming /Users/Jslice/.npm/declare.js
+242 verbose gentlyRm vacuuming /Users/Jslice/.npm/decompress
+243 verbose gentlyRm vacuuming /Users/Jslice/.npm/decompress-tar
+244 verbose gentlyRm vacuuming /Users/Jslice/.npm/decompress-tarbz2
+245 verbose gentlyRm vacuuming /Users/Jslice/.npm/decompress-targz
+246 verbose gentlyRm vacuuming /Users/Jslice/.npm/decompress-unzip
+247 verbose gentlyRm vacuuming /Users/Jslice/.npm/decompress-zip
+248 verbose gentlyRm vacuuming /Users/Jslice/.npm/deep-eql
+249 verbose gentlyRm vacuuming /Users/Jslice/.npm/deep-equal
+250 verbose gentlyRm vacuuming /Users/Jslice/.npm/deep-extend
+251 verbose gentlyRm vacuuming /Users/Jslice/.npm/deep-is
+252 verbose gentlyRm vacuuming /Users/Jslice/.npm/default-browser-id
+253 verbose gentlyRm vacuuming /Users/Jslice/.npm/defaults
+254 verbose gentlyRm vacuuming /Users/Jslice/.npm/defined
+255 verbose gentlyRm vacuuming /Users/Jslice/.npm/delayed-stream
+256 verbose gentlyRm vacuuming /Users/Jslice/.npm/depd
+257 verbose gentlyRm vacuuming /Users/Jslice/.npm/deps-sort
+258 verbose gentlyRm vacuuming /Users/Jslice/.npm/destroy
+259 verbose gentlyRm vacuuming /Users/Jslice/.npm/detect-indent
+260 verbose gentlyRm vacuuming /Users/Jslice/.npm/detective
+261 verbose gentlyRm vacuuming /Users/Jslice/.npm/di
+262 verbose gentlyRm vacuuming /Users/Jslice/.npm/dicer
+263 verbose gentlyRm vacuuming /Users/Jslice/.npm/did_it_work
+264 verbose gentlyRm vacuuming /Users/Jslice/.npm/diff
+265 verbose gentlyRm vacuuming /Users/Jslice/.npm/diffie-hellman
+266 verbose gentlyRm vacuuming /Users/Jslice/.npm/difflet
+267 verbose gentlyRm vacuuming /Users/Jslice/.npm/directmail
+268 verbose gentlyRm vacuuming /Users/Jslice/.npm/director
+269 verbose gentlyRm vacuuming /Users/Jslice/.npm/dkim-signer
+270 verbose gentlyRm vacuuming /Users/Jslice/.npm/docker
+271 verbose gentlyRm vacuuming /Users/Jslice/.npm/dom-serializer
+272 verbose gentlyRm vacuuming /Users/Jslice/.npm/domain-browser
+273 verbose gentlyRm vacuuming /Users/Jslice/.npm/domelementtype
+274 verbose gentlyRm vacuuming /Users/Jslice/.npm/domhandler
+275 verbose gentlyRm vacuuming /Users/Jslice/.npm/domutils
+276 verbose gentlyRm vacuuming /Users/Jslice/.npm/dot-case
+277 verbose gentlyRm vacuuming /Users/Jslice/.npm/download
+278 verbose gentlyRm vacuuming /Users/Jslice/.npm/download-status
+279 verbose gentlyRm vacuuming /Users/Jslice/.npm/downsize
+280 verbose gentlyRm vacuuming /Users/Jslice/.npm/duplexer
+281 verbose gentlyRm vacuuming /Users/Jslice/.npm/duplexer2
+282 verbose gentlyRm vacuuming /Users/Jslice/.npm/duplexify
+283 verbose gentlyRm vacuuming /Users/Jslice/.npm/each-async
+284 verbose gentlyRm vacuuming /Users/Jslice/.npm/eachr
+285 verbose gentlyRm vacuuming /Users/Jslice/.npm/easy-table
+286 verbose gentlyRm vacuuming /Users/Jslice/.npm/ecstatic
+287 verbose gentlyRm vacuuming /Users/Jslice/.npm/ee-first
+288 verbose gentlyRm vacuuming /Users/Jslice/.npm/ejs
+289 verbose gentlyRm vacuuming /Users/Jslice/.npm/elliptic
+290 verbose gentlyRm vacuuming /Users/Jslice/.npm/ember-template-compiler
+291 verbose gentlyRm vacuuming /Users/Jslice/.npm/emitter-component
+292 verbose gentlyRm vacuuming /Users/Jslice/.npm/encoding
+293 verbose gentlyRm vacuuming /Users/Jslice/.npm/end-of-stream
+294 verbose gentlyRm vacuuming /Users/Jslice/.npm/engine.io
+295 verbose gentlyRm vacuuming /Users/Jslice/.npm/engine.io-client
+296 verbose gentlyRm vacuuming /Users/Jslice/.npm/engine.io-parser
+297 verbose gentlyRm vacuuming /Users/Jslice/.npm/enhanced-resolve
+298 verbose gentlyRm vacuuming /Users/Jslice/.npm/entities
+299 verbose gentlyRm vacuuming /Users/Jslice/.npm/envconf
+300 verbose gentlyRm vacuuming /Users/Jslice/.npm/envify
+301 verbose gentlyRm vacuuming /Users/Jslice/.npm/errorhandler
+302 verbose gentlyRm vacuuming /Users/Jslice/.npm/es5-ext
+303 verbose gentlyRm vacuuming /Users/Jslice/.npm/es6-iterator
+304 verbose gentlyRm vacuuming /Users/Jslice/.npm/es6-module-transpiler
+305 verbose gentlyRm vacuuming /Users/Jslice/.npm/es6-symbol
+306 verbose gentlyRm vacuuming /Users/Jslice/.npm/es6-weak-map
+307 verbose gentlyRm vacuuming /Users/Jslice/.npm/escape-html
+308 verbose gentlyRm vacuuming /Users/Jslice/.npm/escape-string-regexp
+309 verbose gentlyRm vacuuming /Users/Jslice/.npm/escodegen
+310 verbose gentlyRm vacuuming /Users/Jslice/.npm/esprima
+311 verbose gentlyRm vacuuming /Users/Jslice/.npm/esprima-fb
+312 verbose gentlyRm vacuuming /Users/Jslice/.npm/esprima-harmony-jscs
+313 verbose gentlyRm vacuuming /Users/Jslice/.npm/estraverse
+314 verbose gentlyRm vacuuming /Users/Jslice/.npm/esutils
+315 verbose gentlyRm vacuuming /Users/Jslice/.npm/etag
+316 verbose gentlyRm vacuuming /Users/Jslice/.npm/event-emitter
+317 verbose gentlyRm vacuuming /Users/Jslice/.npm/event-stream
+318 verbose gentlyRm vacuuming /Users/Jslice/.npm/eventemitter2
+319 verbose gentlyRm vacuuming /Users/Jslice/.npm/eventemitter3
+320 verbose gentlyRm vacuuming /Users/Jslice/.npm/events
+321 verbose gentlyRm vacuuming /Users/Jslice/.npm/exec-buffer
+322 verbose gentlyRm vacuuming /Users/Jslice/.npm/exec-series
+323 verbose gentlyRm vacuuming /Users/Jslice/.npm/executable
+324 verbose gentlyRm vacuuming /Users/Jslice/.npm/exit
+325 verbose gentlyRm vacuuming /Users/Jslice/.npm/expect
+326 verbose gentlyRm vacuuming /Users/Jslice/.npm/exposify
+327 verbose gentlyRm vacuuming /Users/Jslice/.npm/express
+328 verbose gentlyRm vacuuming /Users/Jslice/.npm/express-hbs
+329 verbose gentlyRm vacuuming /Users/Jslice/.npm/express-partials
+330 verbose gentlyRm vacuuming /Users/Jslice/.npm/express-session
+331 verbose gentlyRm vacuuming /Users/Jslice/.npm/extend
+332 verbose gentlyRm vacuuming /Users/Jslice/.npm/extended
+333 verbose gentlyRm vacuuming /Users/Jslice/.npm/extender
+334 verbose gentlyRm vacuuming /Users/Jslice/.npm/extendr
+335 verbose gentlyRm vacuuming /Users/Jslice/.npm/eyes
+336 verbose gentlyRm vacuuming /Users/Jslice/.npm/falafel
+337 verbose gentlyRm vacuuming /Users/Jslice/.npm/fast-csv
+338 verbose gentlyRm vacuuming /Users/Jslice/.npm/fast-levenshtein
+339 verbose gentlyRm vacuuming /Users/Jslice/.npm/faye-websocket
+340 verbose gentlyRm vacuuming /Users/Jslice/.npm/fd-slicer
+341 verbose gentlyRm vacuuming /Users/Jslice/.npm/figlet
+342 verbose gentlyRm vacuuming /Users/Jslice/.npm/figures
+343 verbose gentlyRm vacuuming /Users/Jslice/.npm/file-type
+344 verbose gentlyRm vacuuming /Users/Jslice/.npm/fileset
+345 verbose gentlyRm vacuuming /Users/Jslice/.npm/finalhandler
+346 verbose gentlyRm vacuuming /Users/Jslice/.npm/find-index
+347 verbose gentlyRm vacuuming /Users/Jslice/.npm/find-parent-dir
+348 verbose gentlyRm vacuuming /Users/Jslice/.npm/find-versions
+349 verbose gentlyRm vacuuming /Users/Jslice/.npm/findup-sync
+350 verbose gentlyRm vacuuming /Users/Jslice/.npm/firebase-auto-ids
+351 verbose gentlyRm vacuuming /Users/Jslice/.npm/fireworm
+352 verbose gentlyRm vacuuming /Users/Jslice/.npm/first-chunk-stream
+353 verbose gentlyRm vacuuming /Users/Jslice/.npm/flagged-respawn
+354 verbose gentlyRm vacuuming /Users/Jslice/.npm/flatiron
+355 verbose gentlyRm vacuuming /Users/Jslice/.npm/follow-redirects
+356 verbose gentlyRm vacuuming /Users/Jslice/.npm/forever
+357 verbose gentlyRm vacuuming /Users/Jslice/.npm/forever-agent
+358 verbose gentlyRm vacuuming /Users/Jslice/.npm/forever-monitor
+359 verbose gentlyRm vacuuming /Users/Jslice/.npm/form-data
+360 verbose gentlyRm vacuuming /Users/Jslice/.npm/formatio
+361 verbose gentlyRm vacuuming /Users/Jslice/.npm/formidable
+362 verbose gentlyRm vacuuming /Users/Jslice/.npm/forwarded
+363 verbose gentlyRm vacuuming /Users/Jslice/.npm/fresh
+364 verbose gentlyRm vacuuming /Users/Jslice/.npm/from
+365 verbose gentlyRm vacuuming /Users/Jslice/.npm/fs-extra
+366 verbose gentlyRm vacuuming /Users/Jslice/.npm/fs-readdir-recursive
+367 verbose gentlyRm vacuuming /Users/Jslice/.npm/fsevents
+368 verbose gentlyRm vacuuming /Users/Jslice/.npm/fstream
+369 verbose gentlyRm vacuuming /Users/Jslice/.npm/fstream-ignore
+370 verbose gentlyRm vacuuming /Users/Jslice/.npm/gaze
+371 verbose gentlyRm vacuuming /Users/Jslice/.npm/generic-pool
+372 verbose gentlyRm vacuuming /Users/Jslice/.npm/generic-pool-redux
+373 verbose gentlyRm vacuuming /Users/Jslice/.npm/get-stdin
+374 verbose gentlyRm vacuuming /Users/Jslice/.npm/getobject
+375 verbose gentlyRm vacuuming /Users/Jslice/.npm/getsetdeep
+376 verbose gentlyRm vacuuming /Users/Jslice/.npm/gifsicle
+377 verbose gentlyRm vacuuming /Users/Jslice/.npm/github
+378 verbose gentlyRm vacuuming /Users/Jslice/.npm/glob
+379 verbose gentlyRm vacuuming /Users/Jslice/.npm/glob-all
+380 verbose gentlyRm vacuuming /Users/Jslice/.npm/glob-parent
+381 verbose gentlyRm vacuuming /Users/Jslice/.npm/glob-stream
+382 verbose gentlyRm vacuuming /Users/Jslice/.npm/glob-watcher
+383 verbose gentlyRm vacuuming /Users/Jslice/.npm/glob2base
+384 verbose gentlyRm vacuuming /Users/Jslice/.npm/global
+385 verbose gentlyRm vacuuming /Users/Jslice/.npm/globals
+386 verbose gentlyRm vacuuming /Users/Jslice/.npm/globby
+387 verbose gentlyRm vacuuming /Users/Jslice/.npm/globule
+388 verbose gentlyRm vacuuming /Users/Jslice/.npm/google-cdn
+389 verbose gentlyRm vacuuming /Users/Jslice/.npm/google-cdn-data
+390 verbose gentlyRm vacuuming /Users/Jslice/.npm/got
+391 verbose gentlyRm vacuuming /Users/Jslice/.npm/graceful-fs
+392 verbose gentlyRm vacuuming /Users/Jslice/.npm/graceful-readlink
+393 verbose gentlyRm vacuuming /Users/Jslice/.npm/growl
+394 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt
+395 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-autoprefixer
+396 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-casperjs
+397 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-cli
+398 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-concat-sourcemap
+399 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-concurrent
+400 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-contrib-clean
+401 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-contrib-compress
+402 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-contrib-concat
+403 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-contrib-connect
+404 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-contrib-copy
+405 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-contrib-cssmin
+406 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-contrib-htmlmin
+407 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-contrib-imagemin
+408 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-contrib-jshint
+409 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-contrib-uglify
+410 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-contrib-watch
+411 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-docker
+412 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-ember-templates
+413 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-es6-module-transpiler
+414 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-execute
+415 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-express-server
+416 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-filerev
+417 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-google-cdn
+418 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-jscs
+419 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-karma
+420 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-legacy-log
+421 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-legacy-util
+422 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-lib-phantomjs
+423 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-mocha
+424 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-mocha-cli
+425 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-mocha-test
+426 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-newer
+427 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-ng-annotate
+428 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-nodemon
+429 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-notify
+430 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-sass
+431 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-shell
+432 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-svgmin
+433 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-update-submodules
+434 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-usemin
+435 verbose gentlyRm vacuuming /Users/Jslice/.npm/grunt-wiredep
+436 verbose gentlyRm vacuuming /Users/Jslice/.npm/gulp-rename
+437 verbose gentlyRm vacuuming /Users/Jslice/.npm/gzip-size
+438 verbose gentlyRm vacuuming /Users/Jslice/.npm/handlebars
+439 verbose gentlyRm vacuuming /Users/Jslice/.npm/has-ansi
+440 verbose gentlyRm vacuuming /Users/Jslice/.npm/has-binary
+441 verbose gentlyRm vacuuming /Users/Jslice/.npm/has-binary-data
+442 verbose gentlyRm vacuuming /Users/Jslice/.npm/has-color
+443 verbose gentlyRm vacuuming /Users/Jslice/.npm/has-cors
+444 verbose gentlyRm vacuuming /Users/Jslice/.npm/hash.js
+445 verbose gentlyRm vacuuming /Users/Jslice/.npm/hawk
+446 verbose gentlyRm vacuuming /Users/Jslice/.npm/he
+447 verbose gentlyRm vacuuming /Users/Jslice/.npm/headless
+448 verbose gentlyRm vacuuming /Users/Jslice/.npm/hoek
+449 verbose gentlyRm vacuuming /Users/Jslice/.npm/hooker
+450 verbose gentlyRm vacuuming /Users/Jslice/.npm/hooks
+451 verbose gentlyRm vacuuming /Users/Jslice/.npm/html-minifier
+452 verbose gentlyRm vacuuming /Users/Jslice/.npm/html-to-text
+453 verbose gentlyRm vacuuming /Users/Jslice/.npm/htmlparser
+454 verbose gentlyRm vacuuming /Users/Jslice/.npm/htmlparser2
+455 verbose gentlyRm vacuuming /Users/Jslice/.npm/http-browserify
+456 verbose gentlyRm vacuuming /Users/Jslice/.npm/http-errors
+457 verbose gentlyRm vacuuming /Users/Jslice/.npm/http-proxy
+458 verbose gentlyRm vacuuming /Users/Jslice/.npm/http-server
+459 verbose gentlyRm vacuuming /Users/Jslice/.npm/http-signature
+460 verbose gentlyRm vacuuming /Users/Jslice/.npm/https-browserify
+461 verbose gentlyRm vacuuming /Users/Jslice/.npm/i
+462 verbose gentlyRm vacuuming /Users/Jslice/.npm/ibrik
+463 verbose gentlyRm vacuuming /Users/Jslice/.npm/iconv-lite
+464 verbose gentlyRm vacuuming /Users/Jslice/.npm/ieee754
+465 verbose gentlyRm vacuuming /Users/Jslice/.npm/imagemin
+466 verbose gentlyRm vacuuming /Users/Jslice/.npm/imagemin-gifsicle
+467 verbose gentlyRm vacuuming /Users/Jslice/.npm/imagemin-jpegtran
+468 verbose gentlyRm vacuuming /Users/Jslice/.npm/imagemin-log
+469 verbose gentlyRm vacuuming /Users/Jslice/.npm/imagemin-optipng
+470 verbose gentlyRm vacuuming /Users/Jslice/.npm/imagemin-pngquant
+471 verbose gentlyRm vacuuming /Users/Jslice/.npm/imagemin-svgo
+472 verbose gentlyRm vacuuming /Users/Jslice/.npm/indent-string
+473 verbose gentlyRm vacuuming /Users/Jslice/.npm/indexof
+474 verbose gentlyRm vacuuming /Users/Jslice/.npm/infinity-agent
+475 verbose gentlyRm vacuuming /Users/Jslice/.npm/inflection
+476 verbose gentlyRm vacuuming /Users/Jslice/.npm/inflight
+477 verbose gentlyRm vacuuming /Users/Jslice/.npm/inherits
+478 verbose gentlyRm vacuuming /Users/Jslice/.npm/ini
+479 verbose gentlyRm vacuuming /Users/Jslice/.npm/inline-source-map
+480 verbose gentlyRm vacuuming /Users/Jslice/.npm/inquirer
+481 verbose gentlyRm vacuuming /Users/Jslice/.npm/insert-module-globals
+482 verbose gentlyRm vacuuming /Users/Jslice/.npm/insight
+483 verbose gentlyRm vacuuming /Users/Jslice/.npm/install
+484 verbose gentlyRm vacuuming /Users/Jslice/.npm/interpret
+485 verbose gentlyRm vacuuming /Users/Jslice/.npm/intersect
+486 verbose gentlyRm vacuuming /Users/Jslice/.npm/ip-regex
+487 verbose gentlyRm vacuuming /Users/Jslice/.npm/ipaddr.js
+488 verbose gentlyRm vacuuming /Users/Jslice/.npm/is-absolute
+489 verbose gentlyRm vacuuming /Users/Jslice/.npm/is-array
+490 verbose gentlyRm vacuuming /Users/Jslice/.npm/is-binary-path
+491 verbose gentlyRm vacuuming /Users/Jslice/.npm/is-bzip2
+492 verbose gentlyRm vacuuming /Users/Jslice/.npm/is-extended
+493 verbose gentlyRm vacuuming /Users/Jslice/.npm/is-finite
+494 verbose gentlyRm vacuuming /Users/Jslice/.npm/is-gif
+495 verbose gentlyRm vacuuming /Users/Jslice/.npm/is-glob
+496 verbose gentlyRm vacuuming /Users/Jslice/.npm/is-gzip
+497 verbose gentlyRm vacuuming /Users/Jslice/.npm/is-integer
+498 verbose gentlyRm vacuuming /Users/Jslice/.npm/is-jpg
+499 verbose gentlyRm vacuuming /Users/Jslice/.npm/is-lower-case
+500 verbose gentlyRm vacuuming /Users/Jslice/.npm/is-nan
+501 verbose gentlyRm vacuuming /Users/Jslice/.npm/is-natural-number
+502 verbose gentlyRm vacuuming /Users/Jslice/.npm/is-npm
+503 verbose gentlyRm vacuuming /Users/Jslice/.npm/is-path-global
+504 verbose gentlyRm vacuuming /Users/Jslice/.npm/is-path-inside
+505 verbose gentlyRm vacuuming /Users/Jslice/.npm/is-png
+506 verbose gentlyRm vacuuming /Users/Jslice/.npm/is-relative
+507 verbose gentlyRm vacuuming /Users/Jslice/.npm/is-root
+508 verbose gentlyRm vacuuming /Users/Jslice/.npm/is-stream
+509 verbose gentlyRm vacuuming /Users/Jslice/.npm/is-svg
+510 verbose gentlyRm vacuuming /Users/Jslice/.npm/is-tar
+511 verbose gentlyRm vacuuming /Users/Jslice/.npm/is-type
+512 verbose gentlyRm vacuuming /Users/Jslice/.npm/is-upper-case
+513 verbose gentlyRm vacuuming /Users/Jslice/.npm/is-utf8
+514 verbose gentlyRm vacuuming /Users/Jslice/.npm/is-zip
+515 verbose gentlyRm vacuuming /Users/Jslice/.npm/isarray
+516 verbose gentlyRm vacuuming /Users/Jslice/.npm/isstream
+517 verbose gentlyRm vacuuming /Users/Jslice/.npm/istanbul
+518 verbose gentlyRm vacuuming /Users/Jslice/.npm/jade
+519 verbose gentlyRm vacuuming /Users/Jslice/.npm/jasmine-core
+520 verbose gentlyRm vacuuming /Users/Jslice/.npm/jpegtran-bin
+521 verbose gentlyRm vacuuming /Users/Jslice/.npm/jquery
+522 verbose gentlyRm vacuuming /Users/Jslice/.npm/js-base64
+523 verbose gentlyRm vacuuming /Users/Jslice/.npm/js-beautify
+524 verbose gentlyRm vacuuming /Users/Jslice/.npm/js-tokens
+525 verbose gentlyRm vacuuming /Users/Jslice/.npm/js-yaml
+526 verbose gentlyRm vacuuming /Users/Jslice/.npm/jscs
+527 verbose gentlyRm vacuuming /Users/Jslice/.npm/jsesc
+528 verbose gentlyRm vacuuming /Users/Jslice/.npm/jshint
+529 verbose gentlyRm vacuuming /Users/Jslice/.npm/jshint-stylish
+530 verbose gentlyRm vacuuming /Users/Jslice/.npm/json-stable-stringify
+531 verbose gentlyRm vacuuming /Users/Jslice/.npm/json-stringify-safe
+532 verbose gentlyRm vacuuming /Users/Jslice/.npm/json3
+533 verbose gentlyRm vacuuming /Users/Jslice/.npm/json5
+534 verbose gentlyRm vacuuming /Users/Jslice/.npm/jsonfile
+535 verbose gentlyRm vacuuming /Users/Jslice/.npm/jsonify
+536 verbose gentlyRm vacuuming /Users/Jslice/.npm/jsonparse
+537 verbose gentlyRm vacuuming /Users/Jslice/.npm/jstransform
+538 verbose gentlyRm vacuuming /Users/Jslice/.npm/jsxhint
+539 verbose gentlyRm vacuuming /Users/Jslice/.npm/junk
+540 verbose gentlyRm vacuuming /Users/Jslice/.npm/karma
+541 verbose gentlyRm vacuuming /Users/Jslice/.npm/karma-chai
+542 verbose gentlyRm vacuuming /Users/Jslice/.npm/karma-chai-plugins
+543 verbose gentlyRm vacuuming /Users/Jslice/.npm/karma-chrome-launcher
+544 verbose gentlyRm vacuuming /Users/Jslice/.npm/karma-cli
+545 verbose gentlyRm vacuuming /Users/Jslice/.npm/karma-coverage
+546 verbose gentlyRm vacuuming /Users/Jslice/.npm/karma-firefox-launcher
+547 verbose gentlyRm vacuuming /Users/Jslice/.npm/karma-jasmine
+548 verbose gentlyRm vacuuming /Users/Jslice/.npm/karma-mocha
+549 verbose gentlyRm vacuuming /Users/Jslice/.npm/karma-phantomjs-launcher
+550 verbose gentlyRm vacuuming /Users/Jslice/.npm/karma-sinon
+551 verbose gentlyRm vacuuming /Users/Jslice/.npm/karma-sourcemap-loader
+552 verbose gentlyRm vacuuming /Users/Jslice/.npm/karma-webpack
+553 verbose gentlyRm vacuuming /Users/Jslice/.npm/kerberos
+554 verbose gentlyRm vacuuming /Users/Jslice/.npm/kew
+555 verbose gentlyRm vacuuming /Users/Jslice/.npm/keygrip
+556 verbose gentlyRm vacuuming /Users/Jslice/.npm/keypress
+557 verbose gentlyRm vacuuming /Users/Jslice/.npm/knex
+558 verbose gentlyRm vacuuming /Users/Jslice/.npm/kuduscript
+559 verbose gentlyRm vacuuming /Users/Jslice/.npm/labeled-stream-splicer
+560 verbose gentlyRm vacuuming /Users/Jslice/.npm/latest-version
+561 verbose gentlyRm vacuuming /Users/Jslice/.npm/lazy
+562 verbose gentlyRm vacuuming /Users/Jslice/.npm/lazystream
+563 verbose gentlyRm vacuuming /Users/Jslice/.npm/left-pad
+564 verbose gentlyRm vacuuming /Users/Jslice/.npm/leven
+565 verbose gentlyRm vacuuming /Users/Jslice/.npm/levn
+566 verbose gentlyRm vacuuming /Users/Jslice/.npm/lexical-scope
+567 verbose gentlyRm vacuuming /Users/Jslice/.npm/liftoff
+568 verbose gentlyRm vacuuming /Users/Jslice/.npm/line-numbers
+569 verbose gentlyRm vacuuming /Users/Jslice/.npm/lnfs
+570 verbose gentlyRm vacuuming /Users/Jslice/.npm/load-grunt-tasks
+571 verbose gentlyRm vacuuming /Users/Jslice/.npm/loader-utils
+572 verbose gentlyRm vacuuming /Users/Jslice/.npm/lockfile
+573 verbose gentlyRm vacuuming /Users/Jslice/.npm/lodash
+574 verbose gentlyRm vacuuming /Users/Jslice/.npm/lodash-node
+575 verbose gentlyRm vacuuming /Users/Jslice/.npm/lodash._isnative
+576 verbose gentlyRm vacuuming /Users/Jslice/.npm/lodash._objecttypes
+577 verbose gentlyRm vacuuming /Users/Jslice/.npm/lodash.debounce
+578 verbose gentlyRm vacuuming /Users/Jslice/.npm/lodash.isfunction
+579 verbose gentlyRm vacuuming /Users/Jslice/.npm/lodash.isobject
+580 verbose gentlyRm vacuuming /Users/Jslice/.npm/lodash.now
+581 verbose gentlyRm vacuuming /Users/Jslice/.npm/log-symbols
+582 verbose gentlyRm vacuuming /Users/Jslice/.npm/log4js
+583 verbose gentlyRm vacuuming /Users/Jslice/.npm/logalot
+584 verbose gentlyRm vacuuming /Users/Jslice/.npm/lolex
+585 verbose gentlyRm vacuuming /Users/Jslice/.npm/longest
+586 verbose gentlyRm vacuuming /Users/Jslice/.npm/lower-case
+587 verbose gentlyRm vacuuming /Users/Jslice/.npm/lowercase-keys
+588 verbose gentlyRm vacuuming /Users/Jslice/.npm/lpad
+589 verbose gentlyRm vacuuming /Users/Jslice/.npm/lpad-align
+590 verbose gentlyRm vacuuming /Users/Jslice/.npm/lru-cache
+591 verbose gentlyRm vacuuming /Users/Jslice/.npm/lru-queue
+592 verbose gentlyRm vacuuming /Users/Jslice/.npm/mailcomposer
+593 verbose gentlyRm vacuuming /Users/Jslice/.npm/mandrill-api
+594 verbose gentlyRm vacuuming /Users/Jslice/.npm/map-obj
+595 verbose gentlyRm vacuuming /Users/Jslice/.npm/map-stream
+596 verbose gentlyRm vacuuming /Users/Jslice/.npm/matchdep
+597 verbose gentlyRm vacuuming /Users/Jslice/.npm/maxmin
+598 verbose gentlyRm vacuuming /Users/Jslice/.npm/media-typer
+599 verbose gentlyRm vacuuming /Users/Jslice/.npm/memoizee
+600 verbose gentlyRm vacuuming /Users/Jslice/.npm/memory-fs
+601 verbose gentlyRm vacuuming /Users/Jslice/.npm/meow
+602 verbose gentlyRm vacuuming /Users/Jslice/.npm/merge-descriptors
+603 verbose gentlyRm vacuuming /Users/Jslice/.npm/method-override
+604 verbose gentlyRm vacuuming /Users/Jslice/.npm/methods
+605 verbose gentlyRm vacuuming /Users/Jslice/.npm/miller-rabin
+606 verbose gentlyRm vacuuming /Users/Jslice/.npm/mime
+607 verbose gentlyRm vacuuming /Users/Jslice/.npm/mime-db
+608 verbose gentlyRm vacuuming /Users/Jslice/.npm/mime-types
+609 verbose gentlyRm vacuuming /Users/Jslice/.npm/mimelib
+610 verbose gentlyRm vacuuming /Users/Jslice/.npm/minimalistic-assert
+611 verbose gentlyRm vacuuming /Users/Jslice/.npm/minimatch
+612 verbose gentlyRm vacuuming /Users/Jslice/.npm/minimist
+613 verbose gentlyRm vacuuming /Users/Jslice/.npm/mkdirp
+614 verbose gentlyRm vacuuming /Users/Jslice/.npm/mkpath
+615 verbose gentlyRm vacuuming /Users/Jslice/.npm/mocha
+616 verbose gentlyRm vacuuming /Users/Jslice/.npm/mockfirebase
+617 verbose gentlyRm vacuuming /Users/Jslice/.npm/module-deps
+618 verbose gentlyRm vacuuming /Users/Jslice/.npm/moment
+619 verbose gentlyRm vacuuming /Users/Jslice/.npm/moment-timezone
+620 verbose gentlyRm vacuuming /Users/Jslice/.npm/mongo
+621 verbose gentlyRm vacuuming /Users/Jslice/.npm/mongod
+622 verbose gentlyRm vacuuming /Users/Jslice/.npm/mongodb
+623 verbose gentlyRm vacuuming /Users/Jslice/.npm/mongojs
+624 verbose gentlyRm vacuuming /Users/Jslice/.npm/mongoose
+625 verbose gentlyRm vacuuming /Users/Jslice/.npm/morgan
+626 verbose gentlyRm vacuuming /Users/Jslice/.npm/mothership
+627 verbose gentlyRm vacuuming /Users/Jslice/.npm/mout
+628 verbose gentlyRm vacuuming /Users/Jslice/.npm/mpath
+629 verbose gentlyRm vacuuming /Users/Jslice/.npm/mpns
+630 verbose gentlyRm vacuuming /Users/Jslice/.npm/mpromise
+631 verbose gentlyRm vacuuming /Users/Jslice/.npm/mquery
+632 verbose gentlyRm vacuuming /Users/Jslice/.npm/ms
+633 verbose gentlyRm vacuuming /Users/Jslice/.npm/multimatch
+634 verbose gentlyRm vacuuming /Users/Jslice/.npm/multiparty
+635 verbose gentlyRm vacuuming /Users/Jslice/.npm/muri
+636 verbose gentlyRm vacuuming /Users/Jslice/.npm/mustache
+637 verbose gentlyRm vacuuming /Users/Jslice/.npm/mute-stream
+638 verbose gentlyRm vacuuming /Users/Jslice/.npm/mysql
+639 verbose gentlyRm vacuuming /Users/Jslice/.npm/mz
+640 verbose gentlyRm vacuuming /Users/Jslice/.npm/nan
+641 verbose gentlyRm vacuuming /Users/Jslice/.npm/native-or-bluebird
+642 verbose gentlyRm vacuuming /Users/Jslice/.npm/nconf
+643 verbose gentlyRm vacuuming /Users/Jslice/.npm/ncp
+644 verbose gentlyRm vacuuming /Users/Jslice/.npm/negotiator
+645 verbose gentlyRm vacuuming /Users/Jslice/.npm/next-tick
+646 verbose gentlyRm vacuuming /Users/Jslice/.npm/ng-annotate
+647 verbose gentlyRm vacuuming /Users/Jslice/.npm/nock
+648 verbose gentlyRm vacuuming /Users/Jslice/.npm/node-debug
+649 verbose gentlyRm vacuuming /Users/Jslice/.npm/node-inspector
+650 verbose gentlyRm vacuuming /Users/Jslice/.npm/node-libs-browser
+651 verbose gentlyRm vacuuming /Users/Jslice/.npm/node-sass
+652 verbose gentlyRm vacuuming /Users/Jslice/.npm/node-uuid
+653 verbose gentlyRm vacuuming /Users/Jslice/.npm/node-watch
+654 verbose gentlyRm vacuuming /Users/Jslice/.npm/nodegit
+655 verbose gentlyRm vacuuming /Users/Jslice/.npm/nodegit-promise
+656 verbose gentlyRm vacuuming /Users/Jslice/.npm/nodemailer
+657 verbose gentlyRm vacuuming /Users/Jslice/.npm/nodemon
+658 verbose gentlyRm vacuuming /Users/Jslice/.npm/nopt
+659 verbose gentlyRm vacuuming /Users/Jslice/.npm/noptify
+660 verbose gentlyRm vacuuming /Users/Jslice/.npm/npm
+661 verbose gentlyRm vacuuming /Users/Jslice/.npm/npm-installed
+662 verbose gentlyRm vacuuming /Users/Jslice/.npm/npm-path
+663 verbose gentlyRm vacuuming /Users/Jslice/.npm/npm-which
+664 verbose gentlyRm vacuuming /Users/Jslice/.npm/npmconf
+665 verbose gentlyRm vacuuming /Users/Jslice/.npm/npmlog
+666 verbose gentlyRm vacuuming /Users/Jslice/.npm/nssocket
+667 verbose gentlyRm vacuuming /Users/Jslice/.npm/num2fraction
+668 verbose gentlyRm vacuuming /Users/Jslice/.npm/oauth-sign
+669 verbose gentlyRm vacuuming /Users/Jslice/.npm/oauth2orize
+670 verbose gentlyRm vacuuming /Users/Jslice/.npm/object-assign
+671 verbose gentlyRm vacuuming /Users/Jslice/.npm/object-component
+672 verbose gentlyRm vacuuming /Users/Jslice/.npm/object-extended
+673 verbose gentlyRm vacuuming /Users/Jslice/.npm/object-keys
+674 verbose gentlyRm vacuuming /Users/Jslice/.npm/omelette
+675 verbose gentlyRm vacuuming /Users/Jslice/.npm/on-finished
+676 verbose gentlyRm vacuuming /Users/Jslice/.npm/on-headers
+677 verbose gentlyRm vacuuming /Users/Jslice/.npm/once
+678 verbose gentlyRm vacuuming /Users/Jslice/.npm/onetime
+679 verbose gentlyRm vacuuming /Users/Jslice/.npm/open
+680 verbose gentlyRm vacuuming /Users/Jslice/.npm/opener
+681 verbose gentlyRm vacuuming /Users/Jslice/.npm/openssl-wrapper
+682 verbose gentlyRm vacuuming /Users/Jslice/.npm/opn
+683 verbose gentlyRm vacuuming /Users/Jslice/.npm/optimist
+684 verbose gentlyRm vacuuming /Users/Jslice/.npm/optional
+685 verbose gentlyRm vacuuming /Users/Jslice/.npm/optionator
+686 verbose gentlyRm vacuuming /Users/Jslice/.npm/options
+687 verbose gentlyRm vacuuming /Users/Jslice/.npm/optipng-bin
+688 verbose gentlyRm vacuuming /Users/Jslice/.npm/ordered-ast-traverse
+689 verbose gentlyRm vacuuming /Users/Jslice/.npm/ordered-read-streams
+690 verbose gentlyRm vacuuming /Users/Jslice/.npm/os-browserify
+691 verbose gentlyRm vacuuming /Users/Jslice/.npm/os-filter-obj
+692 verbose gentlyRm vacuuming /Users/Jslice/.npm/os-name
+693 verbose gentlyRm vacuuming /Users/Jslice/.npm/osenv
+694 verbose gentlyRm vacuuming /Users/Jslice/.npm/osx-release
+695 verbose gentlyRm vacuuming /Users/Jslice/.npm/output-file-sync
+696 verbose gentlyRm vacuuming /Users/Jslice/.npm/p-throttler
+697 verbose gentlyRm vacuuming /Users/Jslice/.npm/package
+698 verbose gentlyRm vacuuming /Users/Jslice/.npm/package-json
+699 verbose gentlyRm vacuuming /Users/Jslice/.npm/packet-reader
+700 verbose gentlyRm vacuuming /Users/Jslice/.npm/pad-stdio
+701 verbose gentlyRm vacuuming /Users/Jslice/.npm/pako
+702 verbose gentlyRm vacuuming /Users/Jslice/.npm/param-case
+703 verbose gentlyRm vacuuming /Users/Jslice/.npm/parents
+704 verbose gentlyRm vacuuming /Users/Jslice/.npm/parse-asn1
+705 verbose gentlyRm vacuuming /Users/Jslice/.npm/parse-ms
+706 verbose gentlyRm vacuuming /Users/Jslice/.npm/parsejson
+707 verbose gentlyRm vacuuming /Users/Jslice/.npm/parseqs
+708 verbose gentlyRm vacuuming /Users/Jslice/.npm/parseuri
+709 verbose gentlyRm vacuuming /Users/Jslice/.npm/parseurl
+710 verbose gentlyRm vacuuming /Users/Jslice/.npm/pascal-case
+711 verbose gentlyRm vacuuming /Users/Jslice/.npm/passport
+712 verbose gentlyRm vacuuming /Users/Jslice/.npm/passport-http-bearer
+713 verbose gentlyRm vacuuming /Users/Jslice/.npm/passport-oauth2-client-password
+714 verbose gentlyRm vacuuming /Users/Jslice/.npm/passport-strategy
+715 verbose gentlyRm vacuuming /Users/Jslice/.npm/path-browserify
+716 verbose gentlyRm vacuuming /Users/Jslice/.npm/path-case
+717 verbose gentlyRm vacuuming /Users/Jslice/.npm/path-is-absolute
+718 verbose gentlyRm vacuuming /Users/Jslice/.npm/path-is-inside
+719 verbose gentlyRm vacuuming /Users/Jslice/.npm/path-platform
+720 verbose gentlyRm vacuuming /Users/Jslice/.npm/path-to-regexp
+721 verbose gentlyRm vacuuming /Users/Jslice/.npm/pause
+722 verbose gentlyRm vacuuming /Users/Jslice/.npm/pause-stream
+723 verbose gentlyRm vacuuming /Users/Jslice/.npm/pbkdf2-compat
+724 verbose gentlyRm vacuuming /Users/Jslice/.npm/pegjs
+725 verbose gentlyRm vacuuming /Users/Jslice/.npm/pemstrip
+726 verbose gentlyRm vacuuming /Users/Jslice/.npm/pend
+727 verbose gentlyRm vacuuming /Users/Jslice/.npm/pg-connection-string
+728 verbose gentlyRm vacuuming /Users/Jslice/.npm/pg-types
+729 verbose gentlyRm vacuuming /Users/Jslice/.npm/pg.js
+730 verbose gentlyRm vacuuming /Users/Jslice/.npm/pgpass
+731 verbose gentlyRm vacuuming /Users/Jslice/.npm/phantomjs
+732 verbose gentlyRm vacuuming /Users/Jslice/.npm/pkginfo
+733 verbose gentlyRm vacuuming /Users/Jslice/.npm/plist
+734 verbose gentlyRm vacuuming /Users/Jslice/.npm/pngquant-bin
+735 verbose gentlyRm vacuuming /Users/Jslice/.npm/policyfile
+736 verbose gentlyRm vacuuming /Users/Jslice/.npm/portfinder
+737 verbose gentlyRm vacuuming /Users/Jslice/.npm/portscanner
+738 verbose gentlyRm vacuuming /Users/Jslice/.npm/postcss
+739 verbose gentlyRm vacuuming /Users/Jslice/.npm/prelude-ls
+740 verbose gentlyRm vacuuming /Users/Jslice/.npm/prepend-http
+741 verbose gentlyRm vacuuming /Users/Jslice/.npm/pretty-bytes
+742 verbose gentlyRm vacuuming /Users/Jslice/.npm/pretty-ms
+743 verbose gentlyRm vacuuming /Users/Jslice/.npm/prettysize
+744 verbose gentlyRm vacuuming /Users/Jslice/.npm/private
+745 verbose gentlyRm vacuuming /Users/Jslice/.npm/process
+746 verbose gentlyRm vacuuming /Users/Jslice/.npm/progress
+747 verbose gentlyRm vacuuming /Users/Jslice/.npm/promise
+748 verbose gentlyRm vacuuming /Users/Jslice/.npm/promisify-node
+749 verbose gentlyRm vacuuming /Users/Jslice/.npm/prompt
+750 verbose gentlyRm vacuuming /Users/Jslice/.npm/promptly
+751 verbose gentlyRm vacuuming /Users/Jslice/.npm/propagate
+752 verbose gentlyRm vacuuming /Users/Jslice/.npm/propprop
+753 verbose gentlyRm vacuuming /Users/Jslice/.npm/proto-list
+754 verbose gentlyRm vacuuming /Users/Jslice/.npm/proxy-addr
+755 verbose gentlyRm vacuuming /Users/Jslice/.npm/ps-tree
+756 verbose gentlyRm vacuuming /Users/Jslice/.npm/public-address
+757 verbose gentlyRm vacuuming /Users/Jslice/.npm/public-encrypt
+758 verbose gentlyRm vacuuming /Users/Jslice/.npm/pump
+759 verbose gentlyRm vacuuming /Users/Jslice/.npm/punycode
+760 verbose gentlyRm vacuuming /Users/Jslice/.npm/pygmentize-bundled
+761 verbose gentlyRm vacuuming /Users/Jslice/.npm/q
+762 verbose gentlyRm vacuuming /Users/Jslice/.npm/qs
+763 verbose gentlyRm vacuuming /Users/Jslice/.npm/querystring
+764 verbose gentlyRm vacuuming /Users/Jslice/.npm/querystring-es3
+765 verbose gentlyRm vacuuming /Users/Jslice/.npm/rai
+766 verbose gentlyRm vacuuming /Users/Jslice/.npm/randombytes
+767 verbose gentlyRm vacuuming /Users/Jslice/.npm/range-parser
+768 verbose gentlyRm vacuuming /Users/Jslice/.npm/raw-body
+769 verbose gentlyRm vacuuming /Users/Jslice/.npm/rc
+770 verbose gentlyRm vacuuming /Users/Jslice/.npm/react
+771 verbose gentlyRm vacuuming /Users/Jslice/.npm/react-tools
+772 verbose gentlyRm vacuuming /Users/Jslice/.npm/read
+773 verbose gentlyRm vacuuming /Users/Jslice/.npm/read-all-stream
+774 verbose gentlyRm vacuuming /Users/Jslice/.npm/read-chunk
+775 verbose gentlyRm vacuuming /Users/Jslice/.npm/readable-stream
+776 verbose gentlyRm vacuuming /Users/Jslice/.npm/readable-wrap
+777 verbose gentlyRm vacuuming /Users/Jslice/.npm/readdirp
+778 verbose gentlyRm vacuuming /Users/Jslice/.npm/readline2
+779 verbose gentlyRm vacuuming /Users/Jslice/.npm/recast
+780 verbose gentlyRm vacuuming /Users/Jslice/.npm/redeyed
+781 verbose gentlyRm vacuuming /Users/Jslice/.npm/redis
+782 verbose gentlyRm vacuuming /Users/Jslice/.npm/reduce-component
+783 verbose gentlyRm vacuuming /Users/Jslice/.npm/regenerate
+784 verbose gentlyRm vacuuming /Users/Jslice/.npm/regenerator-babel
+785 verbose gentlyRm vacuuming /Users/Jslice/.npm/regexp-clone
+786 verbose gentlyRm vacuuming /Users/Jslice/.npm/regexp-quote
+787 verbose gentlyRm vacuuming /Users/Jslice/.npm/regexpu
+788 verbose gentlyRm vacuuming /Users/Jslice/.npm/registry-url
+789 verbose gentlyRm vacuuming /Users/Jslice/.npm/registry.npmjs.org
+790 verbose gentlyRm vacuuming /Users/Jslice/.npm/regjsgen
+791 verbose gentlyRm vacuuming /Users/Jslice/.npm/regjsparser
+792 verbose gentlyRm vacuuming /Users/Jslice/.npm/relateurl
+793 verbose gentlyRm vacuuming /Users/Jslice/.npm/rename-function-calls
+794 verbose gentlyRm vacuuming /Users/Jslice/.npm/repeating
+795 verbose gentlyRm vacuuming /Users/Jslice/.npm/request
+796 verbose gentlyRm vacuuming /Users/Jslice/.npm/request-progress
+797 verbose gentlyRm vacuuming /Users/Jslice/.npm/request-replay
+798 verbose gentlyRm vacuuming /Users/Jslice/.npm/require-all
+799 verbose gentlyRm vacuuming /Users/Jslice/.npm/require-dir
+800 verbose gentlyRm vacuuming /Users/Jslice/.npm/requirejs
+801 verbose gentlyRm vacuuming /Users/Jslice/.npm/requires-port
+802 verbose gentlyRm vacuuming /Users/Jslice/.npm/resolve
+803 verbose gentlyRm vacuuming /Users/Jslice/.npm/response-time
+804 verbose gentlyRm vacuuming /Users/Jslice/.npm/retry
+805 verbose gentlyRm vacuuming /Users/Jslice/.npm/revalidator
+806 verbose gentlyRm vacuuming /Users/Jslice/.npm/rewire
+807 verbose gentlyRm vacuuming /Users/Jslice/.npm/rf-changelog
+808 verbose gentlyRm vacuuming /Users/Jslice/.npm/rfile
+809 verbose gentlyRm vacuuming /Users/Jslice/.npm/rimraf
+810 verbose gentlyRm vacuuming /Users/Jslice/.npm/ripemd160
+811 verbose gentlyRm vacuuming /Users/Jslice/.npm/rndm
+812 verbose gentlyRm vacuuming /Users/Jslice/.npm/rss
+813 verbose gentlyRm vacuuming /Users/Jslice/.npm/ruglify
+814 verbose gentlyRm vacuuming /Users/Jslice/.npm/runforcover
+815 verbose gentlyRm vacuuming /Users/Jslice/.npm/rx
+816 verbose gentlyRm vacuuming /Users/Jslice/.npm/safecallback
+817 verbose gentlyRm vacuuming /Users/Jslice/.npm/safefs
+818 verbose gentlyRm vacuuming /Users/Jslice/.npm/samsam
+819 verbose gentlyRm vacuuming /Users/Jslice/.npm/sax
+820 verbose gentlyRm vacuuming /Users/Jslice/.npm/scmp
+821 verbose gentlyRm vacuuming /Users/Jslice/.npm/seek-bzip
+822 verbose gentlyRm vacuuming /Users/Jslice/.npm/semver
+823 verbose gentlyRm vacuuming /Users/Jslice/.npm/semver-diff
+824 verbose gentlyRm vacuuming /Users/Jslice/.npm/semver-regex
+825 verbose gentlyRm vacuuming /Users/Jslice/.npm/semver-truncate
+826 verbose gentlyRm vacuuming /Users/Jslice/.npm/send
+827 verbose gentlyRm vacuuming /Users/Jslice/.npm/sentence-case
+828 verbose gentlyRm vacuuming /Users/Jslice/.npm/serve-favicon
+829 verbose gentlyRm vacuuming /Users/Jslice/.npm/serve-index
+830 verbose gentlyRm vacuuming /Users/Jslice/.npm/serve-static
+831 verbose gentlyRm vacuuming /Users/Jslice/.npm/set-immediate
+832 verbose gentlyRm vacuuming /Users/Jslice/.npm/set-immediate-shim
+833 verbose gentlyRm vacuuming /Users/Jslice/.npm/setimmediate
+834 verbose gentlyRm vacuuming /Users/Jslice/.npm/sha.js
+835 verbose gentlyRm vacuuming /Users/Jslice/.npm/shallow-copy
+836 verbose gentlyRm vacuuming /Users/Jslice/.npm/shasum
+837 verbose gentlyRm vacuuming /Users/Jslice/.npm/shebang-regex
+838 verbose gentlyRm vacuuming /Users/Jslice/.npm/shell-quote
+839 verbose gentlyRm vacuuming /Users/Jslice/.npm/shelljs
+840 verbose gentlyRm vacuuming /Users/Jslice/.npm/should
+841 verbose gentlyRm vacuuming /Users/Jslice/.npm/showdown-ghost
+842 verbose gentlyRm vacuuming /Users/Jslice/.npm/sigmund
+843 verbose gentlyRm vacuuming /Users/Jslice/.npm/simple-extend
+844 verbose gentlyRm vacuuming /Users/Jslice/.npm/simple-fmt
+845 verbose gentlyRm vacuuming /Users/Jslice/.npm/simple-is
+846 verbose gentlyRm vacuuming /Users/Jslice/.npm/simplesmtp
+847 verbose gentlyRm vacuuming /Users/Jslice/.npm/sinon
+848 verbose gentlyRm vacuuming /Users/Jslice/.npm/sinon-chai
+849 verbose gentlyRm vacuuming /Users/Jslice/.npm/sinon-chrome
+850 verbose gentlyRm vacuuming /Users/Jslice/.npm/slash
+851 verbose gentlyRm vacuuming /Users/Jslice/.npm/sliced
+852 verbose gentlyRm vacuuming /Users/Jslice/.npm/slide
+853 verbose gentlyRm vacuuming /Users/Jslice/.npm/snake-case
+854 verbose gentlyRm vacuuming /Users/Jslice/.npm/sntp
+855 verbose gentlyRm vacuuming /Users/Jslice/.npm/socket.io
+856 verbose gentlyRm vacuuming /Users/Jslice/.npm/socket.io-adapter
+857 verbose gentlyRm vacuuming /Users/Jslice/.npm/socket.io-client
+858 verbose gentlyRm vacuuming /Users/Jslice/.npm/socket.io-parser
+859 verbose gentlyRm vacuuming /Users/Jslice/.npm/source-map
+860 verbose gentlyRm vacuuming /Users/Jslice/.npm/source-map-support
+861 verbose gentlyRm vacuuming /Users/Jslice/.npm/split
+862 verbose gentlyRm vacuuming /Users/Jslice/.npm/sprintf-js
+863 verbose gentlyRm vacuuming /Users/Jslice/.npm/sqlite3
+864 verbose gentlyRm vacuuming /Users/Jslice/.npm/squeak
+865 verbose gentlyRm vacuuming /Users/Jslice/.npm/stable
+866 verbose gentlyRm vacuuming /Users/Jslice/.npm/stack-parser
+867 verbose gentlyRm vacuuming /Users/Jslice/.npm/stack-trace
+868 verbose gentlyRm vacuuming /Users/Jslice/.npm/statuses
+869 verbose gentlyRm vacuuming /Users/Jslice/.npm/stream-browserify
+870 verbose gentlyRm vacuuming /Users/Jslice/.npm/stream-cache
+871 verbose gentlyRm vacuuming /Users/Jslice/.npm/stream-combiner
+872 verbose gentlyRm vacuuming /Users/Jslice/.npm/stream-combiner2
+873 verbose gentlyRm vacuuming /Users/Jslice/.npm/stream-counter
+874 verbose gentlyRm vacuuming /Users/Jslice/.npm/stream-splicer
+875 verbose gentlyRm vacuuming /Users/Jslice/.npm/streamline
+876 verbose gentlyRm vacuuming /Users/Jslice/.npm/streamsearch
+877 verbose gentlyRm vacuuming /Users/Jslice/.npm/string-extended
+878 verbose gentlyRm vacuuming /Users/Jslice/.npm/string-length
+879 verbose gentlyRm vacuuming /Users/Jslice/.npm/string_decoder
+880 verbose gentlyRm vacuuming /Users/Jslice/.npm/stringify-object
+881 verbose gentlyRm vacuuming /Users/Jslice/.npm/stringmap
+882 verbose gentlyRm vacuuming /Users/Jslice/.npm/stringset
+883 verbose gentlyRm vacuuming /Users/Jslice/.npm/stringstream
+884 verbose gentlyRm vacuuming /Users/Jslice/.npm/strip-ansi
+885 verbose gentlyRm vacuuming /Users/Jslice/.npm/strip-bom
+886 verbose gentlyRm vacuuming /Users/Jslice/.npm/strip-dirs
+887 verbose gentlyRm vacuuming /Users/Jslice/.npm/strip-json-comments
+888 verbose gentlyRm vacuuming /Users/Jslice/.npm/strong-data-uri
+889 verbose gentlyRm vacuuming /Users/Jslice/.npm/styled_string
+890 verbose gentlyRm vacuuming /Users/Jslice/.npm/subarg
+891 verbose gentlyRm vacuuming /Users/Jslice/.npm/sum-up
+892 verbose gentlyRm vacuuming /Users/Jslice/.npm/superagent
+893 verbose gentlyRm vacuuming /Users/Jslice/.npm/supertest
+894 verbose gentlyRm vacuuming /Users/Jslice/.npm/supports-color
+895 verbose gentlyRm vacuuming /Users/Jslice/.npm/svgo
+896 verbose gentlyRm vacuuming /Users/Jslice/.npm/swap-case
+897 verbose gentlyRm vacuuming /Users/Jslice/.npm/syntax-error
+898 verbose gentlyRm vacuuming /Users/Jslice/.npm/tap
+899 verbose gentlyRm vacuuming /Users/Jslice/.npm/tapable
+900 verbose gentlyRm vacuuming /Users/Jslice/.npm/tape
+901 verbose gentlyRm vacuuming /Users/Jslice/.npm/tar-fs
+902 verbose gentlyRm vacuuming /Users/Jslice/.npm/tar-stream
+903 verbose gentlyRm vacuuming /Users/Jslice/.npm/taskgroup
+904 verbose gentlyRm vacuuming /Users/Jslice/.npm/tempfile
+905 verbose gentlyRm vacuuming /Users/Jslice/.npm/temporary
+906 verbose gentlyRm vacuuming /Users/Jslice/.npm/testem
+907 verbose gentlyRm vacuuming /Users/Jslice/.npm/text-table
+908 verbose gentlyRm vacuuming /Users/Jslice/.npm/thenify
+909 verbose gentlyRm vacuuming /Users/Jslice/.npm/thenify-all
+910 verbose gentlyRm vacuuming /Users/Jslice/.npm/throttleit
+911 verbose gentlyRm vacuuming /Users/Jslice/.npm/through
+912 verbose gentlyRm vacuuming /Users/Jslice/.npm/through2
+913 verbose gentlyRm vacuuming /Users/Jslice/.npm/thunky
+914 verbose gentlyRm vacuuming /Users/Jslice/.npm/tildify
+915 verbose gentlyRm vacuuming /Users/Jslice/.npm/time-grunt
+916 verbose gentlyRm vacuuming /Users/Jslice/.npm/timed-out
+917 verbose gentlyRm vacuuming /Users/Jslice/.npm/timers-browserify
+918 verbose gentlyRm vacuuming /Users/Jslice/.npm/timers-ext
+919 verbose gentlyRm vacuuming /Users/Jslice/.npm/timespan
+920 verbose gentlyRm vacuuming /Users/Jslice/.npm/tiny-lr-fork
+921 verbose gentlyRm vacuuming /Users/Jslice/.npm/tinycolor
+922 verbose gentlyRm vacuuming /Users/Jslice/.npm/title-case
+923 verbose gentlyRm vacuuming /Users/Jslice/.npm/tmp
+924 verbose gentlyRm vacuuming /Users/Jslice/.npm/to-array
+925 verbose gentlyRm vacuuming /Users/Jslice/.npm/to-fast-properties
+926 verbose gentlyRm vacuuming /Users/Jslice/.npm/top-gh-contribs
+927 verbose gentlyRm vacuuming /Users/Jslice/.npm/touch
+928 verbose gentlyRm vacuuming /Users/Jslice/.npm/tough-cookie
+929 verbose gentlyRm vacuuming /Users/Jslice/.npm/transformify
+930 verbose gentlyRm vacuuming /Users/Jslice/.npm/traverse
+931 verbose gentlyRm vacuuming /Users/Jslice/.npm/trigger-then
+932 verbose gentlyRm vacuuming /Users/Jslice/.npm/trim-right
+933 verbose gentlyRm vacuuming /Users/Jslice/.npm/truncate
+934 verbose gentlyRm vacuuming /Users/Jslice/.npm/tryor
+935 verbose gentlyRm vacuuming /Users/Jslice/.npm/tty-browserify
+936 verbose gentlyRm vacuuming /Users/Jslice/.npm/tunnel
+937 verbose gentlyRm vacuuming /Users/Jslice/.npm/tunnel-agent
+938 verbose gentlyRm vacuuming /Users/Jslice/.npm/type-check
+939 verbose gentlyRm vacuuming /Users/Jslice/.npm/type-detect
+940 verbose gentlyRm vacuuming /Users/Jslice/.npm/type-is
+941 verbose gentlyRm vacuuming /Users/Jslice/.npm/typechecker
+942 verbose gentlyRm vacuuming /Users/Jslice/.npm/typedarray
+943 verbose gentlyRm vacuuming /Users/Jslice/.npm/uglify-js
+944 verbose gentlyRm vacuuming /Users/Jslice/.npm/uglify-to-browserify
+945 verbose gentlyRm vacuuming /Users/Jslice/.npm/uid
+946 verbose gentlyRm vacuuming /Users/Jslice/.npm/uid-number
+947 verbose gentlyRm vacuuming /Users/Jslice/.npm/uid-safe
+948 verbose gentlyRm vacuuming /Users/Jslice/.npm/uid2
+949 verbose gentlyRm vacuuming /Users/Jslice/.npm/ultron
+950 verbose gentlyRm vacuuming /Users/Jslice/.npm/umd
+951 verbose gentlyRm vacuuming /Users/Jslice/.npm/underscore
+952 verbose gentlyRm vacuuming /Users/Jslice/.npm/underscore.string
+953 verbose gentlyRm vacuuming /Users/Jslice/.npm/unidecode
+954 verbose gentlyRm vacuuming /Users/Jslice/.npm/union
+955 verbose gentlyRm vacuuming /Users/Jslice/.npm/unique-stream
+956 verbose gentlyRm vacuuming /Users/Jslice/.npm/untildify
+957 verbose gentlyRm vacuuming /Users/Jslice/.npm/update-notifier
+958 verbose gentlyRm vacuuming /Users/Jslice/.npm/upper-case
+959 verbose gentlyRm vacuuming /Users/Jslice/.npm/upper-case-first
+960 verbose gentlyRm vacuuming /Users/Jslice/.npm/uri-path
+961 verbose gentlyRm vacuuming /Users/Jslice/.npm/url
+962 verbose gentlyRm vacuuming /Users/Jslice/.npm/url-regex
+963 verbose gentlyRm vacuuming /Users/Jslice/.npm/user-home
+964 verbose gentlyRm vacuuming /Users/Jslice/.npm/useragent
+965 verbose gentlyRm vacuuming /Users/Jslice/.npm/utf8
+966 verbose gentlyRm vacuuming /Users/Jslice/.npm/util
+967 verbose gentlyRm vacuuming /Users/Jslice/.npm/util-deprecate
+968 verbose gentlyRm vacuuming /Users/Jslice/.npm/utile
+969 verbose gentlyRm vacuuming /Users/Jslice/.npm/utils-merge
+970 verbose gentlyRm vacuuming /Users/Jslice/.npm/uuid
+971 verbose gentlyRm vacuuming /Users/Jslice/.npm/v8-debug
+972 verbose gentlyRm vacuuming /Users/Jslice/.npm/v8-profiler
+973 verbose gentlyRm vacuuming /Users/Jslice/.npm/validator
+974 verbose gentlyRm vacuuming /Users/Jslice/.npm/vary
+975 verbose gentlyRm vacuuming /Users/Jslice/.npm/vhost
+976 verbose gentlyRm vacuuming /Users/Jslice/.npm/vinyl
+977 verbose gentlyRm vacuuming /Users/Jslice/.npm/vinyl-assign
+978 verbose gentlyRm vacuuming /Users/Jslice/.npm/vinyl-fs
+979 verbose gentlyRm vacuuming /Users/Jslice/.npm/vm-browserify
+980 verbose gentlyRm vacuuming /Users/Jslice/.npm/vow
+981 verbose gentlyRm vacuuming /Users/Jslice/.npm/vow-fs
+982 verbose gentlyRm vacuuming /Users/Jslice/.npm/vow-queue
+983 verbose gentlyRm vacuuming /Users/Jslice/.npm/ware
+984 verbose gentlyRm vacuuming /Users/Jslice/.npm/watch
+985 verbose gentlyRm vacuuming /Users/Jslice/.npm/watchpack
+986 verbose gentlyRm vacuuming /Users/Jslice/.npm/watchr
+987 verbose gentlyRm vacuuming /Users/Jslice/.npm/webpack
+988 verbose gentlyRm vacuuming /Users/Jslice/.npm/webpack-core
+989 verbose gentlyRm vacuuming /Users/Jslice/.npm/webpack-dev-middleware
+990 verbose gentlyRm vacuuming /Users/Jslice/.npm/webpack-dev-server
+991 verbose gentlyRm vacuuming /Users/Jslice/.npm/whet.extend
+992 verbose gentlyRm vacuuming /Users/Jslice/.npm/which
+993 verbose gentlyRm vacuuming /Users/Jslice/.npm/win-detect-browsers
+994 verbose gentlyRm vacuuming /Users/Jslice/.npm/win-release
+995 verbose gentlyRm vacuuming /Users/Jslice/.npm/winston
+996 verbose gentlyRm vacuuming /Users/Jslice/.npm/wiredep
+997 verbose gentlyRm vacuuming /Users/Jslice/.npm/wns
+998 verbose gentlyRm vacuuming /Users/Jslice/.npm/wordwrap
+999 verbose gentlyRm vacuuming /Users/Jslice/.npm/wrap-fn
+1000 verbose gentlyRm vacuuming /Users/Jslice/.npm/wrappy
+1001 verbose gentlyRm vacuuming /Users/Jslice/.npm/ws
+1002 verbose gentlyRm vacuuming /Users/Jslice/.npm/x-default-browser
+1003 verbose gentlyRm vacuuming /Users/Jslice/.npm/xdg-basedir
+1004 verbose gentlyRm vacuuming /Users/Jslice/.npm/xml
+1005 verbose gentlyRm vacuuming /Users/Jslice/.npm/xml-escape
+1006 verbose gentlyRm vacuuming /Users/Jslice/.npm/xml2js
+1007 verbose gentlyRm vacuuming /Users/Jslice/.npm/xmlbuilder
+1008 verbose gentlyRm vacuuming /Users/Jslice/.npm/xmldom
+1009 verbose gentlyRm vacuuming /Users/Jslice/.npm/xmlhttprequest
+1010 verbose gentlyRm vacuuming /Users/Jslice/.npm/xoauth2
+1011 verbose gentlyRm vacuuming /Users/Jslice/.npm/xpath.js
+1012 verbose gentlyRm vacuuming /Users/Jslice/.npm/xregexp
+1013 verbose gentlyRm vacuuming /Users/Jslice/.npm/xtend
+1014 verbose gentlyRm vacuuming /Users/Jslice/.npm/ya-csv
+1015 verbose gentlyRm vacuuming /Users/Jslice/.npm/yamlish
+1016 verbose gentlyRm vacuuming /Users/Jslice/.npm/yargs
+1017 verbose gentlyRm vacuuming /Users/Jslice/.npm/yauzl
+1018 verbose gentlyRm vacuuming /Users/Jslice/.npm/zeparser
+1019 verbose gentlyRm vacuuming /Users/Jslice/.npm/zip-stream
+1020 verbose gentlyRm vacuuming /Users/Jslice/.npm/zlib-browserify
+1021 silly gentlyRm purging /Users/Jslice/.npm/Base64
+1022 silly gentlyRm purging /Users/Jslice/.npm/CSSselect
+1023 silly gentlyRm purging /Users/Jslice/.npm/CSSwhat
+1024 silly gentlyRm purging /Users/Jslice/.npm/JSONStream
+1025 silly gentlyRm purging /Users/Jslice/.npm/MD5
+1026 silly gentlyRm purging /Users/Jslice/.npm/_locks
+1027 silly gentlyRm purging /Users/Jslice/.npm/abbrev
+1028 silly gentlyRm purging /Users/Jslice/.npm/accepts
+1029 silly gentlyRm purging /Users/Jslice/.npm/acorn
+1030 silly gentlyRm purging /Users/Jslice/.npm/acorn-babel
+1031 silly gentlyRm purging /Users/Jslice/.npm/active-x-obfuscator
+1032 silly gentlyRm purging /Users/Jslice/.npm/adal-node
+1033 silly gentlyRm purging /Users/Jslice/.npm/addressparser
+1034 silly gentlyRm purging /Users/Jslice/.npm/adm-zip
+1035 silly gentlyRm purging /Users/Jslice/.npm/after
+1036 silly gentlyRm purging /Users/Jslice/.npm/alter
+1037 silly gentlyRm purging /Users/Jslice/.npm/ambi
+1038 silly gentlyRm purging /Users/Jslice/.npm/amdefine
+1039 silly gentlyRm purging /Users/Jslice/.npm/ansi
+1040 silly gentlyRm purging /Users/Jslice/.npm/ansi-regex
+1041 silly gentlyRm purging /Users/Jslice/.npm/ansi-styles
+1042 silly gentlyRm purging /Users/Jslice/.npm/anymatch
+1043 silly gentlyRm purging /Users/Jslice/.npm/archive-type
+1044 silly gentlyRm purging /Users/Jslice/.npm/archiver
+1045 silly gentlyRm purging /Users/Jslice/.npm/archy
+1046 silly gentlyRm purging /Users/Jslice/.npm/argparse
+1047 silly gentlyRm purging /Users/Jslice/.npm/arguments-extended
+1048 silly gentlyRm purging /Users/Jslice/.npm/array-differ
+1049 silly gentlyRm purging /Users/Jslice/.npm/array-extended
+1050 silly gentlyRm purging /Users/Jslice/.npm/array-filter
+1051 silly gentlyRm purging /Users/Jslice/.npm/array-map
+1052 silly gentlyRm purging /Users/Jslice/.npm/array-reduce
+1053 silly gentlyRm purging /Users/Jslice/.npm/array-union
+1054 silly gentlyRm purging /Users/Jslice/.npm/array-uniq
+1055 silly gentlyRm purging /Users/Jslice/.npm/arraybuffer.slice
+1056 silly gentlyRm purging /Users/Jslice/.npm/asap
+1057 silly gentlyRm purging /Users/Jslice/.npm/asn1
+1058 silly gentlyRm purging /Users/Jslice/.npm/asn1.js
+1059 silly gentlyRm purging /Users/Jslice/.npm/asn1.js-rfc3280
+1060 silly gentlyRm purging /Users/Jslice/.npm/assert
+1061 silly gentlyRm purging /Users/Jslice/.npm/assert-plus
+1062 silly gentlyRm purging /Users/Jslice/.npm/assertion-error
+1063 silly gentlyRm purging /Users/Jslice/.npm/ast-types
+1064 silly gentlyRm purging /Users/Jslice/.npm/astw
+1065 silly gentlyRm purging /Users/Jslice/.npm/async
+1066 silly gentlyRm purging /Users/Jslice/.npm/async-each
+1067 silly gentlyRm purging /Users/Jslice/.npm/async-each-series
+1068 silly gentlyRm purging /Users/Jslice/.npm/autoprefixer-core
+1069 silly gentlyRm purging /Users/Jslice/.npm/aws-sdk
+1070 silly gentlyRm purging /Users/Jslice/.npm/aws-sdk-apis
+1071 silly gentlyRm purging /Users/Jslice/.npm/aws-sign
+1072 silly gentlyRm purging /Users/Jslice/.npm/aws-sign2
+1073 silly gentlyRm purging /Users/Jslice/.npm/azure
+1074 silly gentlyRm purging /Users/Jslice/.npm/azure-cli
+1075 silly gentlyRm purging /Users/Jslice/.npm/azure-common
+1076 silly gentlyRm purging /Users/Jslice/.npm/azure-extra
+1077 silly gentlyRm purging /Users/Jslice/.npm/azure-gallery
+1078 silly gentlyRm purging /Users/Jslice/.npm/azure-mgmt
+1079 silly gentlyRm purging /Users/Jslice/.npm/azure-mgmt-authorization
+1080 silly gentlyRm purging /Users/Jslice/.npm/azure-mgmt-compute
+1081 silly gentlyRm purging /Users/Jslice/.npm/azure-mgmt-hdinsight
+1082 silly gentlyRm purging /Users/Jslice/.npm/azure-mgmt-resource
+1083 silly gentlyRm purging /Users/Jslice/.npm/azure-mgmt-sb
+1084 silly gentlyRm purging /Users/Jslice/.npm/azure-mgmt-scheduler
+1085 silly gentlyRm purging /Users/Jslice/.npm/azure-mgmt-sql
+1086 silly gentlyRm purging /Users/Jslice/.npm/azure-mgmt-storage
+1087 silly gentlyRm purging /Users/Jslice/.npm/azure-mgmt-subscription
+1088 silly gentlyRm purging /Users/Jslice/.npm/azure-mgmt-vnet
+1089 silly gentlyRm purging /Users/Jslice/.npm/azure-mgmt-website
+1090 silly gentlyRm purging /Users/Jslice/.npm/azure-monitoring
+1091 silly gentlyRm purging /Users/Jslice/.npm/azure-rm-website
+1092 silly gentlyRm purging /Users/Jslice/.npm/azure-sb
+1093 silly gentlyRm purging /Users/Jslice/.npm/azure-scheduler
+1094 silly gentlyRm purging /Users/Jslice/.npm/azure-storage
+1095 silly gentlyRm purging /Users/Jslice/.npm/azure-storage-legacy
+1096 silly gentlyRm purging /Users/Jslice/.npm/babel
+1097 silly gentlyRm purging /Users/Jslice/.npm/babel-core
+1098 silly gentlyRm purging /Users/Jslice/.npm/babel-loader
+1099 silly gentlyRm purging /Users/Jslice/.npm/backbone
+1100 silly gentlyRm purging /Users/Jslice/.npm/backo2
+1101 silly gentlyRm purging /Users/Jslice/.npm/bal-util
+1102 silly gentlyRm purging /Users/Jslice/.npm/balanced-match
+1103 silly gentlyRm purging /Users/Jslice/.npm/base62
+1104 silly gentlyRm purging /Users/Jslice/.npm/base64-arraybuffer
+1105 silly gentlyRm purging /Users/Jslice/.npm/base64-js
+1106 silly gentlyRm purging /Users/Jslice/.npm/base64-url
+1107 silly gentlyRm purging /Users/Jslice/.npm/base64id
+1108 silly gentlyRm purging /Users/Jslice/.npm/basic-auth
+1109 silly gentlyRm purging /Users/Jslice/.npm/basic-auth-connect
+1110 silly gentlyRm purging /Users/Jslice/.npm/batch
+1111 silly gentlyRm purging /Users/Jslice/.npm/bcrypt-nodejs
+1112 silly gentlyRm purging /Users/Jslice/.npm/bcryptjs
+1113 silly gentlyRm purging /Users/Jslice/.npm/benchmark
+1114 silly gentlyRm purging /Users/Jslice/.npm/better-assert
+1115 silly gentlyRm purging /Users/Jslice/.npm/biased-opener
+1116 silly gentlyRm purging /Users/Jslice/.npm/big.js
+1117 silly gentlyRm purging /Users/Jslice/.npm/bignumber.js
+1118 silly gentlyRm purging /Users/Jslice/.npm/bin-build
+1119 silly gentlyRm purging /Users/Jslice/.npm/bin-check
+1120 silly gentlyRm purging /Users/Jslice/.npm/bin-version
+1121 silly gentlyRm purging /Users/Jslice/.npm/bin-version-check
+1122 silly gentlyRm purging /Users/Jslice/.npm/bin-wrapper
+1123 silly gentlyRm purging /Users/Jslice/.npm/binary
+1124 silly gentlyRm purging /Users/Jslice/.npm/binary-extensions
+1125 silly gentlyRm purging /Users/Jslice/.npm/bl
+1126 silly gentlyRm purging /Users/Jslice/.npm/blanket
+1127 silly gentlyRm purging /Users/Jslice/.npm/blob
+1128 silly gentlyRm purging /Users/Jslice/.npm/bluebird
+1129 silly gentlyRm purging /Users/Jslice/.npm/bn.js
+1130 silly gentlyRm purging /Users/Jslice/.npm/body-parser
+1131 silly gentlyRm purging /Users/Jslice/.npm/bookshelf
+1132 silly gentlyRm purging /Users/Jslice/.npm/boom
+1133 silly gentlyRm purging /Users/Jslice/.npm/bower
+1134 silly gentlyRm purging /Users/Jslice/.npm/bower-config
+1135 silly gentlyRm purging /Users/Jslice/.npm/bower-endpoint-parser
+1136 silly gentlyRm purging /Users/Jslice/.npm/bower-json
+1137 silly gentlyRm purging /Users/Jslice/.npm/bower-logger
+1138 silly gentlyRm purging /Users/Jslice/.npm/bower-registry-client
+1139 silly gentlyRm purging /Users/Jslice/.npm/bplist-parser
+1140 silly gentlyRm purging /Users/Jslice/.npm/brace-expansion
+1141 silly gentlyRm purging /Users/Jslice/.npm/broadway
+1142 silly gentlyRm purging /Users/Jslice/.npm/brorand
+1143 silly gentlyRm purging /Users/Jslice/.npm/browser-launcher2
+1144 silly gentlyRm purging /Users/Jslice/.npm/browser-pack
+1145 silly gentlyRm purging /Users/Jslice/.npm/browser-resolve
+1146 silly gentlyRm purging /Users/Jslice/.npm/browserify
+1147 silly gentlyRm purging /Users/Jslice/.npm/browserify-aes
+1148 silly gentlyRm purging /Users/Jslice/.npm/browserify-rsa
+1149 silly gentlyRm purging /Users/Jslice/.npm/browserify-shim
+1150 silly gentlyRm purging /Users/Jslice/.npm/browserify-sign
+1151 silly gentlyRm purging /Users/Jslice/.npm/browserify-zlib
+1152 silly gentlyRm purging /Users/Jslice/.npm/browserslist
+1153 silly gentlyRm purging /Users/Jslice/.npm/bson
+1154 silly gentlyRm purging /Users/Jslice/.npm/buffer
+1155 silly gentlyRm purging /Users/Jslice/.npm/buffer-crc32
+1156 silly gentlyRm purging /Users/Jslice/.npm/buffer-equal
+1157 silly gentlyRm purging /Users/Jslice/.npm/buffer-to-vinyl
+1158 silly gentlyRm purging /Users/Jslice/.npm/buffer-writer
+1159 silly gentlyRm purging /Users/Jslice/.npm/buffers
+1160 silly gentlyRm purging /Users/Jslice/.npm/builtins
+1161 silly gentlyRm purging /Users/Jslice/.npm/bundle-loader
+1162 silly gentlyRm purging /Users/Jslice/.npm/bunker
+1163 silly gentlyRm purging /Users/Jslice/.npm/burrito
+1164 silly gentlyRm purging /Users/Jslice/.npm/busboy
+1165 silly gentlyRm purging /Users/Jslice/.npm/bytes
+1166 silly gentlyRm purging /Users/Jslice/.npm/caller-id
+1167 silly gentlyRm purging /Users/Jslice/.npm/callsite
+1168 silly gentlyRm purging /Users/Jslice/.npm/camel-case
+1169 silly gentlyRm purging /Users/Jslice/.npm/camelcase
+1170 silly gentlyRm purging /Users/Jslice/.npm/camelcase-keys
+1171 silly gentlyRm purging /Users/Jslice/.npm/caniuse-db
+1172 silly gentlyRm purging /Users/Jslice/.npm/cardinal
+1173 silly gentlyRm purging /Users/Jslice/.npm/caseless
+1174 silly gentlyRm purging /Users/Jslice/.npm/casperjs
+1175 silly gentlyRm purging /Users/Jslice/.npm/cdnjs-cdn-data
+1176 silly gentlyRm purging /Users/Jslice/.npm/chai
+1177 silly gentlyRm purging /Users/Jslice/.npm/chai-as-promised
+1178 silly gentlyRm purging /Users/Jslice/.npm/chai-jquery
+1179 silly gentlyRm purging /Users/Jslice/.npm/chai-things
+1180 silly gentlyRm purging /Users/Jslice/.npm/chainsaw
+1181 silly gentlyRm purging /Users/Jslice/.npm/chalk
+1182 silly gentlyRm purging /Users/Jslice/.npm/change-case
+1183 silly gentlyRm purging /Users/Jslice/.npm/charenc
+1184 silly gentlyRm purging /Users/Jslice/.npm/charm
+1185 silly gentlyRm purging /Users/Jslice/.npm/cheerio
+1186 silly gentlyRm purging /Users/Jslice/.npm/chmodr
+1187 silly gentlyRm purging /Users/Jslice/.npm/chokidar
+1188 silly gentlyRm purging /Users/Jslice/.npm/classnames
+1189 silly gentlyRm purging /Users/Jslice/.npm/clean-css
+1190 silly gentlyRm purging /Users/Jslice/.npm/cli
+1191 silly gentlyRm purging /Users/Jslice/.npm/cli-color
+1192 silly gentlyRm purging /Users/Jslice/.npm/cliff
+1193 silly gentlyRm purging /Users/Jslice/.npm/clone
+1194 silly gentlyRm purging /Users/Jslice/.npm/clone-stats
+1195 silly gentlyRm purging /Users/Jslice/.npm/co
+1196 silly gentlyRm purging /Users/Jslice/.npm/coa
+1197 silly gentlyRm purging /Users/Jslice/.npm/coffee-script
+1198 silly gentlyRm purging /Users/Jslice/.npm/colors
+1199 silly gentlyRm purging /Users/Jslice/.npm/combine-source-map
+1200 silly gentlyRm purging /Users/Jslice/.npm/combined-stream
+1201 silly gentlyRm purging /Users/Jslice/.npm/commander
+1202 silly gentlyRm purging /Users/Jslice/.npm/commondir
+1203 silly gentlyRm purging /Users/Jslice/.npm/commoner
+1204 silly gentlyRm purging /Users/Jslice/.npm/component-bind
+1205 silly gentlyRm purging /Users/Jslice/.npm/component-emitter
+1206 silly gentlyRm purging /Users/Jslice/.npm/component-inherit
+1207 silly gentlyRm purging /Users/Jslice/.npm/compress-commons
+1208 silly gentlyRm purging /Users/Jslice/.npm/compressible
+1209 silly gentlyRm purging /Users/Jslice/.npm/compression
+1210 silly gentlyRm purging /Users/Jslice/.npm/concat-map
+1211 silly gentlyRm purging /Users/Jslice/.npm/concat-stream
+1212 silly gentlyRm purging /Users/Jslice/.npm/config-chain
+1213 silly gentlyRm purging /Users/Jslice/.npm/configstore
+1214 silly gentlyRm purging /Users/Jslice/.npm/connect
+1215 silly gentlyRm purging /Users/Jslice/.npm/connect-history-api-fallback
+1216 silly gentlyRm purging /Users/Jslice/.npm/connect-livereload
+1217 silly gentlyRm purging /Users/Jslice/.npm/connect-slashes
+1218 silly gentlyRm purging /Users/Jslice/.npm/connect-timeout
+1219 silly gentlyRm purging /Users/Jslice/.npm/console-browserify
+1220 silly gentlyRm purging /Users/Jslice/.npm/consolidate
+1221 silly gentlyRm purging /Users/Jslice/.npm/constant-case
+1222 silly gentlyRm purging /Users/Jslice/.npm/constants-browserify
+1223 silly gentlyRm purging /Users/Jslice/.npm/content-disposition
+1224 silly gentlyRm purging /Users/Jslice/.npm/content-type
+1225 silly gentlyRm purging /Users/Jslice/.npm/convert-source-map
+1226 silly gentlyRm purging /Users/Jslice/.npm/cookie
+1227 silly gentlyRm purging /Users/Jslice/.npm/cookie-jar
+1228 silly gentlyRm purging /Users/Jslice/.npm/cookie-parser
+1229 silly gentlyRm purging /Users/Jslice/.npm/cookie-session
+1230 silly gentlyRm purging /Users/Jslice/.npm/cookie-signature
+1231 silly gentlyRm purging /Users/Jslice/.npm/cookiejar
+1232 silly gentlyRm purging /Users/Jslice/.npm/cookies
+1233 silly gentlyRm purging /Users/Jslice/.npm/core-js
+1234 silly gentlyRm purging /Users/Jslice/.npm/core-util-is
+1235 silly gentlyRm purging /Users/Jslice/.npm/cors
+1236 silly gentlyRm purging /Users/Jslice/.npm/crc
+1237 silly gentlyRm purging /Users/Jslice/.npm/crc32-stream
+1238 silly gentlyRm purging /Users/Jslice/.npm/create-ecdh
+1239 silly gentlyRm purging /Users/Jslice/.npm/create-error
+1240 silly gentlyRm purging /Users/Jslice/.npm/create-hash
+1241 silly gentlyRm purging /Users/Jslice/.npm/create-hmac
+1242 silly gentlyRm purging /Users/Jslice/.npm/cron
+1243 silly gentlyRm purging /Users/Jslice/.npm/crypt
+1244 silly gentlyRm purging /Users/Jslice/.npm/cryptiles
+1245 silly gentlyRm purging /Users/Jslice/.npm/crypto-browserify
+1246 silly gentlyRm purging /Users/Jslice/.npm/csrf
+1247 silly gentlyRm purging /Users/Jslice/.npm/csurf
+1248 silly gentlyRm purging /Users/Jslice/.npm/ctype
+1249 silly gentlyRm purging /Users/Jslice/.npm/cycle
+1250 silly gentlyRm purging /Users/Jslice/.npm/d
+1251 silly gentlyRm purging /Users/Jslice/.npm/date-extended
+1252 silly gentlyRm purging /Users/Jslice/.npm/date-now
+1253 silly gentlyRm purging /Users/Jslice/.npm/date-time
+1254 silly gentlyRm purging /Users/Jslice/.npm/date-utils
+1255 silly gentlyRm purging /Users/Jslice/.npm/dateformat
+1256 silly gentlyRm purging /Users/Jslice/.npm/debug
+1257 silly gentlyRm purging /Users/Jslice/.npm/declare.js
+1258 silly gentlyRm purging /Users/Jslice/.npm/decompress
+1259 silly gentlyRm purging /Users/Jslice/.npm/decompress-tar
+1260 silly gentlyRm purging /Users/Jslice/.npm/decompress-tarbz2
+1261 silly gentlyRm purging /Users/Jslice/.npm/decompress-targz
+1262 silly gentlyRm purging /Users/Jslice/.npm/decompress-unzip
+1263 silly gentlyRm purging /Users/Jslice/.npm/decompress-zip
+1264 silly gentlyRm purging /Users/Jslice/.npm/deep-eql
+1265 silly gentlyRm purging /Users/Jslice/.npm/deep-equal
+1266 silly gentlyRm purging /Users/Jslice/.npm/deep-extend
+1267 silly gentlyRm purging /Users/Jslice/.npm/deep-is
+1268 silly gentlyRm purging /Users/Jslice/.npm/default-browser-id
+1269 silly gentlyRm purging /Users/Jslice/.npm/defaults
+1270 silly gentlyRm purging /Users/Jslice/.npm/defined
+1271 silly gentlyRm purging /Users/Jslice/.npm/delayed-stream
+1272 silly gentlyRm purging /Users/Jslice/.npm/depd
+1273 silly gentlyRm purging /Users/Jslice/.npm/deps-sort
+1274 silly gentlyRm purging /Users/Jslice/.npm/destroy
+1275 silly gentlyRm purging /Users/Jslice/.npm/detect-indent
+1276 silly gentlyRm purging /Users/Jslice/.npm/detective
+1277 silly gentlyRm purging /Users/Jslice/.npm/di
+1278 silly gentlyRm purging /Users/Jslice/.npm/dicer
+1279 silly gentlyRm purging /Users/Jslice/.npm/did_it_work
+1280 silly gentlyRm purging /Users/Jslice/.npm/diff
+1281 silly gentlyRm purging /Users/Jslice/.npm/diffie-hellman
+1282 silly gentlyRm purging /Users/Jslice/.npm/difflet
+1283 silly gentlyRm purging /Users/Jslice/.npm/directmail
+1284 silly gentlyRm purging /Users/Jslice/.npm/director
+1285 silly gentlyRm purging /Users/Jslice/.npm/dkim-signer
+1286 silly gentlyRm purging /Users/Jslice/.npm/docker
+1287 silly gentlyRm purging /Users/Jslice/.npm/dom-serializer
+1288 silly gentlyRm purging /Users/Jslice/.npm/domain-browser
+1289 silly gentlyRm purging /Users/Jslice/.npm/domelementtype
+1290 silly gentlyRm purging /Users/Jslice/.npm/domhandler
+1291 silly gentlyRm purging /Users/Jslice/.npm/domutils
+1292 silly gentlyRm purging /Users/Jslice/.npm/dot-case
+1293 silly gentlyRm purging /Users/Jslice/.npm/download
+1294 silly gentlyRm purging /Users/Jslice/.npm/download-status
+1295 silly gentlyRm purging /Users/Jslice/.npm/downsize
+1296 silly gentlyRm purging /Users/Jslice/.npm/duplexer
+1297 silly gentlyRm purging /Users/Jslice/.npm/duplexer2
+1298 silly gentlyRm purging /Users/Jslice/.npm/duplexify
+1299 silly gentlyRm purging /Users/Jslice/.npm/each-async
+1300 silly gentlyRm purging /Users/Jslice/.npm/eachr
+1301 silly gentlyRm purging /Users/Jslice/.npm/easy-table
+1302 silly gentlyRm purging /Users/Jslice/.npm/ecstatic
+1303 silly gentlyRm purging /Users/Jslice/.npm/ee-first
+1304 silly gentlyRm purging /Users/Jslice/.npm/ejs
+1305 silly gentlyRm purging /Users/Jslice/.npm/elliptic
+1306 silly gentlyRm purging /Users/Jslice/.npm/ember-template-compiler
+1307 silly gentlyRm purging /Users/Jslice/.npm/emitter-component
+1308 silly gentlyRm purging /Users/Jslice/.npm/encoding
+1309 silly gentlyRm purging /Users/Jslice/.npm/end-of-stream
+1310 silly gentlyRm purging /Users/Jslice/.npm/engine.io
+1311 silly gentlyRm purging /Users/Jslice/.npm/engine.io-client
+1312 silly gentlyRm purging /Users/Jslice/.npm/engine.io-parser
+1313 silly gentlyRm purging /Users/Jslice/.npm/enhanced-resolve
+1314 silly gentlyRm purging /Users/Jslice/.npm/entities
+1315 silly gentlyRm purging /Users/Jslice/.npm/envconf
+1316 silly gentlyRm purging /Users/Jslice/.npm/envify
+1317 silly gentlyRm purging /Users/Jslice/.npm/errorhandler
+1318 silly gentlyRm purging /Users/Jslice/.npm/es5-ext
+1319 silly gentlyRm purging /Users/Jslice/.npm/es6-iterator
+1320 silly gentlyRm purging /Users/Jslice/.npm/es6-module-transpiler
+1321 silly gentlyRm purging /Users/Jslice/.npm/es6-symbol
+1322 silly gentlyRm purging /Users/Jslice/.npm/es6-weak-map
+1323 silly gentlyRm purging /Users/Jslice/.npm/escape-html
+1324 silly gentlyRm purging /Users/Jslice/.npm/escape-string-regexp
+1325 silly gentlyRm purging /Users/Jslice/.npm/escodegen
+1326 silly gentlyRm purging /Users/Jslice/.npm/esprima
+1327 silly gentlyRm purging /Users/Jslice/.npm/esprima-fb
+1328 silly gentlyRm purging /Users/Jslice/.npm/esprima-harmony-jscs
+1329 silly gentlyRm purging /Users/Jslice/.npm/estraverse
+1330 silly gentlyRm purging /Users/Jslice/.npm/esutils
+1331 silly gentlyRm purging /Users/Jslice/.npm/etag
+1332 silly gentlyRm purging /Users/Jslice/.npm/event-emitter
+1333 silly gentlyRm purging /Users/Jslice/.npm/event-stream
+1334 silly gentlyRm purging /Users/Jslice/.npm/eventemitter2
+1335 silly gentlyRm purging /Users/Jslice/.npm/eventemitter3
+1336 silly gentlyRm purging /Users/Jslice/.npm/events
+1337 silly gentlyRm purging /Users/Jslice/.npm/exec-buffer
+1338 silly gentlyRm purging /Users/Jslice/.npm/exec-series
+1339 silly gentlyRm purging /Users/Jslice/.npm/executable
+1340 silly gentlyRm purging /Users/Jslice/.npm/exit
+1341 silly gentlyRm purging /Users/Jslice/.npm/expect
+1342 silly gentlyRm purging /Users/Jslice/.npm/exposify
+1343 silly gentlyRm purging /Users/Jslice/.npm/express
+1344 silly gentlyRm purging /Users/Jslice/.npm/express-hbs
+1345 silly gentlyRm purging /Users/Jslice/.npm/express-partials
+1346 silly gentlyRm purging /Users/Jslice/.npm/express-session
+1347 silly gentlyRm purging /Users/Jslice/.npm/extend
+1348 silly gentlyRm purging /Users/Jslice/.npm/extended
+1349 silly gentlyRm purging /Users/Jslice/.npm/extender
+1350 silly gentlyRm purging /Users/Jslice/.npm/extendr
+1351 silly gentlyRm purging /Users/Jslice/.npm/eyes
+1352 silly gentlyRm purging /Users/Jslice/.npm/falafel
+1353 silly gentlyRm purging /Users/Jslice/.npm/fast-csv
+1354 silly gentlyRm purging /Users/Jslice/.npm/fast-levenshtein
+1355 silly gentlyRm purging /Users/Jslice/.npm/faye-websocket
+1356 silly gentlyRm purging /Users/Jslice/.npm/fd-slicer
+1357 silly gentlyRm purging /Users/Jslice/.npm/figlet
+1358 silly gentlyRm purging /Users/Jslice/.npm/figures
+1359 silly gentlyRm purging /Users/Jslice/.npm/file-type
+1360 silly gentlyRm purging /Users/Jslice/.npm/fileset
+1361 silly gentlyRm purging /Users/Jslice/.npm/finalhandler
+1362 silly gentlyRm purging /Users/Jslice/.npm/find-index
+1363 silly gentlyRm purging /Users/Jslice/.npm/find-parent-dir
+1364 silly gentlyRm purging /Users/Jslice/.npm/find-versions
+1365 silly gentlyRm purging /Users/Jslice/.npm/findup-sync
+1366 silly gentlyRm purging /Users/Jslice/.npm/firebase-auto-ids
+1367 silly gentlyRm purging /Users/Jslice/.npm/fireworm
+1368 silly gentlyRm purging /Users/Jslice/.npm/first-chunk-stream
+1369 silly gentlyRm purging /Users/Jslice/.npm/flagged-respawn
+1370 silly gentlyRm purging /Users/Jslice/.npm/flatiron
+1371 silly gentlyRm purging /Users/Jslice/.npm/follow-redirects
+1372 silly gentlyRm purging /Users/Jslice/.npm/forever
+1373 silly gentlyRm purging /Users/Jslice/.npm/forever-agent
+1374 silly gentlyRm purging /Users/Jslice/.npm/forever-monitor
+1375 silly gentlyRm purging /Users/Jslice/.npm/form-data
+1376 silly gentlyRm purging /Users/Jslice/.npm/formatio
+1377 silly gentlyRm purging /Users/Jslice/.npm/formidable
+1378 silly gentlyRm purging /Users/Jslice/.npm/forwarded
+1379 silly gentlyRm purging /Users/Jslice/.npm/fresh
+1380 silly gentlyRm purging /Users/Jslice/.npm/from
+1381 silly gentlyRm purging /Users/Jslice/.npm/fs-extra
+1382 silly gentlyRm purging /Users/Jslice/.npm/fs-readdir-recursive
+1383 silly gentlyRm purging /Users/Jslice/.npm/fsevents
+1384 silly gentlyRm purging /Users/Jslice/.npm/fstream
+1385 silly gentlyRm purging /Users/Jslice/.npm/fstream-ignore
+1386 silly gentlyRm purging /Users/Jslice/.npm/gaze
+1387 silly gentlyRm purging /Users/Jslice/.npm/generic-pool
+1388 silly gentlyRm purging /Users/Jslice/.npm/generic-pool-redux
+1389 silly gentlyRm purging /Users/Jslice/.npm/get-stdin
+1390 silly gentlyRm purging /Users/Jslice/.npm/getobject
+1391 silly gentlyRm purging /Users/Jslice/.npm/getsetdeep
+1392 silly gentlyRm purging /Users/Jslice/.npm/gifsicle
+1393 silly gentlyRm purging /Users/Jslice/.npm/github
+1394 silly gentlyRm purging /Users/Jslice/.npm/glob
+1395 silly gentlyRm purging /Users/Jslice/.npm/glob-all
+1396 silly gentlyRm purging /Users/Jslice/.npm/glob-parent
+1397 silly gentlyRm purging /Users/Jslice/.npm/glob-stream
+1398 silly gentlyRm purging /Users/Jslice/.npm/glob-watcher
+1399 silly gentlyRm purging /Users/Jslice/.npm/glob2base
+1400 silly gentlyRm purging /Users/Jslice/.npm/global
+1401 silly gentlyRm purging /Users/Jslice/.npm/globals
+1402 silly gentlyRm purging /Users/Jslice/.npm/globby
+1403 silly gentlyRm purging /Users/Jslice/.npm/globule
+1404 silly gentlyRm purging /Users/Jslice/.npm/google-cdn
+1405 silly gentlyRm purging /Users/Jslice/.npm/google-cdn-data
+1406 silly gentlyRm purging /Users/Jslice/.npm/got
+1407 silly gentlyRm purging /Users/Jslice/.npm/graceful-fs
+1408 silly gentlyRm purging /Users/Jslice/.npm/graceful-readlink
+1409 silly gentlyRm purging /Users/Jslice/.npm/growl
+1410 silly gentlyRm purging /Users/Jslice/.npm/grunt
+1411 silly gentlyRm purging /Users/Jslice/.npm/grunt-autoprefixer
+1412 silly gentlyRm purging /Users/Jslice/.npm/grunt-casperjs
+1413 silly gentlyRm purging /Users/Jslice/.npm/grunt-cli
+1414 silly gentlyRm purging /Users/Jslice/.npm/grunt-concat-sourcemap
+1415 silly gentlyRm purging /Users/Jslice/.npm/grunt-concurrent
+1416 silly gentlyRm purging /Users/Jslice/.npm/grunt-contrib-clean
+1417 silly gentlyRm purging /Users/Jslice/.npm/grunt-contrib-compress
+1418 silly gentlyRm purging /Users/Jslice/.npm/grunt-contrib-concat
+1419 silly gentlyRm purging /Users/Jslice/.npm/grunt-contrib-connect
+1420 silly gentlyRm purging /Users/Jslice/.npm/grunt-contrib-copy
+1421 silly gentlyRm purging /Users/Jslice/.npm/grunt-contrib-cssmin
+1422 silly gentlyRm purging /Users/Jslice/.npm/grunt-contrib-htmlmin
+1423 silly gentlyRm purging /Users/Jslice/.npm/grunt-contrib-imagemin
+1424 silly gentlyRm purging /Users/Jslice/.npm/grunt-contrib-jshint
+1425 silly gentlyRm purging /Users/Jslice/.npm/grunt-contrib-uglify
+1426 silly gentlyRm purging /Users/Jslice/.npm/grunt-contrib-watch
+1427 silly gentlyRm purging /Users/Jslice/.npm/grunt-docker
+1428 silly gentlyRm purging /Users/Jslice/.npm/grunt-ember-templates
+1429 silly gentlyRm purging /Users/Jslice/.npm/grunt-es6-module-transpiler
+1430 silly gentlyRm purging /Users/Jslice/.npm/grunt-execute
+1431 silly gentlyRm purging /Users/Jslice/.npm/grunt-express-server
+1432 silly gentlyRm purging /Users/Jslice/.npm/grunt-filerev
+1433 silly gentlyRm purging /Users/Jslice/.npm/grunt-google-cdn
+1434 silly gentlyRm purging /Users/Jslice/.npm/grunt-jscs
+1435 silly gentlyRm purging /Users/Jslice/.npm/grunt-karma
+1436 silly gentlyRm purging /Users/Jslice/.npm/grunt-legacy-log
+1437 silly gentlyRm purging /Users/Jslice/.npm/grunt-legacy-util
+1438 silly gentlyRm purging /Users/Jslice/.npm/grunt-lib-phantomjs
+1439 silly gentlyRm purging /Users/Jslice/.npm/grunt-mocha
+1440 silly gentlyRm purging /Users/Jslice/.npm/grunt-mocha-cli
+1441 silly gentlyRm purging /Users/Jslice/.npm/grunt-mocha-test
+1442 silly gentlyRm purging /Users/Jslice/.npm/grunt-newer
+1443 silly gentlyRm purging /Users/Jslice/.npm/grunt-ng-annotate
+1444 silly gentlyRm purging /Users/Jslice/.npm/grunt-nodemon
+1445 silly gentlyRm purging /Users/Jslice/.npm/grunt-notify
+1446 silly gentlyRm purging /Users/Jslice/.npm/grunt-sass
+1447 silly gentlyRm purging /Users/Jslice/.npm/grunt-shell
+1448 silly gentlyRm purging /Users/Jslice/.npm/grunt-svgmin
+1449 silly gentlyRm purging /Users/Jslice/.npm/grunt-update-submodules
+1450 silly gentlyRm purging /Users/Jslice/.npm/grunt-usemin
+1451 silly gentlyRm purging /Users/Jslice/.npm/grunt-wiredep
+1452 silly gentlyRm purging /Users/Jslice/.npm/gulp-rename
+1453 silly gentlyRm purging /Users/Jslice/.npm/gzip-size
+1454 silly gentlyRm purging /Users/Jslice/.npm/handlebars
+1455 silly gentlyRm purging /Users/Jslice/.npm/has-ansi
+1456 silly gentlyRm purging /Users/Jslice/.npm/has-binary
+1457 silly gentlyRm purging /Users/Jslice/.npm/has-binary-data
+1458 silly gentlyRm purging /Users/Jslice/.npm/has-color
+1459 silly gentlyRm purging /Users/Jslice/.npm/has-cors
+1460 silly gentlyRm purging /Users/Jslice/.npm/hash.js
+1461 silly gentlyRm purging /Users/Jslice/.npm/hawk
+1462 silly gentlyRm purging /Users/Jslice/.npm/he
+1463 silly gentlyRm purging /Users/Jslice/.npm/headless
+1464 silly gentlyRm purging /Users/Jslice/.npm/hoek
+1465 silly gentlyRm purging /Users/Jslice/.npm/hooker
+1466 silly gentlyRm purging /Users/Jslice/.npm/hooks
+1467 silly gentlyRm purging /Users/Jslice/.npm/html-minifier
+1468 silly gentlyRm purging /Users/Jslice/.npm/html-to-text
+1469 silly gentlyRm purging /Users/Jslice/.npm/htmlparser
+1470 silly gentlyRm purging /Users/Jslice/.npm/htmlparser2
+1471 silly gentlyRm purging /Users/Jslice/.npm/http-browserify
+1472 silly gentlyRm purging /Users/Jslice/.npm/http-errors
+1473 silly gentlyRm purging /Users/Jslice/.npm/http-proxy
+1474 silly gentlyRm purging /Users/Jslice/.npm/http-server
+1475 silly gentlyRm purging /Users/Jslice/.npm/http-signature
+1476 silly gentlyRm purging /Users/Jslice/.npm/https-browserify
+1477 silly gentlyRm purging /Users/Jslice/.npm/i
+1478 silly gentlyRm purging /Users/Jslice/.npm/ibrik
+1479 silly gentlyRm purging /Users/Jslice/.npm/iconv-lite
+1480 silly gentlyRm purging /Users/Jslice/.npm/ieee754
+1481 silly gentlyRm purging /Users/Jslice/.npm/imagemin
+1482 silly gentlyRm purging /Users/Jslice/.npm/imagemin-gifsicle
+1483 silly gentlyRm purging /Users/Jslice/.npm/imagemin-jpegtran
+1484 silly gentlyRm purging /Users/Jslice/.npm/imagemin-log
+1485 silly gentlyRm purging /Users/Jslice/.npm/imagemin-optipng
+1486 silly gentlyRm purging /Users/Jslice/.npm/imagemin-pngquant
+1487 silly gentlyRm purging /Users/Jslice/.npm/imagemin-svgo
+1488 silly gentlyRm purging /Users/Jslice/.npm/indent-string
+1489 silly gentlyRm purging /Users/Jslice/.npm/indexof
+1490 silly gentlyRm purging /Users/Jslice/.npm/infinity-agent
+1491 silly gentlyRm purging /Users/Jslice/.npm/inflection
+1492 silly gentlyRm purging /Users/Jslice/.npm/inflight
+1493 silly gentlyRm purging /Users/Jslice/.npm/inherits
+1494 silly gentlyRm purging /Users/Jslice/.npm/ini
+1495 silly gentlyRm purging /Users/Jslice/.npm/inline-source-map
+1496 silly gentlyRm purging /Users/Jslice/.npm/inquirer
+1497 silly gentlyRm purging /Users/Jslice/.npm/insert-module-globals
+1498 silly gentlyRm purging /Users/Jslice/.npm/insight
+1499 silly gentlyRm purging /Users/Jslice/.npm/install
+1500 silly gentlyRm purging /Users/Jslice/.npm/interpret
+1501 silly gentlyRm purging /Users/Jslice/.npm/intersect
+1502 silly gentlyRm purging /Users/Jslice/.npm/ip-regex
+1503 silly gentlyRm purging /Users/Jslice/.npm/ipaddr.js
+1504 silly gentlyRm purging /Users/Jslice/.npm/is-absolute
+1505 silly gentlyRm purging /Users/Jslice/.npm/is-array
+1506 silly gentlyRm purging /Users/Jslice/.npm/is-binary-path
+1507 silly gentlyRm purging /Users/Jslice/.npm/is-bzip2
+1508 silly gentlyRm purging /Users/Jslice/.npm/is-extended
+1509 silly gentlyRm purging /Users/Jslice/.npm/is-finite
+1510 silly gentlyRm purging /Users/Jslice/.npm/is-gif
+1511 silly gentlyRm purging /Users/Jslice/.npm/is-glob
+1512 silly gentlyRm purging /Users/Jslice/.npm/is-gzip
+1513 silly gentlyRm purging /Users/Jslice/.npm/is-integer
+1514 silly gentlyRm purging /Users/Jslice/.npm/is-jpg
+1515 silly gentlyRm purging /Users/Jslice/.npm/is-lower-case
+1516 silly gentlyRm purging /Users/Jslice/.npm/is-nan
+1517 silly gentlyRm purging /Users/Jslice/.npm/is-natural-number
+1518 silly gentlyRm purging /Users/Jslice/.npm/is-npm
+1519 silly gentlyRm purging /Users/Jslice/.npm/is-path-global
+1520 silly gentlyRm purging /Users/Jslice/.npm/is-path-inside
+1521 silly gentlyRm purging /Users/Jslice/.npm/is-png
+1522 silly gentlyRm purging /Users/Jslice/.npm/is-relative
+1523 silly gentlyRm purging /Users/Jslice/.npm/is-root
+1524 silly gentlyRm purging /Users/Jslice/.npm/is-stream
+1525 silly gentlyRm purging /Users/Jslice/.npm/is-svg
+1526 silly gentlyRm purging /Users/Jslice/.npm/is-tar
+1527 silly gentlyRm purging /Users/Jslice/.npm/is-type
+1528 silly gentlyRm purging /Users/Jslice/.npm/is-upper-case
+1529 silly gentlyRm purging /Users/Jslice/.npm/is-utf8
+1530 silly gentlyRm purging /Users/Jslice/.npm/is-zip
+1531 silly gentlyRm purging /Users/Jslice/.npm/isarray
+1532 silly gentlyRm purging /Users/Jslice/.npm/isstream
+1533 silly gentlyRm purging /Users/Jslice/.npm/istanbul
+1534 silly gentlyRm purging /Users/Jslice/.npm/jade
+1535 silly gentlyRm purging /Users/Jslice/.npm/jasmine-core
+1536 silly gentlyRm purging /Users/Jslice/.npm/jpegtran-bin
+1537 silly gentlyRm purging /Users/Jslice/.npm/jquery
+1538 silly gentlyRm purging /Users/Jslice/.npm/js-base64
+1539 silly gentlyRm purging /Users/Jslice/.npm/js-beautify
+1540 silly gentlyRm purging /Users/Jslice/.npm/js-tokens
+1541 silly gentlyRm purging /Users/Jslice/.npm/js-yaml
+1542 silly gentlyRm purging /Users/Jslice/.npm/jscs
+1543 silly gentlyRm purging /Users/Jslice/.npm/jsesc
+1544 silly gentlyRm purging /Users/Jslice/.npm/jshint
+1545 silly gentlyRm purging /Users/Jslice/.npm/jshint-stylish
+1546 silly gentlyRm purging /Users/Jslice/.npm/json-stable-stringify
+1547 silly gentlyRm purging /Users/Jslice/.npm/json-stringify-safe
+1548 silly gentlyRm purging /Users/Jslice/.npm/json3
+1549 silly gentlyRm purging /Users/Jslice/.npm/json5
+1550 silly gentlyRm purging /Users/Jslice/.npm/jsonfile
+1551 silly gentlyRm purging /Users/Jslice/.npm/jsonify
+1552 silly gentlyRm purging /Users/Jslice/.npm/jsonparse
+1553 silly gentlyRm purging /Users/Jslice/.npm/jstransform
+1554 silly gentlyRm purging /Users/Jslice/.npm/jsxhint
+1555 silly gentlyRm purging /Users/Jslice/.npm/junk
+1556 silly gentlyRm purging /Users/Jslice/.npm/karma
+1557 silly gentlyRm purging /Users/Jslice/.npm/karma-chai
+1558 silly gentlyRm purging /Users/Jslice/.npm/karma-chai-plugins
+1559 silly gentlyRm purging /Users/Jslice/.npm/karma-chrome-launcher
+1560 silly gentlyRm purging /Users/Jslice/.npm/karma-cli
+1561 silly gentlyRm purging /Users/Jslice/.npm/karma-coverage
+1562 silly gentlyRm purging /Users/Jslice/.npm/karma-firefox-launcher
+1563 silly gentlyRm purging /Users/Jslice/.npm/karma-jasmine
+1564 silly gentlyRm purging /Users/Jslice/.npm/karma-mocha
+1565 silly gentlyRm purging /Users/Jslice/.npm/karma-phantomjs-launcher
+1566 silly gentlyRm purging /Users/Jslice/.npm/karma-sinon
+1567 silly gentlyRm purging /Users/Jslice/.npm/karma-sourcemap-loader
+1568 silly gentlyRm purging /Users/Jslice/.npm/karma-webpack
+1569 silly gentlyRm purging /Users/Jslice/.npm/kerberos
+1570 silly gentlyRm purging /Users/Jslice/.npm/kew
+1571 silly gentlyRm purging /Users/Jslice/.npm/keygrip
+1572 silly gentlyRm purging /Users/Jslice/.npm/keypress
+1573 silly gentlyRm purging /Users/Jslice/.npm/knex
+1574 silly gentlyRm purging /Users/Jslice/.npm/kuduscript
+1575 silly gentlyRm purging /Users/Jslice/.npm/labeled-stream-splicer
+1576 silly gentlyRm purging /Users/Jslice/.npm/latest-version
+1577 silly gentlyRm purging /Users/Jslice/.npm/lazy
+1578 silly gentlyRm purging /Users/Jslice/.npm/lazystream
+1579 silly gentlyRm purging /Users/Jslice/.npm/left-pad
+1580 silly gentlyRm purging /Users/Jslice/.npm/leven
+1581 silly gentlyRm purging /Users/Jslice/.npm/levn
+1582 silly gentlyRm purging /Users/Jslice/.npm/lexical-scope
+1583 silly gentlyRm purging /Users/Jslice/.npm/liftoff
+1584 silly gentlyRm purging /Users/Jslice/.npm/line-numbers
+1585 silly gentlyRm purging /Users/Jslice/.npm/lnfs
+1586 silly gentlyRm purging /Users/Jslice/.npm/load-grunt-tasks
+1587 silly gentlyRm purging /Users/Jslice/.npm/loader-utils
+1588 silly gentlyRm purging /Users/Jslice/.npm/lockfile
+1589 silly gentlyRm purging /Users/Jslice/.npm/lodash
+1590 silly gentlyRm purging /Users/Jslice/.npm/lodash-node
+1591 silly gentlyRm purging /Users/Jslice/.npm/lodash._isnative
+1592 silly gentlyRm purging /Users/Jslice/.npm/lodash._objecttypes
+1593 silly gentlyRm purging /Users/Jslice/.npm/lodash.debounce
+1594 silly gentlyRm purging /Users/Jslice/.npm/lodash.isfunction
+1595 silly gentlyRm purging /Users/Jslice/.npm/lodash.isobject
+1596 silly gentlyRm purging /Users/Jslice/.npm/lodash.now
+1597 silly gentlyRm purging /Users/Jslice/.npm/log-symbols
+1598 silly gentlyRm purging /Users/Jslice/.npm/log4js
+1599 silly gentlyRm purging /Users/Jslice/.npm/logalot
+1600 silly gentlyRm purging /Users/Jslice/.npm/lolex
+1601 silly gentlyRm purging /Users/Jslice/.npm/longest
+1602 silly gentlyRm purging /Users/Jslice/.npm/lower-case
+1603 silly gentlyRm purging /Users/Jslice/.npm/lowercase-keys
+1604 silly gentlyRm purging /Users/Jslice/.npm/lpad
+1605 silly gentlyRm purging /Users/Jslice/.npm/lpad-align
+1606 silly gentlyRm purging /Users/Jslice/.npm/lru-cache
+1607 silly gentlyRm purging /Users/Jslice/.npm/lru-queue
+1608 silly gentlyRm purging /Users/Jslice/.npm/mailcomposer
+1609 silly gentlyRm purging /Users/Jslice/.npm/mandrill-api
+1610 silly gentlyRm purging /Users/Jslice/.npm/map-obj
+1611 silly gentlyRm purging /Users/Jslice/.npm/map-stream
+1612 silly gentlyRm purging /Users/Jslice/.npm/matchdep
+1613 silly gentlyRm purging /Users/Jslice/.npm/maxmin
+1614 silly gentlyRm purging /Users/Jslice/.npm/media-typer
+1615 silly gentlyRm purging /Users/Jslice/.npm/memoizee
+1616 silly gentlyRm purging /Users/Jslice/.npm/memory-fs
+1617 silly gentlyRm purging /Users/Jslice/.npm/meow
+1618 silly gentlyRm purging /Users/Jslice/.npm/merge-descriptors
+1619 silly gentlyRm purging /Users/Jslice/.npm/method-override
+1620 silly gentlyRm purging /Users/Jslice/.npm/methods
+1621 silly gentlyRm purging /Users/Jslice/.npm/miller-rabin
+1622 silly gentlyRm purging /Users/Jslice/.npm/mime
+1623 silly gentlyRm purging /Users/Jslice/.npm/mime-db
+1624 silly gentlyRm purging /Users/Jslice/.npm/mime-types
+1625 silly gentlyRm purging /Users/Jslice/.npm/mimelib
+1626 silly gentlyRm purging /Users/Jslice/.npm/minimalistic-assert
+1627 silly gentlyRm purging /Users/Jslice/.npm/minimatch
+1628 silly gentlyRm purging /Users/Jslice/.npm/minimist
+1629 silly gentlyRm purging /Users/Jslice/.npm/mkdirp
+1630 silly gentlyRm purging /Users/Jslice/.npm/mkpath
+1631 silly gentlyRm purging /Users/Jslice/.npm/mocha
+1632 silly gentlyRm purging /Users/Jslice/.npm/mockfirebase
+1633 silly gentlyRm purging /Users/Jslice/.npm/module-deps
+1634 silly gentlyRm purging /Users/Jslice/.npm/moment
+1635 silly gentlyRm purging /Users/Jslice/.npm/moment-timezone
+1636 silly gentlyRm purging /Users/Jslice/.npm/mongo
+1637 silly gentlyRm purging /Users/Jslice/.npm/mongod
+1638 silly gentlyRm purging /Users/Jslice/.npm/mongodb
+1639 silly gentlyRm purging /Users/Jslice/.npm/mongojs
+1640 silly gentlyRm purging /Users/Jslice/.npm/mongoose
+1641 silly gentlyRm purging /Users/Jslice/.npm/morgan
+1642 silly gentlyRm purging /Users/Jslice/.npm/mothership
+1643 silly gentlyRm purging /Users/Jslice/.npm/mout
+1644 silly gentlyRm purging /Users/Jslice/.npm/mpath
+1645 silly gentlyRm purging /Users/Jslice/.npm/mpns
+1646 silly gentlyRm purging /Users/Jslice/.npm/mpromise
+1647 silly gentlyRm purging /Users/Jslice/.npm/mquery
+1648 silly gentlyRm purging /Users/Jslice/.npm/ms
+1649 silly gentlyRm purging /Users/Jslice/.npm/multimatch
+1650 silly gentlyRm purging /Users/Jslice/.npm/multiparty
+1651 silly gentlyRm purging /Users/Jslice/.npm/muri
+1652 silly gentlyRm purging /Users/Jslice/.npm/mustache
+1653 silly gentlyRm purging /Users/Jslice/.npm/mute-stream
+1654 silly gentlyRm purging /Users/Jslice/.npm/mysql
+1655 silly gentlyRm purging /Users/Jslice/.npm/mz
+1656 silly gentlyRm purging /Users/Jslice/.npm/nan
+1657 silly gentlyRm purging /Users/Jslice/.npm/native-or-bluebird
+1658 silly gentlyRm purging /Users/Jslice/.npm/nconf
+1659 silly gentlyRm purging /Users/Jslice/.npm/ncp
+1660 silly gentlyRm purging /Users/Jslice/.npm/negotiator
+1661 silly gentlyRm purging /Users/Jslice/.npm/next-tick
+1662 silly gentlyRm purging /Users/Jslice/.npm/ng-annotate
+1663 silly gentlyRm purging /Users/Jslice/.npm/nock
+1664 silly gentlyRm purging /Users/Jslice/.npm/node-debug
+1665 silly gentlyRm purging /Users/Jslice/.npm/node-inspector
+1666 silly gentlyRm purging /Users/Jslice/.npm/node-libs-browser
+1667 silly gentlyRm purging /Users/Jslice/.npm/node-sass
+1668 silly gentlyRm purging /Users/Jslice/.npm/node-uuid
+1669 silly gentlyRm purging /Users/Jslice/.npm/node-watch
+1670 silly gentlyRm purging /Users/Jslice/.npm/nodegit
+1671 silly gentlyRm purging /Users/Jslice/.npm/nodegit-promise
+1672 silly gentlyRm purging /Users/Jslice/.npm/nodemailer
+1673 silly gentlyRm purging /Users/Jslice/.npm/nodemon
+1674 silly gentlyRm purging /Users/Jslice/.npm/nopt
+1675 silly gentlyRm purging /Users/Jslice/.npm/noptify
+1676 silly gentlyRm purging /Users/Jslice/.npm/npm
+1677 silly gentlyRm purging /Users/Jslice/.npm/npm-installed
+1678 silly gentlyRm purging /Users/Jslice/.npm/npm-path
+1679 silly gentlyRm purging /Users/Jslice/.npm/npm-which
+1680 silly gentlyRm purging /Users/Jslice/.npm/npmconf
+1681 silly gentlyRm purging /Users/Jslice/.npm/npmlog
+1682 silly gentlyRm purging /Users/Jslice/.npm/nssocket
+1683 silly gentlyRm purging /Users/Jslice/.npm/num2fraction
+1684 silly gentlyRm purging /Users/Jslice/.npm/oauth-sign
+1685 silly gentlyRm purging /Users/Jslice/.npm/oauth2orize
+1686 silly gentlyRm purging /Users/Jslice/.npm/object-assign
+1687 silly gentlyRm purging /Users/Jslice/.npm/object-component
+1688 silly gentlyRm purging /Users/Jslice/.npm/object-extended
+1689 silly gentlyRm purging /Users/Jslice/.npm/object-keys
+1690 silly gentlyRm purging /Users/Jslice/.npm/omelette
+1691 silly gentlyRm purging /Users/Jslice/.npm/on-finished
+1692 silly gentlyRm purging /Users/Jslice/.npm/on-headers
+1693 silly gentlyRm purging /Users/Jslice/.npm/once
+1694 silly gentlyRm purging /Users/Jslice/.npm/onetime
+1695 silly gentlyRm purging /Users/Jslice/.npm/open
+1696 silly gentlyRm purging /Users/Jslice/.npm/opener
+1697 silly gentlyRm purging /Users/Jslice/.npm/openssl-wrapper
+1698 silly gentlyRm purging /Users/Jslice/.npm/opn
+1699 silly gentlyRm purging /Users/Jslice/.npm/optimist
+1700 silly gentlyRm purging /Users/Jslice/.npm/optional
+1701 silly gentlyRm purging /Users/Jslice/.npm/optionator
+1702 silly gentlyRm purging /Users/Jslice/.npm/options
+1703 silly gentlyRm purging /Users/Jslice/.npm/optipng-bin
+1704 silly gentlyRm purging /Users/Jslice/.npm/ordered-ast-traverse
+1705 silly gentlyRm purging /Users/Jslice/.npm/ordered-read-streams
+1706 silly gentlyRm purging /Users/Jslice/.npm/os-browserify
+1707 silly gentlyRm purging /Users/Jslice/.npm/os-filter-obj
+1708 silly gentlyRm purging /Users/Jslice/.npm/os-name
+1709 silly gentlyRm purging /Users/Jslice/.npm/osenv
+1710 silly gentlyRm purging /Users/Jslice/.npm/osx-release
+1711 silly gentlyRm purging /Users/Jslice/.npm/output-file-sync
+1712 silly gentlyRm purging /Users/Jslice/.npm/p-throttler
+1713 silly gentlyRm purging /Users/Jslice/.npm/package
+1714 silly gentlyRm purging /Users/Jslice/.npm/package-json
+1715 silly gentlyRm purging /Users/Jslice/.npm/packet-reader
+1716 silly gentlyRm purging /Users/Jslice/.npm/pad-stdio
+1717 silly gentlyRm purging /Users/Jslice/.npm/pako
+1718 silly gentlyRm purging /Users/Jslice/.npm/param-case
+1719 silly gentlyRm purging /Users/Jslice/.npm/parents
+1720 silly gentlyRm purging /Users/Jslice/.npm/parse-asn1
+1721 silly gentlyRm purging /Users/Jslice/.npm/parse-ms
+1722 silly gentlyRm purging /Users/Jslice/.npm/parsejson
+1723 silly gentlyRm purging /Users/Jslice/.npm/parseqs
+1724 silly gentlyRm purging /Users/Jslice/.npm/parseuri
+1725 silly gentlyRm purging /Users/Jslice/.npm/parseurl
+1726 silly gentlyRm purging /Users/Jslice/.npm/pascal-case
+1727 silly gentlyRm purging /Users/Jslice/.npm/passport
+1728 silly gentlyRm purging /Users/Jslice/.npm/passport-http-bearer
+1729 silly gentlyRm purging /Users/Jslice/.npm/passport-oauth2-client-password
+1730 silly gentlyRm purging /Users/Jslice/.npm/passport-strategy
+1731 silly gentlyRm purging /Users/Jslice/.npm/path-browserify
+1732 silly gentlyRm purging /Users/Jslice/.npm/path-case
+1733 silly gentlyRm purging /Users/Jslice/.npm/path-is-absolute
+1734 silly gentlyRm purging /Users/Jslice/.npm/path-is-inside
+1735 silly gentlyRm purging /Users/Jslice/.npm/path-platform
+1736 silly gentlyRm purging /Users/Jslice/.npm/path-to-regexp
+1737 silly gentlyRm purging /Users/Jslice/.npm/pause
+1738 silly gentlyRm purging /Users/Jslice/.npm/pause-stream
+1739 silly gentlyRm purging /Users/Jslice/.npm/pbkdf2-compat
+1740 silly gentlyRm purging /Users/Jslice/.npm/pegjs
+1741 silly gentlyRm purging /Users/Jslice/.npm/pemstrip
+1742 silly gentlyRm purging /Users/Jslice/.npm/pend
+1743 silly gentlyRm purging /Users/Jslice/.npm/pg-connection-string
+1744 silly gentlyRm purging /Users/Jslice/.npm/pg-types
+1745 silly gentlyRm purging /Users/Jslice/.npm/pg.js
+1746 silly gentlyRm purging /Users/Jslice/.npm/pgpass
+1747 silly gentlyRm purging /Users/Jslice/.npm/phantomjs
+1748 silly gentlyRm purging /Users/Jslice/.npm/pkginfo
+1749 silly gentlyRm purging /Users/Jslice/.npm/plist
+1750 silly gentlyRm purging /Users/Jslice/.npm/pngquant-bin
+1751 silly gentlyRm purging /Users/Jslice/.npm/policyfile
+1752 silly gentlyRm purging /Users/Jslice/.npm/portfinder
+1753 silly gentlyRm purging /Users/Jslice/.npm/portscanner
+1754 silly gentlyRm purging /Users/Jslice/.npm/postcss
+1755 silly gentlyRm purging /Users/Jslice/.npm/prelude-ls
+1756 silly gentlyRm purging /Users/Jslice/.npm/prepend-http
+1757 silly gentlyRm purging /Users/Jslice/.npm/pretty-bytes
+1758 silly gentlyRm purging /Users/Jslice/.npm/pretty-ms
+1759 silly gentlyRm purging /Users/Jslice/.npm/prettysize
+1760 silly gentlyRm purging /Users/Jslice/.npm/private
+1761 silly gentlyRm purging /Users/Jslice/.npm/process
+1762 silly gentlyRm purging /Users/Jslice/.npm/progress
+1763 silly gentlyRm purging /Users/Jslice/.npm/promise
+1764 silly gentlyRm purging /Users/Jslice/.npm/promisify-node
+1765 silly gentlyRm purging /Users/Jslice/.npm/prompt
+1766 silly gentlyRm purging /Users/Jslice/.npm/promptly
+1767 silly gentlyRm purging /Users/Jslice/.npm/propagate
+1768 silly gentlyRm purging /Users/Jslice/.npm/propprop
+1769 silly gentlyRm purging /Users/Jslice/.npm/proto-list
+1770 silly gentlyRm purging /Users/Jslice/.npm/proxy-addr
+1771 silly gentlyRm purging /Users/Jslice/.npm/ps-tree
+1772 silly gentlyRm purging /Users/Jslice/.npm/public-address
+1773 silly gentlyRm purging /Users/Jslice/.npm/public-encrypt
+1774 silly gentlyRm purging /Users/Jslice/.npm/pump
+1775 silly gentlyRm purging /Users/Jslice/.npm/punycode
+1776 silly gentlyRm purging /Users/Jslice/.npm/pygmentize-bundled
+1777 silly gentlyRm purging /Users/Jslice/.npm/q
+1778 silly gentlyRm purging /Users/Jslice/.npm/qs
+1779 silly gentlyRm purging /Users/Jslice/.npm/querystring
+1780 silly gentlyRm purging /Users/Jslice/.npm/querystring-es3
+1781 silly gentlyRm purging /Users/Jslice/.npm/rai
+1782 silly gentlyRm purging /Users/Jslice/.npm/randombytes
+1783 silly gentlyRm purging /Users/Jslice/.npm/range-parser
+1784 silly gentlyRm purging /Users/Jslice/.npm/raw-body
+1785 silly gentlyRm purging /Users/Jslice/.npm/rc
+1786 silly gentlyRm purging /Users/Jslice/.npm/react
+1787 silly gentlyRm purging /Users/Jslice/.npm/react-tools
+1788 silly gentlyRm purging /Users/Jslice/.npm/read
+1789 silly gentlyRm purging /Users/Jslice/.npm/read-all-stream
+1790 silly gentlyRm purging /Users/Jslice/.npm/read-chunk
+1791 silly gentlyRm purging /Users/Jslice/.npm/readable-stream
+1792 silly gentlyRm purging /Users/Jslice/.npm/readable-wrap
+1793 silly gentlyRm purging /Users/Jslice/.npm/readdirp
+1794 silly gentlyRm purging /Users/Jslice/.npm/readline2
+1795 silly gentlyRm purging /Users/Jslice/.npm/recast
+1796 silly gentlyRm purging /Users/Jslice/.npm/redeyed
+1797 silly gentlyRm purging /Users/Jslice/.npm/redis
+1798 silly gentlyRm purging /Users/Jslice/.npm/reduce-component
+1799 silly gentlyRm purging /Users/Jslice/.npm/regenerate
+1800 silly gentlyRm purging /Users/Jslice/.npm/regenerator-babel
+1801 silly gentlyRm purging /Users/Jslice/.npm/regexp-clone
+1802 silly gentlyRm purging /Users/Jslice/.npm/regexp-quote
+1803 silly gentlyRm purging /Users/Jslice/.npm/regexpu
+1804 silly gentlyRm purging /Users/Jslice/.npm/registry-url
+1805 silly gentlyRm purging /Users/Jslice/.npm/registry.npmjs.org
+1806 silly gentlyRm purging /Users/Jslice/.npm/regjsgen
+1807 silly gentlyRm purging /Users/Jslice/.npm/regjsparser
+1808 silly gentlyRm purging /Users/Jslice/.npm/relateurl
+1809 silly gentlyRm purging /Users/Jslice/.npm/rename-function-calls
+1810 silly gentlyRm purging /Users/Jslice/.npm/repeating
+1811 silly gentlyRm purging /Users/Jslice/.npm/request
+1812 silly gentlyRm purging /Users/Jslice/.npm/request-progress
+1813 silly gentlyRm purging /Users/Jslice/.npm/request-replay
+1814 silly gentlyRm purging /Users/Jslice/.npm/require-all
+1815 silly gentlyRm purging /Users/Jslice/.npm/require-dir
+1816 silly gentlyRm purging /Users/Jslice/.npm/requirejs
+1817 silly gentlyRm purging /Users/Jslice/.npm/requires-port
+1818 silly gentlyRm purging /Users/Jslice/.npm/resolve
+1819 silly gentlyRm purging /Users/Jslice/.npm/response-time
+1820 silly gentlyRm purging /Users/Jslice/.npm/retry
+1821 silly gentlyRm purging /Users/Jslice/.npm/revalidator
+1822 silly gentlyRm purging /Users/Jslice/.npm/rewire
+1823 silly gentlyRm purging /Users/Jslice/.npm/rf-changelog
+1824 silly gentlyRm purging /Users/Jslice/.npm/rfile
+1825 silly gentlyRm purging /Users/Jslice/.npm/rimraf
+1826 silly gentlyRm purging /Users/Jslice/.npm/ripemd160
+1827 silly gentlyRm purging /Users/Jslice/.npm/rndm
+1828 silly gentlyRm purging /Users/Jslice/.npm/rss
+1829 silly gentlyRm purging /Users/Jslice/.npm/ruglify
+1830 silly gentlyRm purging /Users/Jslice/.npm/runforcover
+1831 silly gentlyRm purging /Users/Jslice/.npm/rx
+1832 silly gentlyRm purging /Users/Jslice/.npm/safecallback
+1833 silly gentlyRm purging /Users/Jslice/.npm/safefs
+1834 silly gentlyRm purging /Users/Jslice/.npm/samsam
+1835 silly gentlyRm purging /Users/Jslice/.npm/sax
+1836 silly gentlyRm purging /Users/Jslice/.npm/scmp
+1837 silly gentlyRm purging /Users/Jslice/.npm/seek-bzip
+1838 silly gentlyRm purging /Users/Jslice/.npm/semver
+1839 silly gentlyRm purging /Users/Jslice/.npm/semver-diff
+1840 silly gentlyRm purging /Users/Jslice/.npm/semver-regex
+1841 silly gentlyRm purging /Users/Jslice/.npm/semver-truncate
+1842 silly gentlyRm purging /Users/Jslice/.npm/send
+1843 silly gentlyRm purging /Users/Jslice/.npm/sentence-case
+1844 silly gentlyRm purging /Users/Jslice/.npm/serve-favicon
+1845 silly gentlyRm purging /Users/Jslice/.npm/serve-index
+1846 silly gentlyRm purging /Users/Jslice/.npm/serve-static
+1847 silly gentlyRm purging /Users/Jslice/.npm/set-immediate
+1848 silly gentlyRm purging /Users/Jslice/.npm/set-immediate-shim
+1849 silly gentlyRm purging /Users/Jslice/.npm/setimmediate
+1850 silly gentlyRm purging /Users/Jslice/.npm/sha.js
+1851 silly gentlyRm purging /Users/Jslice/.npm/shallow-copy
+1852 silly gentlyRm purging /Users/Jslice/.npm/shasum
+1853 silly gentlyRm purging /Users/Jslice/.npm/shebang-regex
+1854 silly gentlyRm purging /Users/Jslice/.npm/shell-quote
+1855 silly gentlyRm purging /Users/Jslice/.npm/shelljs
+1856 silly gentlyRm purging /Users/Jslice/.npm/should
+1857 silly gentlyRm purging /Users/Jslice/.npm/showdown-ghost
+1858 silly gentlyRm purging /Users/Jslice/.npm/sigmund
+1859 silly gentlyRm purging /Users/Jslice/.npm/simple-extend
+1860 silly gentlyRm purging /Users/Jslice/.npm/simple-fmt
+1861 silly gentlyRm purging /Users/Jslice/.npm/simple-is
+1862 silly gentlyRm purging /Users/Jslice/.npm/simplesmtp
+1863 silly gentlyRm purging /Users/Jslice/.npm/sinon
+1864 silly gentlyRm purging /Users/Jslice/.npm/sinon-chai
+1865 silly gentlyRm purging /Users/Jslice/.npm/sinon-chrome
+1866 silly gentlyRm purging /Users/Jslice/.npm/slash
+1867 silly gentlyRm purging /Users/Jslice/.npm/sliced
+1868 silly gentlyRm purging /Users/Jslice/.npm/slide
+1869 silly gentlyRm purging /Users/Jslice/.npm/snake-case
+1870 silly gentlyRm purging /Users/Jslice/.npm/sntp
+1871 silly gentlyRm purging /Users/Jslice/.npm/socket.io
+1872 silly gentlyRm purging /Users/Jslice/.npm/socket.io-adapter
+1873 silly gentlyRm purging /Users/Jslice/.npm/socket.io-client
+1874 silly gentlyRm purging /Users/Jslice/.npm/socket.io-parser
+1875 silly gentlyRm purging /Users/Jslice/.npm/source-map
+1876 silly gentlyRm purging /Users/Jslice/.npm/source-map-support
+1877 silly gentlyRm purging /Users/Jslice/.npm/split
+1878 silly gentlyRm purging /Users/Jslice/.npm/sprintf-js
+1879 silly gentlyRm purging /Users/Jslice/.npm/sqlite3
+1880 silly gentlyRm purging /Users/Jslice/.npm/squeak
+1881 silly gentlyRm purging /Users/Jslice/.npm/stable
+1882 silly gentlyRm purging /Users/Jslice/.npm/stack-parser
+1883 silly gentlyRm purging /Users/Jslice/.npm/stack-trace
+1884 silly gentlyRm purging /Users/Jslice/.npm/statuses
+1885 silly gentlyRm purging /Users/Jslice/.npm/stream-browserify
+1886 silly gentlyRm purging /Users/Jslice/.npm/stream-cache
+1887 silly gentlyRm purging /Users/Jslice/.npm/stream-combiner
+1888 silly gentlyRm purging /Users/Jslice/.npm/stream-combiner2
+1889 silly gentlyRm purging /Users/Jslice/.npm/stream-counter
+1890 silly gentlyRm purging /Users/Jslice/.npm/stream-splicer
+1891 silly gentlyRm purging /Users/Jslice/.npm/streamline
+1892 silly gentlyRm purging /Users/Jslice/.npm/streamsearch
+1893 silly gentlyRm purging /Users/Jslice/.npm/string-extended
+1894 silly gentlyRm purging /Users/Jslice/.npm/string-length
+1895 silly gentlyRm purging /Users/Jslice/.npm/string_decoder
+1896 silly gentlyRm purging /Users/Jslice/.npm/stringify-object
+1897 silly gentlyRm purging /Users/Jslice/.npm/stringmap
+1898 silly gentlyRm purging /Users/Jslice/.npm/stringset
+1899 silly gentlyRm purging /Users/Jslice/.npm/stringstream
+1900 silly gentlyRm purging /Users/Jslice/.npm/strip-ansi
+1901 silly gentlyRm purging /Users/Jslice/.npm/strip-bom
+1902 silly gentlyRm purging /Users/Jslice/.npm/strip-dirs
+1903 silly gentlyRm purging /Users/Jslice/.npm/strip-json-comments
+1904 silly gentlyRm purging /Users/Jslice/.npm/strong-data-uri
+1905 silly gentlyRm purging /Users/Jslice/.npm/styled_string
+1906 silly gentlyRm purging /Users/Jslice/.npm/subarg
+1907 silly gentlyRm purging /Users/Jslice/.npm/sum-up
+1908 silly gentlyRm purging /Users/Jslice/.npm/superagent
+1909 silly gentlyRm purging /Users/Jslice/.npm/supertest
+1910 silly gentlyRm purging /Users/Jslice/.npm/supports-color
+1911 silly gentlyRm purging /Users/Jslice/.npm/svgo
+1912 silly gentlyRm purging /Users/Jslice/.npm/swap-case
+1913 silly gentlyRm purging /Users/Jslice/.npm/syntax-error
+1914 silly gentlyRm purging /Users/Jslice/.npm/tap
+1915 silly gentlyRm purging /Users/Jslice/.npm/tapable
+1916 silly gentlyRm purging /Users/Jslice/.npm/tape
+1917 silly gentlyRm purging /Users/Jslice/.npm/tar-fs
+1918 silly gentlyRm purging /Users/Jslice/.npm/tar-stream
+1919 silly gentlyRm purging /Users/Jslice/.npm/taskgroup
+1920 silly gentlyRm purging /Users/Jslice/.npm/tempfile
+1921 silly gentlyRm purging /Users/Jslice/.npm/temporary
+1922 silly gentlyRm purging /Users/Jslice/.npm/testem
+1923 silly gentlyRm purging /Users/Jslice/.npm/text-table
+1924 silly gentlyRm purging /Users/Jslice/.npm/thenify
+1925 silly gentlyRm purging /Users/Jslice/.npm/thenify-all
+1926 silly gentlyRm purging /Users/Jslice/.npm/throttleit
+1927 silly gentlyRm purging /Users/Jslice/.npm/through
+1928 silly gentlyRm purging /Users/Jslice/.npm/through2
+1929 silly gentlyRm purging /Users/Jslice/.npm/thunky
+1930 silly gentlyRm purging /Users/Jslice/.npm/tildify
+1931 silly gentlyRm purging /Users/Jslice/.npm/time-grunt
+1932 silly gentlyRm purging /Users/Jslice/.npm/timed-out
+1933 silly gentlyRm purging /Users/Jslice/.npm/timers-browserify
+1934 silly gentlyRm purging /Users/Jslice/.npm/timers-ext
+1935 silly gentlyRm purging /Users/Jslice/.npm/timespan
+1936 silly gentlyRm purging /Users/Jslice/.npm/tiny-lr-fork
+1937 silly gentlyRm purging /Users/Jslice/.npm/tinycolor
+1938 silly gentlyRm purging /Users/Jslice/.npm/title-case
+1939 silly gentlyRm purging /Users/Jslice/.npm/tmp
+1940 silly gentlyRm purging /Users/Jslice/.npm/to-array
+1941 silly gentlyRm purging /Users/Jslice/.npm/to-fast-properties
+1942 silly gentlyRm purging /Users/Jslice/.npm/top-gh-contribs
+1943 silly gentlyRm purging /Users/Jslice/.npm/touch
+1944 silly gentlyRm purging /Users/Jslice/.npm/tough-cookie
+1945 silly gentlyRm purging /Users/Jslice/.npm/transformify
+1946 silly gentlyRm purging /Users/Jslice/.npm/traverse
+1947 silly gentlyRm purging /Users/Jslice/.npm/trigger-then
+1948 silly gentlyRm purging /Users/Jslice/.npm/trim-right
+1949 silly gentlyRm purging /Users/Jslice/.npm/truncate
+1950 silly gentlyRm purging /Users/Jslice/.npm/tryor
+1951 silly gentlyRm purging /Users/Jslice/.npm/tty-browserify
+1952 silly gentlyRm purging /Users/Jslice/.npm/tunnel
+1953 silly gentlyRm purging /Users/Jslice/.npm/tunnel-agent
+1954 silly gentlyRm purging /Users/Jslice/.npm/type-check
+1955 silly gentlyRm purging /Users/Jslice/.npm/type-detect
+1956 silly gentlyRm purging /Users/Jslice/.npm/type-is
+1957 silly gentlyRm purging /Users/Jslice/.npm/typechecker
+1958 silly gentlyRm purging /Users/Jslice/.npm/typedarray
+1959 silly gentlyRm purging /Users/Jslice/.npm/uglify-js
+1960 silly gentlyRm purging /Users/Jslice/.npm/uglify-to-browserify
+1961 silly gentlyRm purging /Users/Jslice/.npm/uid
+1962 silly gentlyRm purging /Users/Jslice/.npm/uid-number
+1963 silly gentlyRm purging /Users/Jslice/.npm/uid-safe
+1964 silly gentlyRm purging /Users/Jslice/.npm/uid2
+1965 silly gentlyRm purging /Users/Jslice/.npm/ultron
+1966 silly gentlyRm purging /Users/Jslice/.npm/umd
+1967 silly gentlyRm purging /Users/Jslice/.npm/underscore
+1968 silly gentlyRm purging /Users/Jslice/.npm/underscore.string
+1969 silly gentlyRm purging /Users/Jslice/.npm/unidecode
+1970 silly gentlyRm purging /Users/Jslice/.npm/union
+1971 silly gentlyRm purging /Users/Jslice/.npm/unique-stream
+1972 silly gentlyRm purging /Users/Jslice/.npm/untildify
+1973 silly gentlyRm purging /Users/Jslice/.npm/update-notifier
+1974 silly gentlyRm purging /Users/Jslice/.npm/upper-case
+1975 silly gentlyRm purging /Users/Jslice/.npm/upper-case-first
+1976 silly gentlyRm purging /Users/Jslice/.npm/uri-path
+1977 silly gentlyRm purging /Users/Jslice/.npm/url
+1978 silly gentlyRm purging /Users/Jslice/.npm/url-regex
+1979 silly gentlyRm purging /Users/Jslice/.npm/user-home
+1980 silly gentlyRm purging /Users/Jslice/.npm/useragent
+1981 silly gentlyRm purging /Users/Jslice/.npm/utf8
+1982 silly gentlyRm purging /Users/Jslice/.npm/util
+1983 silly gentlyRm purging /Users/Jslice/.npm/util-deprecate
+1984 silly gentlyRm purging /Users/Jslice/.npm/utile
+1985 silly gentlyRm purging /Users/Jslice/.npm/utils-merge
+1986 silly gentlyRm purging /Users/Jslice/.npm/uuid
+1987 silly gentlyRm purging /Users/Jslice/.npm/v8-debug
+1988 silly gentlyRm purging /Users/Jslice/.npm/v8-profiler
+1989 silly gentlyRm purging /Users/Jslice/.npm/validator
+1990 silly gentlyRm purging /Users/Jslice/.npm/vary
+1991 silly gentlyRm purging /Users/Jslice/.npm/vhost
+1992 silly gentlyRm purging /Users/Jslice/.npm/vinyl
+1993 silly gentlyRm purging /Users/Jslice/.npm/vinyl-assign
+1994 silly gentlyRm purging /Users/Jslice/.npm/vinyl-fs
+1995 silly gentlyRm purging /Users/Jslice/.npm/vm-browserify
+1996 silly gentlyRm purging /Users/Jslice/.npm/vow
+1997 silly gentlyRm purging /Users/Jslice/.npm/vow-fs
+1998 silly gentlyRm purging /Users/Jslice/.npm/vow-queue
+1999 silly gentlyRm purging /Users/Jslice/.npm/ware
+2000 silly gentlyRm purging /Users/Jslice/.npm/watch
+2001 silly gentlyRm purging /Users/Jslice/.npm/watchpack
+2002 silly gentlyRm purging /Users/Jslice/.npm/watchr
+2003 silly gentlyRm purging /Users/Jslice/.npm/webpack
+2004 silly gentlyRm purging /Users/Jslice/.npm/webpack-core
+2005 silly gentlyRm purging /Users/Jslice/.npm/webpack-dev-middleware
+2006 silly gentlyRm purging /Users/Jslice/.npm/webpack-dev-server
+2007 silly gentlyRm purging /Users/Jslice/.npm/whet.extend
+2008 silly gentlyRm purging /Users/Jslice/.npm/which
+2009 silly gentlyRm purging /Users/Jslice/.npm/win-detect-browsers
+2010 silly gentlyRm purging /Users/Jslice/.npm/win-release
+2011 silly gentlyRm purging /Users/Jslice/.npm/winston
+2012 silly gentlyRm purging /Users/Jslice/.npm/wiredep
+2013 silly gentlyRm purging /Users/Jslice/.npm/wns
+2014 silly gentlyRm purging /Users/Jslice/.npm/wordwrap
+2015 silly gentlyRm purging /Users/Jslice/.npm/wrap-fn
+2016 silly gentlyRm purging /Users/Jslice/.npm/wrappy
+2017 silly gentlyRm purging /Users/Jslice/.npm/ws
+2018 silly gentlyRm purging /Users/Jslice/.npm/x-default-browser
+2019 silly gentlyRm purging /Users/Jslice/.npm/xdg-basedir
+2020 silly gentlyRm purging /Users/Jslice/.npm/xml
+2021 silly gentlyRm purging /Users/Jslice/.npm/xml-escape
+2022 silly gentlyRm purging /Users/Jslice/.npm/xml2js
+2023 silly gentlyRm purging /Users/Jslice/.npm/xmlbuilder
+2024 silly gentlyRm purging /Users/Jslice/.npm/xmldom
+2025 silly gentlyRm purging /Users/Jslice/.npm/xmlhttprequest
+2026 silly gentlyRm purging /Users/Jslice/.npm/xoauth2
+2027 silly gentlyRm purging /Users/Jslice/.npm/xpath.js
+2028 silly gentlyRm purging /Users/Jslice/.npm/xregexp
+2029 silly gentlyRm purging /Users/Jslice/.npm/xtend
+2030 silly gentlyRm purging /Users/Jslice/.npm/ya-csv
+2031 silly gentlyRm purging /Users/Jslice/.npm/yamlish
+2032 silly gentlyRm purging /Users/Jslice/.npm/yargs
+2033 silly gentlyRm purging /Users/Jslice/.npm/yauzl
+2034 silly gentlyRm purging /Users/Jslice/.npm/zeparser
+2035 silly gentlyRm purging /Users/Jslice/.npm/zip-stream
+2036 silly gentlyRm purging /Users/Jslice/.npm/zlib-browserify
+2037 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2038 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2039 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2040 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2041 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2042 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2043 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2044 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2045 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2046 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2047 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2048 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2049 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2050 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2051 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2052 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2053 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2054 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2055 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2056 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2057 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2058 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2059 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2060 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2061 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2062 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2063 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2064 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2065 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2066 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2067 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2068 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2069 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2070 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2071 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2072 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2073 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2074 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2075 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2076 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2077 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2078 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2079 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2080 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2081 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2082 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2083 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2084 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2085 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2086 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2087 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2088 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2089 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2090 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2091 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2092 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2093 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2094 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2095 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2096 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2097 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2098 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2099 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2100 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2101 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2102 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2103 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2104 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2105 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2106 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2107 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2108 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2109 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2110 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2111 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2112 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2113 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2114 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2115 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2116 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2117 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2118 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2119 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2120 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2121 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2122 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2123 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2124 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2125 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2126 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2127 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2128 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2129 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2130 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2131 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2132 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2133 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2134 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2135 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2136 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2137 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2138 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2139 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2140 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2141 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2142 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2143 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2144 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2145 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2146 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2147 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2148 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2149 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2150 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2151 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2152 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2153 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2154 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2155 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2156 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2157 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2158 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2159 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2160 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2161 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2162 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2163 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2164 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2165 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2166 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2167 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2168 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2169 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2170 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2171 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2172 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2173 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2174 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2175 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2176 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2177 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2178 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2179 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2180 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2181 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2182 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2183 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2184 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2185 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2186 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2187 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2188 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2189 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2190 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2191 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2192 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2193 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2194 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2195 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2196 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2197 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2198 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2199 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2200 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2201 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2202 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2203 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2204 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2205 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2206 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2207 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2208 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2209 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2210 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2211 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2212 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2213 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2214 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2215 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2216 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2217 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2218 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2219 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2220 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2221 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2222 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2223 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2224 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2225 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2226 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2227 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2228 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2229 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2230 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2231 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2232 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2233 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2234 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2235 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2236 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2237 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2238 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2239 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2240 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2241 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2242 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2243 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2244 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2245 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2246 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2247 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2248 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2249 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2250 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2251 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2252 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2253 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2254 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2255 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2256 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2257 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2258 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2259 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2260 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2261 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2262 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2263 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2264 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2265 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2266 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2267 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2268 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2269 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2270 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2271 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2272 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2273 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2274 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2275 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2276 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2277 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2278 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2279 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2280 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2281 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2282 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2283 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2284 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2285 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2286 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2287 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2288 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2289 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2290 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2291 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2292 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2293 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2294 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2295 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2296 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2297 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2298 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2299 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2300 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2301 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2302 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2303 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2304 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2305 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2306 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2307 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2308 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2309 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2310 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2311 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2312 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2313 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2314 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2315 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2316 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2317 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2318 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2319 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2320 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2321 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2322 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2323 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2324 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2325 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2326 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2327 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2328 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2329 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2330 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2331 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2332 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2333 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2334 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2335 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2336 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2337 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2338 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2339 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2340 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2341 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2342 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2343 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2344 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2345 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2346 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2347 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2348 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2349 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2350 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2351 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2352 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2353 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2354 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2355 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2356 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2357 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2358 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2359 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2360 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2361 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2362 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2363 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2364 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2365 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2366 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2367 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2368 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2369 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2370 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2371 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2372 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2373 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2374 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2375 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2376 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2377 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2378 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2379 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2380 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2381 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2382 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2383 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2384 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2385 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2386 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2387 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2388 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2389 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2390 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2391 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2392 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2393 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2394 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2395 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2396 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2397 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2398 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2399 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2400 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2401 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2402 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2403 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2404 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2405 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2406 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2407 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2408 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2409 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2410 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2411 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2412 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2413 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2414 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2415 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2416 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2417 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2418 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2419 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2420 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2421 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2422 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2423 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2424 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2425 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2426 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2427 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2428 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2429 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2430 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2431 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2432 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2433 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2434 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2435 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2436 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2437 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2438 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2439 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2440 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2441 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2442 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2443 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2444 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2445 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2446 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2447 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2448 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2449 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2450 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2451 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2452 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2453 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2454 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2455 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2456 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2457 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2458 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2459 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2460 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2461 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2462 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2463 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2464 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2465 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2466 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2467 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2468 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2469 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2470 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2471 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2472 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2473 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2474 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2475 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2476 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2477 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2478 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2479 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2480 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2481 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2482 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2483 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2484 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2485 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2486 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2487 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2488 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2489 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2490 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2491 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2492 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2493 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2494 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2495 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2496 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2497 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2498 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2499 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2500 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2501 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2502 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2503 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2504 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2505 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2506 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2507 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2508 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2509 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2510 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2511 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2512 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2513 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2514 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2515 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2516 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2517 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2518 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2519 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2520 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2521 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2522 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2523 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2524 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2525 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2526 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2527 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2528 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2529 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2530 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2531 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2532 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2533 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2534 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2535 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2536 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2537 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2538 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2539 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2540 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2541 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2542 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2543 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2544 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2545 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2546 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2547 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2548 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2549 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2550 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2551 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2552 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2553 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2554 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2555 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2556 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2557 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2558 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2559 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2560 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2561 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2562 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2563 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2564 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2565 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2566 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2567 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2568 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2569 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2570 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2571 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2572 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2573 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2574 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2575 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2576 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2577 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2578 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2579 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2580 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2581 silly gentlyRm quitting because other entries in /Users/Jslice/.npm
+2582 verbose stack Error: EACCES, unlink '/Users/Jslice/.npm/CSSselect/0.4.1'
+2582 verbose stack     at Error (native)
+2583 verbose cwd /Users/Jslice/Dropbox/CS/GitHub/GitSecure/client
+2584 error Darwin 14.1.0
+2585 error argv "node" "/usr/local/bin/npm" "cache" "clean"
+2586 error node v0.12.0
+2587 error npm  v2.3.0
+2588 error path /Users/Jslice/.npm/CSSselect/0.4.1
+2589 error code EACCES
+2590 error errno -13
+2591 error Error: EACCES, unlink '/Users/Jslice/.npm/CSSselect/0.4.1'
+2591 error     at Error (native)
+2591 error  { [Error: EACCES, unlink '/Users/Jslice/.npm/CSSselect/0.4.1']
+2591 error   errno: -13,
+2591 error   code: 'EACCES',
+2591 error   path: '/Users/Jslice/.npm/CSSselect/0.4.1' }
+2592 error Please try running this command again as root/Administrator.
+2593 verbose exit [ -13, true ]

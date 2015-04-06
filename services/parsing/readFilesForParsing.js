@@ -5,24 +5,24 @@ var fileSystemUtilities = require('./../fileSystem/utilities');
 var emailService = require('./../email/emailer.js');
 
 var APIRegexes = {
-  flikrKey: /(flikr)? (key)? ?[:=] ?[a-z0-9]{32}/i, 
-  flikrSecret: /(flikr)? (secret)? ?[:=] ?[a-z0-9]{16}/i,
-  blockchainKey: /(blockchain)? (key)? ?[:=] ?[a-z0-9-]{36}/i,
-  blockchainSecret: /(blockchain)? (secret)? ?[:=] ?[a-z0-9]{56}/i,
-  bitpayKey: /(bitpay)? (key)? ?[:=] ?[a-z0-9]{26}/i, 
-  coinkite: /(coinkite)? (key)? ?[:=] ?[a-z0-9-]{35}/i,
-  amazonKey: /(amazon)? (key)? ?[:=] ?[A-Z1-9]{20}/,
-  amazonSecret: /(amazon)? (secret)? ?[:=] ?[a-z0-9\/]{35}/i, 
-  // linkedin: /\d{4}\w{8}\d\w/,
-  yahooKey: /(yahoo)? (key)? ?[:=] ?[a-z0-9]{100}/i, 
-  bingKey: /(bing)? (key)? ?[:=] ?[a-z0-9]{40}/i,
-  bingSecret: /(bing)? (secret)? ?[:=] ?[a-z0-9\/]{43}/i,
-  facebookKey: /(facebook)? (key)? ?[:=] ?\d{15}/, //not precise
-  // facebookSecret: /(facebook)? (secret)? ?[:=] ?[0-9a-z]/,
-  twitterKey: /(twitter)? (key)? ?[:=] ?[a-z0-9]{25}/i,
-  twitterSecret: /(twitter)? (secret)? ?[:=] ?[a-z0-9]{25}/i,
-  spotifyKey: /(spotify)? (key)? ?[:=] ?[a-z0-9]{32}/,
-  nytimes: /(nytimes)? (key)? ?[:=] ?[a-z0-9:]{44}/,
+  flikrKey: /(flikr) ?(key) ?[:=] ?[a-z0-9]{32}/i, 
+  flikrSecret: /(flikr) (secret) ?[:=] ?[a-z0-9]{16}/i,
+  blockchainKey: /(blockchain) (key) ?[:=] ?[a-z0-9-]{36}/i,
+  blockchainSecret: /(blockchain) (secret) ?[:=] ?[a-z0-9]{56}/i,
+  bitpayKey: /(bitpay) (key) ?[:=] ?[a-z0-9]{26}/i, 
+  coinkite: /(coinkite) (key) ?[:=] ?[a-z0-9-]{35}/i,
+  amazonKey: /(amazon) (key) ?[:=] ?[A-Z1-9]{20}/,
+  amazonSecret: /(amazon) (secret) ?[:=] ?[a-z0-9\/]{35}/i, 
+  linkedin: /(linkedin) (key) ? [:=] ?\d{4}\w{8}\d\w/,
+  yahooKey: /(yahoo) (key) ?[:=] ?[a-z0-9]{100}/i, 
+  bingKey: /(bing) (key) ?[:=] ?[a-z0-9]{40}/i,
+  bingSecret: /(bing) (secret) ?[:=] ?[a-z0-9\/]{43}/i,
+  facebookKey: /(facebook) (key) ?[:=] ?\d{15}/, //not precise
+  facebookSecret: /(facebook) (secret) ?[:=] ?[0-9a-z]/,
+  twitterKey: /(twitter) (key) ?[:=] ?[a-z0-9]{25}/i,
+  twitterSecret: /(twitter) (secret) ?[:=] ?[a-z0-9]{25}/i,
+  spotifyKey: /(spotify) (key) ?[:=] ?[a-z0-9]{32}/,
+  nytimes: /(nytimes) (key) ?[:=] ?[a-z0-9:]{44}/,
   yelpKey: /\w{16}-[a-zA-Z1-9:]{5}/,
   stripe: /(pk|sk)_live_\w{24}/,
   google: /AIza.{35}/,
@@ -48,7 +48,7 @@ var storeHitData = function(data) {
       repo: data.gitId,
       username: 'GitSecure'
     };
-    emailService.sendMessage(emailObj);
+    // emailService.sendMessage(emailObj);
   });
 };
 
