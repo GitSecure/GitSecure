@@ -2,3 +2,4 @@ git_data/
 node_modules/
 dist/
 results/
+client/npm-debug.log
