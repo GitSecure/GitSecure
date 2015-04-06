@@ -1,7 +1,9 @@
 {
   "name": "client",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "grunt-autoprefixer": "^2.2.0"
+  },
   "repository": {},
   "devDependencies": {
     "grunt": "^0.4.5",
