@@ -9,7 +9,9 @@ var app = express();
 var mainExecution = require("./app");
 var util = require("./utilities");
 
-var server = app.listen(3000, function(){
+var port = process.env || 3000;
+
+var server = app.listen(port, function(){
   var host = server.address().address;
   var port = server.address().port;
   console.log('example app listening at http://%s:%s', host, port);
