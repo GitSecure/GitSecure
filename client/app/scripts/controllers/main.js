@@ -17,7 +17,7 @@ angular.module('clientApp')
     }, 1000);
 
     var getNumbers = function() {
-      $http.get('http://localhost:3000/numbers').success(function(data){
+      $http.get('http://gitsecureus.cloudapp.net/numbers').success(function(data){
         $scope.scanned = data.scanned;
         $scope.recovered = data.hits;
       })
