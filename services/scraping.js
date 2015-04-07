@@ -27,7 +27,10 @@ exports.scrapeUrls = function(callback){
     var dataGitUrls = [];
     for (var i = 0; i < data.length - 1;i++) {
       data[i].processed = false;
-      metaData.insert(data[i], reportResults);
+      // checks to see if repo is less than 100MB
+      if(data[i].size < 100000){
+        metaData.insert(data[i], reportResults);
+      }
     }
     callback();
   });
