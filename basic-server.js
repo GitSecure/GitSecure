@@ -15,7 +15,7 @@ var server = app.listen(3000, function(){
   console.log('example app listening at http://%s:%s', host, port);
 });
 
-app.use(express.static(__dirname + '/client/dist'));
+app.use(express.static(__dirname + '/client/app/'));
 
 app.use(bodyParser.json());
 app.use(cors());
