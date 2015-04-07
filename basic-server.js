@@ -9,7 +9,7 @@ var app = express();
 var mainExecution = require("./app");
 var util = require("./utilities");
 
-var port = process.env || 3000;
+var port = 3000;
 
 var server = app.listen(port, function(){
   var host = server.address().address;
